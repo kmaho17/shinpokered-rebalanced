@@ -5456,6 +5456,7 @@ ApplyAttackToEnemyPokemon:
 	ld a, c
 	ld [hl], a
 .damage_stored
+	call DrawHUDsAndHPBars
 	pop bc
 
 ApplyDamageToEnemyPokemon:
@@ -5571,6 +5572,7 @@ ApplyAttackToPlayerPokemon:
 	ld a, c
 	ld [hl], a
 .damage_stored
+	call DrawHUDsAndHPBars
 	pop bc
 	
 ApplyDamageToPlayerPokemon:
