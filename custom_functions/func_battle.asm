@@ -948,3 +948,110 @@ GetBadgeCap:
 	ld d, b
 	pop bc
 	ret
+	
+	
+PsywaveEnhanced:
+	;E = user's level
+	;D = [0, user's level]
+	push de
+	ld e, d
+	
+	ld hl, $0000
+	ld d, 0
+	add hl, de
+	srl e
+	add hl, de
+	ld a, h
+	or l
+	jr nz, .next
+	inc l
+.next
+	ld d, h
+	ld e, l
+	;DE = [1, 1.5*user's level]
+	
+	ld hl, wDamage
+	ld a, [hl]
+	cp d
+	jr c, .update
+	inc hl
+	ld a, [hld]
+	cp e
+	jr nc, .cycle
+.update
+	ld a, d
+	ld [hli], a
+	ld a, e
+	ld [hl], a
+	
+.cycle
+	ld hl, wcf4b
+	ld a, [hli]
+	ld d, a
+	ld a, [hld]
+	ld e, a
+	srl d
+	rr e
+	srl d
+	rr e
+	ld a, d
+	ld [hli], a
+	ld a, e
+	ld [hld], a
+	or d
+	jr nz, .return_reroll
+	
+.return_good
+	xor a
+	jr .return
+.return_reroll
+	scf
+.return
+	pop de
+	ret
+
+
+
+
+
+
+
+
+
+
+
+
+	ld a, [hl]	;load level from HL
+	ld c, a
+	srl a	;halve the level
+	add c	;add that half to the full level
+	ld c, a
+	rl b	;roll any carry bit form the addition over into b so that bc = level * 1.5
+	or b	;a = c, so OR it with b to make sure that bc is not zero
+	jr nz, .loop
+	inc c	;otherwise make bc a value of $0001
+.loop
+	;roll for damage and keep it in HL for comparison against BC
+	call BattleRandom
+	and b
+	ld h, a		;hi byte of the damage will always be 00 or 01
+	call BattleRandom
+	ld l, a
+	or h
+	jr z, .loop	;do not generate zero damage
+	ld a, h
+	cp b
+	jr c, .store	;damage is [1 <= HL < BC] if H < B ; this is a valid damage number
+	;else H = B
+	ld a, l
+	cp c
+	jr z, .store 	;damage is valid if HL = BC
+	jr nc, .loop		;damage is not valid if H = B and L > C
+	;else H=B and L < C
+.store
+	ld b, h
+	ld c, l
+	ret
+	
+	
+	

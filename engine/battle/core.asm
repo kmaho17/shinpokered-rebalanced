@@ -5448,12 +5448,14 @@ ApplyAttackToEnemyPokemon:
 	jr z, .storeDamage
 ; Psywave	
 	call PsywaveDamage	;joenote - fixes all sorts of problems
+	jr .damage_stored
 .storeDamage ; store damage value at b ;joenote - changed to bc
 	ld hl, wDamage
 	ld a, b ;xor a
 	ld [hli], a
 	ld a, c
 	ld [hl], a
+.damage_stored
 	pop bc
 
 ApplyDamageToEnemyPokemon:
@@ -5561,12 +5563,14 @@ ApplyAttackToPlayerPokemon:
 	jr z, .storeDamage
 ; Psywave	
 	call PsywaveDamage	;joenote - fixes all sorts of problems
+	jr .damage_stored
 .storeDamage ; store damage value at b ;joenote - changed to bc
 	ld hl, wDamage
 	ld a, b ;xor a
 	ld [hli], a
 	ld a, c
 	ld [hl], a
+.damage_stored
 	pop bc
 	
 ApplyDamageToPlayerPokemon:
@@ -9947,34 +9951,35 @@ PsywaveDamage:
 ;adjusted for 2 bytes bc
 ;loop until a random number in the range [1, bc] is found
 ;take heed that the min/max possible bc value for psywave is [$0001, $017E]
+;can use BC and HL freely
+	push de
 	ld a, [hl]	;load level from HL
-	ld c, a
-	srl a	;halve the level
-	add c	;add that half to the full level
-	ld c, a
-	rl b	;roll any carry bit form the addition over into b so that bc = level * 1.5
-	or b	;a = c, so OR it with b to make sure that bc is not zero
-	jr nz, .loop
-	inc c	;otherwise make bc a value of $0001
+	ld e, a
+
+	xor a
+	ld [wDamage], a
+	ld [wDamage+1], a
+	
+	ld a, [H_WHOSETURN]
+	and a
+	ld hl, wEnemyMonHP
+	jr z, .got_turn
+	ld hl, wBattleMonHP
+.got_turn
+	ld a, [hli]
+	ld [wcf4b], a
+	ld a, [hl]
+	ld [wcf4b+1], a
+
 .loop
-	;roll for damage and keep it in HL for comparison against BC
 	call BattleRandom
-	and b
-	ld h, a		;hi byte of the damage will always be 00 or 01
-	call BattleRandom
-	ld l, a
-	or h
-	jr z, .loop	;do not generate zero damage
-	ld a, h
-	cp b
-	jr c, .store	;damage is [1 <= HL < BC] if H < B ; this is a valid damage number
-	;else H = B
-	ld a, l
-	cp c
-	jr z, .store 	;damage is valid if HL = BC
-	jr nc, .loop		;damage is not valid if H = B and L > C
-	;else H=B and L < C
-.store
-	ld b, h
-	ld c, l
+	cp e
+	jr z, .next
+	jr nc, .loop
+.next
+	ld d, a
+	callba PsywaveEnhanced
+	jr c, .loop
+
+	pop de
 	ret
