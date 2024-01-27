@@ -340,6 +340,7 @@ v1.24.5-X (experimental)
   - Psywave will now roll for damage multiple times and use the best roll
   - The number of times that damage is rolled is based on the target's current HP with more HP causing more re-rolls
 - Fixed debug damage display not updating properly for some static damage moves
+- Tweaked NPC text for extra options
   
 v1.24.5
 - Minor text edit for SS Anne npc in post-game.
