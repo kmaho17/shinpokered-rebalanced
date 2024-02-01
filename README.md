@@ -341,6 +341,12 @@ v1.24.5-X (experimental)
   - The number of times that damage is rolled is based on the target's current HP with more HP causing more re-rolls
 - Fixed debug damage display not updating properly for some static damage moves
 - Tweaked NPC text for extra options
+- Certain moves now affect catching mechanics if known by your active pokemon in battle
+  - Razor Wind & Skull Bash - additive +10 to catch rate per toss of a non-safari ball
+  - Roar & Whirlwind - additive +20 to catch rate per toss of a non-safari ball
+  - Take Down - improves the ball factor of non-safari balls by 2
+  - Water Gun - improves the ball factor of non-safari balls by 4
+  - Egg Bomb - improves the ball factor of non-safari balls by 2 and additive +10 to catch rate per toss of a non-safari ball
   
 v1.24.5
 - Minor text edit for SS Anne npc in post-game.
@@ -767,6 +773,16 @@ v1.24.1
     - Now only lasts 2 to 3 moves like Bide in order to prevent an infinite loop
     - As a tradeoff, attack boosts from rage are kept when it ends
   - Minor code correction to Twineedle to prevent future errors, but this has no effect on gameplay
+  - Psywave has been enhanced with a hidden mechanic
+    - Psywave will now roll for damage multiple times and use the best roll
+    - The number of times that damage is rolled is based on the target's current HP with more HP causing more re-rolls
+
+- Certain moves now affect catching mechanics if known by your active pokemon in battle
+  - Razor Wind & Skull Bash - additive +10 to catch rate per toss of a non-safari ball
+  - Roar & Whirlwind - additive +20 to catch rate per toss of a non-safari ball
+  - Take Down - improves the ball factor of non-safari balls by 2
+  - Water Gun - improves the ball factor of non-safari balls by 4
+  - Egg Bomb - improves the ball factor of non-safari balls by 2 and additive +10 to catch rate per toss of a non-safari ball
 
 - Adjustment to stat mods, conditions, and items
   - Sleep does not prevent choosing a move

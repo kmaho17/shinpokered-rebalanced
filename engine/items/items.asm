@@ -314,6 +314,7 @@ ItemUseBall:
 
 ; Calculate (MaxHP * 255) / BallFactor.
 	ld [H_DIVISOR], a
+	callba ImproveBallFactor	;joenote - for secret move effects
 	ld b, 4 ; number of bytes in dividend
 	call Divide
 
@@ -347,6 +348,7 @@ ItemUseBall:
 	ld [H_QUOTIENT + 3], a
 
 .skip3
+	callba ImproveCatchRate		;joenote - for secret move effects
 	pop bc ; b = Rand1 - Status
 
 ; If Rand1 - Status > CatchRate, the ball fails to capture the Pokémon.

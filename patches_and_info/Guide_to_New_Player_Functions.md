@@ -82,6 +82,20 @@ Of note, all wild pokemon DV combinations are now possible regardless of the cur
     - Then throw a single bait, switching to the "eating" state at the cost halving the catch rate once.
     - Now throw Safari balls while enjoying a low flee chance with an increased catch rate.  
 
+**Psywave**  
+Exept for on the Lite patches, Psywave has undergone alterations to its statistical distribution for damage.  
+Psywave will now roll for damage multiple times and use the best roll.  
+The number of times that damage is rolled is based on the target's current HP with more HP causing more re-rolls.  
+This makes the move have more consistent damage as well as higher average damage.  
+
+**Moves With Catch Bonuses**  
+Exept for on the Lite patches, certain moves now affect catching mechanics if known by your active pokemon in battle.  
+  - Razor Wind & Skull Bash - additive +10 to catch rate per toss of a non-safari ball.  
+  - Roar & Whirlwind - additive +20 to catch rate per toss of a non-safari ball.  
+  - Take Down - improves the ball factor of non-safari balls by 2.  
+  - Water Gun - improves the ball factor of non-safari balls by 4.  
+  - Egg Bomb - improves the ball factor of non-safari balls by 2 and additive +10 to catch rate per toss of a non-safari ball.  
+
 
 #Debug Functions
 -----------------------------------------------
