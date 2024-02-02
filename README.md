@@ -341,6 +341,7 @@ v1.24.5-X (experimental)
   - The number of times that damage is rolled is based on the target's current HP with more HP causing more re-rolls
 - Fixed debug damage display not updating properly for some static damage moves
 - Tweaked NPC text for extra options
+- Rebalanced a few TMs across pokemart inventories
 - Certain moves now affect catching mechanics if known by your active pokemon in battle
   - Razor Wind & Skull Bash - additive +10 to catch rate per toss of a non-safari ball
   - Roar & Whirlwind - additive +20 to catch rate per toss of a non-safari ball
