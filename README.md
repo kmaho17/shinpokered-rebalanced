@@ -346,7 +346,6 @@ v1.24.5-X (experimental)
   - Razor Wind & Skull Bash - additive +10 to catch rate per toss of a non-safari ball
   - Roar & Whirlwind - additive +20 to catch rate per toss of a non-safari ball
   - Take Down - improves the ball factor of non-safari balls by 2
-  - Water Gun - improves the ball factor of non-safari balls by 4
   - Egg Bomb - improves the ball factor of non-safari balls by 2 and additive +10 to catch rate per toss of a non-safari ball
   
 v1.24.5
@@ -782,7 +781,6 @@ v1.24.1
   - Razor Wind & Skull Bash - additive +10 to catch rate per toss of a non-safari ball
   - Roar & Whirlwind - additive +20 to catch rate per toss of a non-safari ball
   - Take Down - improves the ball factor of non-safari balls by 2
-  - Water Gun - improves the ball factor of non-safari balls by 4
   - Egg Bomb - improves the ball factor of non-safari balls by 2 and additive +10 to catch rate per toss of a non-safari ball
 
 - Adjustment to stat mods, conditions, and items

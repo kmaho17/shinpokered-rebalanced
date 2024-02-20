@@ -41,12 +41,6 @@ ImproveBallFactor:
 	ld a, TAKE_DOWN
 	call CheckActiveMonMoves
 	call c, .boost
-	ld a, WATER_GUN
-	call CheckActiveMonMoves
-	push af
-	call c, .boost
-	pop af
-	call c, .boost
 	ld a, EGG_BOMB
 	call CheckActiveMonMoves
 	call c, .boost
