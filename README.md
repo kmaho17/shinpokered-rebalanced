@@ -336,6 +336,7 @@ Cheats and Secrets!
 [View the Consolidated Changelog Document from 1.23 to 1.24.0](/patches_and_info/changelog_from_v1.23.md)  
 
 v1.24.5-X (experimental)
+- * Fixed a bug in the AI that caused trainers to use poison-effect moves inaccurately
 - Psywave has been enhanced with a hidden mechanic
   - Psywave will now roll for damage multiple times and use the best roll
   - The number of times that damage is rolled is based on the target's current HP with more HP causing more re-rolls
