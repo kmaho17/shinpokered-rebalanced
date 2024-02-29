@@ -348,7 +348,8 @@ v1.24.5-X (experimental)
   - Roar & Whirlwind - additive +20 to catch rate per toss of a non-safari ball
   - Take Down - improves the ball factor of non-safari balls by 2
   - Egg Bomb - improves the ball factor of non-safari balls by 2 and additive +10 to catch rate per toss of a non-safari ball
-  
+- Made the karate dojo master act like a special trainer
+
 v1.24.5
 - Minor text edit for SS Anne npc in post-game.
 - Minor fix for Itemfinder when there are multiple hidden items on screen.
