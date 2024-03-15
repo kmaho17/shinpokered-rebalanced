@@ -178,7 +178,6 @@ Please note that other text speed selections do nothing while this feature is ac
 #Difficulty Settings
 -----------------------------------------------
 **Hard Mode**  
-A NEW GAME now defaults to the SET battle style and hard mode in the options menu, except for the Lite patches.  
 Toggle this on the extra options menu.  
 Playing in hard mode imposes several changes to the game's systems that increase difficulty:  
 1 - Enemy trainer pokemon are assigned level-appropriate StatEXP whereas they previously had none.  
@@ -618,12 +617,6 @@ Here are some freshly-baked cheat codes unique to Shin Pokemon.
 Note: Not available in the Lite patches.    
 
 - Toggle this mode in the extra options menu.  
-  
-- Default Options
-  - Some options are automatically changed when nuzlocke mode is turned on.
-  - The battle style will change to SET and hard mode with trainer switching.
-  - Also, the Obedience Level Cap will be activated if the Scale Enemy Trainer Levels feature is inactive.
-  - These are not mandatory changes, and you may reconfigure your options as you wish.
   
 - Rule 1: A pokemon that faints is considered dead and can no longer be used.
   - Revival items cannot be used in battle.

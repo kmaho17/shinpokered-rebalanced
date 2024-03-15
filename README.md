@@ -349,6 +349,8 @@ v1.24.5-X (experimental)
   - Take Down - improves the ball factor of non-safari balls by 2
   - Egg Bomb - improves the ball factor of non-safari balls by 2 and additive +10 to catch rate per toss of a non-safari ball
 - Made the karate dojo master act like a special trainer
+- Starting a new game will keep the hard mode off, but now default to fast text speed
+- Turning the nuzlocke mode on will not reset your difficulty options
 
 v1.24.5
 - Minor text edit for SS Anne npc in post-game.
@@ -997,7 +999,7 @@ v1.24.1
   - Added a PC to the daycare
   - Daycare allows HM moves on entered pokemon
 
-- A regular New Game will default the battle style to SET and hard mode
+- A regular New Game will default the battle style to SET and text speed to FAST 
 - Starting a New Game while in GBC-mode will default 60FPS mode to ON
 - Yes/No prompt for flute use has been added to blocking snorlax
 - Game corner prize costs re-balanced
@@ -1449,12 +1451,6 @@ v1.24.1
 - Activation/Deactivation
   - Go to the OPTIONS screen and press SELECT to get to the extra menu.
   - Toggle this mode under "NUZLOCKE".
-  
-- Default Options
-  - Some options are automatically changed when nuzlocke mode is turned on.
-  - The Obedience Level Cap will be activated if the Scale Enemy Trainer Levels feature is inactive.
-  - Also, the battle style will change to SET with hard mode and trainer switching active.
-  - These are not mandatory changes, and you may reconfigure your options as you wish.
   
 - Rule 1: A pokemon that faints is considered dead and can no longer be used.
   - Revival items cannot be used in battle.

@@ -221,9 +221,9 @@ InitOptions:
 	ld [wUnusedD721], a	;joenote - reset any extra optioins
 	ld a, 1 ; no delay
 	ld [wLetterPrintingDelayFlags], a
-	ld a, TEXT_DELAY_MEDIUM ; medium speed
+	ld a, TEXT_DELAY_FAST ; medium speed
 	set BIT_BATTLE_SHIFT, a ;joenote - SET battle style
-	set BIT_BATTLE_HARD, a ;joenote - hard mode
+;	set BIT_BATTLE_HARD, a ;joenote - hard mode
 	ld [wOptions], a
 	ld a, [hGBC]
 	and a
