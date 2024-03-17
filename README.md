@@ -351,6 +351,7 @@ v1.24.5-X (experimental)
 - Made the karate dojo master act like a special trainer
 - Starting a new game will keep the hard mode off, but now default to fast text speed
 - Turning the nuzlocke mode on will not reset your difficulty options
+- Fixed a minor bug when blacking out of the SS Anne post-game tournament
 
 v1.24.5
 - Minor text edit for SS Anne npc in post-game.
