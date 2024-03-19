@@ -352,6 +352,7 @@ v1.24.5-X (experimental)
 - Starting a new game will keep the hard mode off, but now default to fast text speed
 - Turning the nuzlocke mode on will not reset your difficulty options
 - Fixed a minor bug when blacking out of the SS Anne post-game tournament
+- Water Gun TM has been replaced by a super repel in Mt. Moon, and it is now found in the Pewter Museum
 
 v1.24.5
 - Minor text edit for SS Anne npc in post-game.
@@ -1432,17 +1433,18 @@ v1.24.1
 - Fuschia mart sells hyper potions per Yellow version
 
 
-#Added hidden items:
+#Changes to item locations:
 - Added a hidden max revive in celadon city
 - Added a hidden super potion in celadon city
 - Added a hidden moon stone in diglett's cave
 - Added a hidden nugget in diglett's cave
-- Added hidden potion on route 22
+- Added a hidden potion on route 22
 - Additional hidden potion in viridian city
 - Added two hidden repels to pewter city
 - Added a hidden great ball and pokedoll on route 6
 - Added hidden max revive on route 11
 - Added hidden ultra ball on route 8
+- Water Gun TM has been replaced by a super repel in Mt. Moon, and it is now found in the Pewter Museum
 
 </details>
 

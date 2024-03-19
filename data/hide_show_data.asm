@@ -58,7 +58,7 @@ MapHSPointers:
 	dw MapHSXX
 	dw MapHS33
 	dw MapHS34
-	dw MapHSXX
+	dw MapHS35	;joenote - added museum 2f
 	dw MapHSXX
 	dw MapHSXX
 	dw MapHSXX
@@ -342,6 +342,8 @@ MapHS2D:
 	db VIRIDIAN_GYM,$0B,Show
 MapHS34:
 	db MUSEUM_1F,$05,Show
+MapHS35:
+	db MUSEUM_2F,$06,Show	;joenote - added water gun tm to museum 2f
 MapHSE4:
 	db UNKNOWN_DUNGEON_1,$01,Show
 	db UNKNOWN_DUNGEON_1,$02,Show
