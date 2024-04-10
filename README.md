@@ -353,6 +353,7 @@ v1.24.5-X (experimental)
 - Turning the nuzlocke mode on will not reset your difficulty options
 - Fixed a minor bug when blacking out of the SS Anne post-game tournament
 - Water Gun TM has been replaced by a super repel in Mt. Moon, and it is now found in the Pewter Museum
+- Shiny pokemon gain a 4x multiplier for the coin guy in celadon hotel and selling to the game corner chief
 
 v1.24.5
 - Minor text edit for SS Anne npc in post-game.
