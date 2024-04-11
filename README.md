@@ -354,6 +354,7 @@ v1.24.5-X (experimental)
 - Fixed a minor bug when blacking out of the SS Anne post-game tournament
 - Water Gun TM has been replaced by a super repel in Mt. Moon, and it is now found in the Pewter Museum
 - Shiny pokemon gain a 4x multiplier for the coin guy in celadon hotel and selling to the game corner chief
+- Cannot toss balls if the wild pokemon is above the level cap (meant for joke Dittos)
 
 v1.24.5
 - Minor text edit for SS Anne npc in post-game.

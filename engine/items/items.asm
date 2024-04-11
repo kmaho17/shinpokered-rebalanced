@@ -124,6 +124,11 @@ ItemUseBall:
 	and a
 	jp z, ItemUseNotTime
 	
+;joenote - Disallow balls against wild pokemon above the level cap
+	ld a, [wEnemyMonLevel]
+	cp MAX_LEVEL+1
+	jp nc, ItemUseNoEffect
+	
 ; Balls can't catch trainers' Pokémon.
 	dec a
 	jp nz, ThrowBallAtTrainerMon
