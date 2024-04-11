@@ -354,8 +354,9 @@ v1.24.5-X (experimental)
 - Fixed a minor bug when blacking out of the SS Anne post-game tournament
 - Water Gun TM has been replaced by a super repel in Mt. Moon, and it is now found in the Pewter Museum
 - Shiny pokemon gain a 4x multiplier for the coin guy in celadon hotel and selling to the game corner chief
-- Cannot toss balls if the wild pokemon is above the level cap (meant for joke Dittos)
-- Made ReadSuperRodData a predef and made it so the Unknown Dungeon 3 fishing data reverts if the randomizer is on
+- Fixed some oversights with the joke dittos that can be fished in unknown dungeon 3
+  - Cannot toss balls if the wild pokemon is above the level cap
+  - Made ReadSuperRodData a predef and made it so the Unknown Dungeon 3 fishing data reverts if the randomizer is on
 
 v1.24.5
 - Minor text edit for SS Anne npc in post-game.
@@ -806,6 +807,7 @@ v1.24.1
   - In hard mode, X-stat items have double the effect
   - HP-UP item now preserves your HP ratio
   - Non-link battles in hard mode use the Stadium 1 formulas for critical hit probability
+  - Balls cannot be used against wild pokemon that exceed the level cap
   
 - Trainer ai routine #1 (recognition of stats, hp, and conditions) has been modified
   - using a move with a dream eater effect is heavily discouraged against non-sleeping opponents
