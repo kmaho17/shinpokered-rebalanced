@@ -355,6 +355,7 @@ v1.24.5-X (experimental)
 - Water Gun TM has been replaced by a super repel in Mt. Moon, and it is now found in the Pewter Museum
 - Shiny pokemon gain a 4x multiplier for the coin guy in celadon hotel and selling to the game corner chief
 - Cannot toss balls if the wild pokemon is above the level cap (meant for joke Dittos)
+- Made ReadSuperRodData a predef and made it so the Unknown Dungeon 3 fishing data reverts if the randomizer is on
 
 v1.24.5
 - Minor text edit for SS Anne npc in post-game.
