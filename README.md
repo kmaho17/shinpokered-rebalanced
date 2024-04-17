@@ -357,7 +357,8 @@ v1.24.5-X (experimental)
 - Fixed some oversights with the joke dittos that can be fished in unknown dungeon 3
   - Cannot toss balls if the wild pokemon is above the level cap
   - Made ReadSuperRodData a predef and made it so the Unknown Dungeon 3 fishing data reverts if the randomizer is on
-
+- Boosted Eevee encounter rate to 5.5%
+  
 v1.24.5
 - Minor text edit for SS Anne npc in post-game.
 - Minor fix for Itemfinder when there are multiple hidden items on screen.
@@ -1400,7 +1401,7 @@ v1.24.1
 - electabuzz in power plant in all versions (9.4% red and 5.1% all others)
 - magmar in pokemon mansion basement in all versions (4.3%)
 - snorlax in digletts cave (5.1%)
-- eevee on route 21 grass (4.3%)
+- eevee on route 21 grass (5.5%)
 - hitmonchan (5.1%) & hitmonlee (5.1%) in victory road 3f
 - version-swapped pinser/scyther in safari zone central-area
 - lickitung (5.1% red, blue, green) in safari zone 1
