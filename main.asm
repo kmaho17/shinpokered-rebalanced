@@ -1874,7 +1874,6 @@ INCLUDE "engine/battle/exp_bar_print.asm"
 ENDC
 INCLUDE "custom_functions/fisher_yates.asm"
 INCLUDE "custom_functions/func_transformations.asm"
-INCLUDE "custom_functions/func_linkbattlecomms.asm"
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 TradingAnimationGraphics:
@@ -1934,6 +1933,7 @@ INCLUDE "engine/overworld/elevator.asm"	;joenote - moving this to make space
 INCLUDE "custom_functions/func_gamma.asm"
 INCLUDE "custom_functions/func_extra_menu.asm"
 INCLUDE "custom_functions/func_move_secrets.asm"
+INCLUDE "custom_functions/func_linkbattlecomms.asm"
 
 SECTION "Pics 1", ROMX, BANK[PICS_1]
 INCLUDE "constants/pic_banks/pic1.asm"

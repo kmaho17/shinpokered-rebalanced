@@ -24,6 +24,9 @@ SyncBattleClauses:
 	ret nz	;return
 	
 	call NybbleToClauses
+	
+	call DisplayClauseSplashScreen
+	
 	xor a	;success, so set Z flag
 	ret
 
@@ -124,7 +127,60 @@ ExchangeNybbleBC:
 	ret
 
 
+DisplayClauseSplashScreen:
+	push bc
+	
+	call ClearScreen
+	coord hl, $1, $1
+	ld de, LinkClausesTXT_Active
+	call PlaceString
+	coord hl, $3, $3
+.sleep
+	pop bc
+	push bc
+	bit 3, b
+	jr z, .freeze
+	ld de, LinkClausesTXT_Sleep
+	call PlaceString
+	inc l
+.freeze
+	pop bc
+	push bc
+	bit 2, b
+	jr z, .trapping
+	ld de, LinkClausesTXT_Freeze
+	call PlaceString
+	inc l
+.trapping
+	pop bc
+	push bc
+	bit 1, b
+	jr z, .hbeam
+	ld de, LinkClausesTXT_Trapping
+	call PlaceString
+	inc l
+.hbeam
+	pop bc
+	push bc
+	bit 0, b
+	jr z, .done
+	ld de, LinkClausesTXT_Hypbeam
+	call PlaceString
+	inc l
+.done
+	ld c, 120
+	call DelayFrames
+	pop bc
+	ret
 
 
-
-
+LinkClausesTXT_Active:
+	db "Active Clauses@"
+LinkClausesTXT_Sleep:
+	db "SLEEP@"
+LinkClausesTXT_Freeze:
+	db "FREEZE@"
+LinkClausesTXT_Trapping:
+	db "TRAPPING@"
+LinkClausesTXT_Hypbeam:
+	db "HYP.BEAM@"
