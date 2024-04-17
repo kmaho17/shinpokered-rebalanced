@@ -444,8 +444,6 @@ ShinPokemonHandshake:
 	pop af
 	jp LinkMenu.choseCancel
 .pass
-	callba SyncBattleClauses
-	jr nz, .fail
 	pop hl
 	pop af
 	jp LinkMenu.next

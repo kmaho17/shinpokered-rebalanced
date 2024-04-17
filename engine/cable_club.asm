@@ -272,6 +272,24 @@ CableClub_DoBattleOrTradeAgain:
 	ld a, LINK_STATE_TRADING
 	ld [wLinkState], a
 	jr nz, .trading
+
+;joenote - sync battle clauses
+	callba SyncBattleClauses
+	jr z, .initOpp
+	ld a, LINK_STATE_IN_CABLE_CLUB
+	ld [wLinkState], a
+	coord hl, 0, 12
+	ld b, 4
+	ld c, 18
+	call CableClub_TextBoxBorder
+	coord hl, 1, 14
+	ld de, SyncError
+	call PlaceString
+	ld c, 50
+	call DelayFrames
+	jr .back2room
+.initOpp
+
 	ld a, LINK_STATE_BATTLING
 	ld [wLinkState], a
 	ld a, OPP_SONY1
@@ -284,6 +302,7 @@ CableClub_DoBattleOrTradeAgain:
 	res BIT_BATTLE_ANIMATION, [hl]
 	predef InitOpponent
 	predef HealParty
+.back2room
 	jp ReturnToCableClubRoom
 .trading
 	ld c, BANK(Music_GameCorner)
@@ -897,6 +916,10 @@ TradeCenterPointerTable:
 	dw TradeCenter_SelectMon
 	dw TradeCenter_Trade
 
+;joenote - adding an error message
+SyncError:
+	db "Sync Error!@"
+
 CableClub_Run:
 	ld a, [wLinkState]
 	cp LINK_STATE_START_TRADE
@@ -942,12 +965,12 @@ Diploma_TextBoxBorder:
 
 ; b = height
 ; c = width
-;joenote - use different tiles if called outside cable club
+;joenote - use different tiles if called outside cable club maps
 CableClub_TextBoxBorder:
-	ld a, [wLinkState]
-	cp LINK_STATE_START_TRADE
+	ld a, [wCurMap]
+	cp COLOSSEUM
 	jr z, .next
-	cp LINK_STATE_START_BATTLE
+	cp TRADE_CENTER
 	jr z, .next
 	jp CableClub_TextBoxBorder2
 .next	
