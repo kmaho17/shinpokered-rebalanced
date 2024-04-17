@@ -942,12 +942,12 @@ Diploma_TextBoxBorder:
 
 ; b = height
 ; c = width
-;joenote - use different tiles if called outside cable club maps
+;joenote - use different tiles if called outside cable club
 CableClub_TextBoxBorder:
-	ld a, [wCurMap]
-	cp COLOSSEUM
+	ld a, [wLinkState]
+	cp LINK_STATE_START_TRADE
 	jr z, .next
-	cp TRADE_CENTER
+	cp LINK_STATE_START_BATTLE
 	jr z, .next
 	jp CableClub_TextBoxBorder2
 .next	
