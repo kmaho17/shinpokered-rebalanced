@@ -210,6 +210,8 @@ DoShimmerTransformation:
 
 	ld hl, _TXTShimmerSendOut
 	call PrintText
+	ld c, 30
+	call DelayFrames
 	ret 
 
 .getThreeEiths
@@ -249,7 +251,7 @@ DoShimmerTransformation:
 	
 _TXTShimmerSendOut:
 	text "A ray shimmers."
-	prompt
+	done
 	db "@"
 	
 ShimmerFactorPokemon:

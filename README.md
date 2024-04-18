@@ -358,6 +358,7 @@ v1.24.5-X (experimental)
   - Cannot toss balls if the wild pokemon is above the level cap
   - Made ReadSuperRodData a predef and made it so the Unknown Dungeon 3 fishing data reverts if the randomizer is on
 - Boosted Eevee encounter rate to 5.5%
+- The shimmer transformation's text box no longer requires a button prompt to scroll through
   
 v1.24.5
 - Minor text edit for SS Anne npc in post-game.
