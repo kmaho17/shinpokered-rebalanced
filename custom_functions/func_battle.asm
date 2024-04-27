@@ -40,9 +40,12 @@ LowPriorityMoves:
 .CheckTrappingClause
 	res TRAPPING_COUNT, [hl]
 	pop af
-	ld a, [wLinkState]
-	cp LINK_STATE_BATTLING
-	jr z, .next3
+
+;link battles now sync clause flag
+;	ld a, [wLinkState]
+;	cp LINK_STATE_BATTLING
+;	jr z, .next3
+
 	CheckEvent EVENT_8C5
 .next3
 	;invert the z flag bit at this point
@@ -493,9 +496,12 @@ EnemyDisableHandler:
 ;set z flag if not applicable 
 ;clear z flag if confirmed
 _HandleHyperbeamClause:
-	ld a, [wLinkState]
-	cp LINK_STATE_BATTLING
-	ret z	;do not enforce for link battles
+
+;link battles now sync clause flag
+;	ld a, [wLinkState]
+;	cp LINK_STATE_BATTLING
+;	ret z	;do not enforce for link battles
+
 	CheckEvent EVENT_8C8	
 	ret z
 	ld hl, wEnemyMonHP	;check enemy hp if it's the player's turn
@@ -518,9 +524,10 @@ _HandleHyperbeamClause:
 ;return c for  freeze clause triggered
 ;link battles unsupported
 _HandleSlpFrzClause:		
-	ld a, [wLinkState]
-	cp LINK_STATE_BATTLING
-	jp z, .returnclear ;do not enforce for link battles
+;link battles now sync clause flag
+;	ld a, [wLinkState]
+;	cp LINK_STATE_BATTLING
+;	jp z, .returnclear ;do not enforce for link battles
 	
 	ld a, [wIsInBattle]
 	cp 2
