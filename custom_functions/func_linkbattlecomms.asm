@@ -134,39 +134,39 @@ DisplayClauseSplashScreen:
 	coord hl, $1, $1
 	ld de, LinkClausesTXT_Active
 	call PlaceString
-	coord hl, $3, $3
 .sleep
 	pop bc
 	push bc
 	bit 3, b
 	jr z, .freeze
+	coord hl, $3, $3
 	ld de, LinkClausesTXT_Sleep
 	call PlaceString
-	inc l
 .freeze
 	pop bc
 	push bc
 	bit 2, b
 	jr z, .trapping
+	coord hl, $3, $4
 	ld de, LinkClausesTXT_Freeze
 	call PlaceString
-	inc l
 .trapping
 	pop bc
 	push bc
 	bit 1, b
 	jr z, .hbeam
+	coord hl, $3, $5
 	ld de, LinkClausesTXT_Trapping
 	call PlaceString
-	inc l
 .hbeam
 	pop bc
 	push bc
 	bit 0, b
 	jr z, .done
+	coord hl, $3, $6
 	ld de, LinkClausesTXT_Hypbeam
 	call PlaceString
-	inc l
+	inc h
 .done
 	ld c, 120
 	call DelayFrames
