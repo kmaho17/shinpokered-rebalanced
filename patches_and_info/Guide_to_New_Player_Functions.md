@@ -265,6 +265,13 @@ The clauses apply to the player and AI equally, and they only apply during non-l
 - Added a fifth Clause Brother for the hyper beam clause.
 - Hyper beam will recharge if it KOs the opponent.
 
+#### Battle Clauses Over Link  
+- Link battles in the Colosseum now synchronize battle clauses between both players.  
+  - The item clause is not applicable because items are not usable in link battles by default.  
+  - There is a clipboard in the Colosseum that is used to reset and re-select your battle clauses.  
+  - Any active clauses between your opponent and yourself are applied to both players.  
+  - A splash screen before battle will desplay the enforced clauses.  
+
 
 #Button-Activated Features
 -----------------------------------------------

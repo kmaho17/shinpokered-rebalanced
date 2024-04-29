@@ -1069,7 +1069,7 @@ v1.24.1
   - Oak's pokeballs will be upgraded to great balls if you beat the route 22 rival in hard mode
 - Added the Clause Brothers to Viridian City
   - They toggle enforcement of the item, sleep, and/or freeze clauses
-  - The clauses apply to the player and AI equally, and only apply during non-link trainer battles
+  - The clauses apply to the player and AI equally
   - Sleep and freeze clauses work like they do in Pokemon Stadium
 - Added a fourth brother for the Trapping Move Clause
   - A counter tracks if the player or the opponent use trapping moves like Wrap multiple times in a row 
@@ -1080,6 +1080,11 @@ v1.24.1
   - The counter only gets reset by switching or using a move that does not have the trapping effect 
   - Reseting the counter will restore normal priority to trapping effect moves.
 - Added a fifth Clause Brother for the hyper beam clause; hyper beam will recharge if it KOs the opponent
+- Link battles in the Colosseum now synchronize battle clauses between both players
+  - The item clause is not applicable because items are not usable in link battles by default
+  - There is a clipboard in the Colosseum that is used to reset and re-select your battle clauses
+  - Any active clauses between your opponent and yourself are applied to both players
+  - A splash screen before battle will desplay the enforced clauses
 - There is now an obedience level-cap that can be toggled in the extra options menu under "LVL CAP"
   - While active, the current maximum obedience level will display in the options menu
   - All pokemon, not just trades, will start to disobey if over the displayed level cap
