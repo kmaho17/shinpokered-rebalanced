@@ -361,6 +361,7 @@ v1.24.5-X (experimental)
   - Made ReadSuperRodData a predef and made it so the Unknown Dungeon 3 fishing data reverts if the randomizer is on
 - Boosted Eevee encounter rate to 5.5%
 - The shimmer transformation's text box no longer requires a button prompt to scroll through
+- The battle clauses between link players now sync and are applied during battles
   
 v1.24.5
 - Minor text edit for SS Anne npc in post-game.
@@ -1433,7 +1434,7 @@ v1.24.1
 
 	
 #Changes to pokemart inventories:
-- TMs of all kinds at all stores. All TMs are now re-purchaseable at various stages of the game.
+- TMs of all kinds at all stores (Prize Corner included). All TMs are now re-purchaseable at various stages of the game.
 - Pewter city has ethers
 - Lavender town has max ethers
 - Saffron city has elixers

@@ -6,31 +6,38 @@ Load the new save with the latest version of Shin Pokemon.
 You will be automatically warped to Pallet Town.  
 Save the game. Your save file is now updated.  
 
-**Troubleshooting**  
+#### Troubleshooting  
 If you are blocked by invisible walls, use the Softlock Warp (detailed below).  
 On the old save, before transferring it over, saving outside in Pallet town can solve certain issues.  
 
 
 #Some Changes to Particular Mechanics
 -----------------------------------------------
-**Trade Evolutions**  
+#### Trade Evolutions  
 Except for the Lite patches, pokemon that evolve by trade can also evolve by other means.  
-  - Kadabra: Hinted at by a Pewter Museum NPC that comments on the moon stone
-  - Haunter: Hinted at by the Lavender Town NPC that asks if you believe in ghosts
-  - Graveler: Hinted at by a Cinnabar Island NPC that talks about the mansion
-  - Machoke: Hinted at by a house NPC in Pewter City that talks about trainers teaching pokemon
+  - Kadabra: Hinted at by a Pewter Museum NPC that comments on the moon stone. Use a moon stone at level 35.  
+  - Haunter: Hinted at by the Lavender Town NPC that asks if you believe in ghosts. Use a thunder stone at level 35.  
+  - Graveler: Hinted at by a Cinnabar Island NPC that talks about the mansion. Use a fire stone at level 35.  
+  - Machoke: Hinted at by a house NPC in Pewter City that talks about trainers teaching pokemon. Use a leaf stone at level 35.  
+Evolution by trade is still allowed and works as normal.  
+  
+#### Type Interactions  
+Ghost moves (i.e. Lick) are now supereffective against Psychic types.  
+Night Shade deals no damage to Normal type pokemon.  
+Seismic Toss deals no damage to Ghost type pokemon.  
+Normal-type trapping moves (Wrap and Bind) will not restrain Ghost types.  
 
-**Rage**  
+#### Rage  
 This move now lasts 2 to 3 turns to prevent getting stuck in an infinite loop.  
 Any attack boosts gained during Rage are retained when it ends.  
 In this way, Rage is almost like an alternate take on Bide.  
 Having your Raging pokemon tank a multi-hit move is a great way to setup for a physical sweep.  
 
-**Bide**  
+#### Bide  
 Each hit of a multi-hit move now adds to Bide's damage instead of just the first.  
 Needless to say, using Double Kick on a Bide-user has the potential to backfire horribly.  
 
-**Transform**  
+#### Transform  
 Move slots cannot be rearranged when transformed to prevent acquiring glitch moves.  
 When transforming into a pokemon and copying its Transform move, the PP of the copied move is set thusly.  
 - The PP of the Transform move getting copied is read at the current instant.
@@ -38,33 +45,35 @@ When transforming into a pokemon and copying its Transform move, the PP of the c
 - If <= 5, then the copy transform is set to the current instant PP - 1.
 This will prevent endless battles between two pokemon who can only transform.  
 
-**Sleep Status**  
+#### Sleep Status  
 You can choose a move while asleep, and the move is used upon waking up.  
 Sleep starts with a counter of at least 2 in order to maintain the accuracy of sleep effect moves.  
 Rest now sets the sleep counter to 3 in order to preserve its lose-2-turns penalty.  
 These changes help to remove the "infinite combo" that could be done by high-speed users of sleep moves.  
 Overall, the only loss is that sleep has a maximum possible lost-turn number of 6 instead of 7.  
 
-**Trapping Moves**  
+#### Trapping Moves  
 Switching out of trapping moves (Wrap, Clamp, Fire Spin, etc) ends the move and wastes the trapper's turn.  
 This matches what Pokemon Stadium enforces upon trapping moves.  
-Additionally,except for the Lite patches, a 'poof' animation plays to signal the last turn of a trapping move.  
+Additionally, except for the Lite patches, a 'poof' animation plays to signal the last turn of a trapping move.  
 
-**Critical Hits**  
+#### Critical Hits  
 If a critical hit would do less damage than its non-critical value, the non-critical value will be used instead.  
 Furthermore, the effect for Dire Hit and Focus Energy now work correctly and quadruple the critical hit rate.  
+Each hit of a multi-hit move has a chance to critically hit.  
 
-**X-Accuracy and One-Hit-K.O. Moves**  
+#### Accuracy, X-Accuracy, and One-Hit-K.O. Moves  
+The 1-in-256 chance to miss bug on all moves has been fixed.  
 X-Accuracy no longer gives OHKO moves 100% accuracy.  
 X-Accuracy now allows OHKO moves to hit a faster opponent.  
 
-**New Random Number Engine**  
+#### New Random Number Engine  
 The game now uses an XOR-shift-style pseudorandom number generator.  
 This method is a good and speedy solution for 8-bit processors.  
 The random seeds are taken from garbage values in HRAM on boot-up. Power-cycle your game if your luck is bad.  
 Of note, all wild pokemon DV combinations are now possible regardless of the current map.  
 
-**Fixes/Improvements to Catching Mechanics and Safari Zone**  
+#### Fixes/Improvements to Catching Mechanics and Safari Zone  
 - The ball factors of 8 for Great balls and 12 for Safari balls have been swapped.  
   - This means that Great balls are no better at catching full-health pokemon than its peers.  
   - It also means that Safari balls are much better for catching full-health pokemon, as was likely intended.  
@@ -82,23 +91,23 @@ Of note, all wild pokemon DV combinations are now possible regardless of the cur
     - Then throw a single bait, switching to the "eating" state at the cost halving the catch rate once.
     - Now throw Safari balls while enjoying a low flee chance with an increased catch rate.  
 
-**Psywave**  
+#### Psywave  
 Exept for on the Lite patches, Psywave has undergone alterations to its statistical distribution for damage.  
 Psywave will now roll for damage multiple times and use the best roll.  
 The number of times that damage is rolled is based on the target's current HP with more HP causing more re-rolls.  
 This makes the move have more consistent damage as well as higher average damage.  
 
-**Moves With Catch Bonuses**  
+#### Moves With Catch Bonuses  
 Exept for on the Lite patches, certain moves now affect catching mechanics if known by your active pokemon in battle.  
-  - Razor Wind & Skull Bash - additive +10 to catch rate per toss of a non-safari ball.  
-  - Roar & Whirlwind - additive +20 to catch rate per toss of a non-safari ball.  
-  - Take Down - improves the ball factor of non-safari balls by 2.  
-  - Egg Bomb - improves the ball factor of non-safari balls by 2 and additive +10 to catch rate per toss of a non-safari ball.  
+- Razor Wind & Skull Bash - additive +10 to catch rate per toss of a non-safari ball.  
+- Roar & Whirlwind - additive +20 to catch rate per toss of a non-safari ball.  
+- Take Down - improves the ball factor of non-safari balls by 2.  
+- Egg Bomb - improves the ball factor of non-safari balls by 2 and additive +10 to catch rate per toss of a non-safari ball.  
 
 
 #Debug Functions
 -----------------------------------------------
-**Softlock Warp**  
+#### Softlock Warp  
 This will instantly teleport you back to your mom's house in Pallet Town if you get stuck.  
 It also sets your money to at least 1000 if you have less than that.  
 Use this warp if you find yourself unable to move after updating to a new patch.  
@@ -109,7 +118,7 @@ Instructions to perform:
 4 - While still continuing to hold the two aforementioned buttons, press B.  
 5 - The start menu should close and you will warp back to your mom's house.  
 
-**Vanilla Options Reset**  
+#### Vanilla Options Reset  
 This will undo all of the special options in case you are updating to a new patch.  
 Instructions to perform:  
 1 - Go to the start menu and put the cursor on the top option (usually POKEDEX).  
@@ -118,7 +127,7 @@ Instructions to perform:
 4 - While still continuing to hold the two aforementioned buttons, press B.  
 5 - The start menu should close and you will will hear a jingle.  
 
-**Debug Damage Display**  
+#### Debug Damage Display  
 As a debugging cheat, damage values will be displayed in battle as the UI updates.  
 Toggled on/off via the following method:  
 1 - Go to the start menu and put the cursor on OPTION.  
@@ -129,11 +138,11 @@ Toggled on/off via the following method:
 Zero damage is not displayed.  
 Damage is not displayed if either pokemon has zero HP remaining.  
 
-**Debug RNG Seed Display**  
+#### Debug RNG Seed Display  
 At the title screen, press and hold A + SELECT until the main menu appears.  
 This will display the 4-byte RNG seed at the main menu for debugging purposes.  
 
-**Debug DV / Stat EXP Reset**  
+#### Debug DV / Stat EXP Reset  
 Not available in the Lite patches.  
 On your POKEMON party screen from the start menu, place the cursor over a desired pokemon.  
 Then press A while holding LEFT + SELECT.  
@@ -144,10 +153,10 @@ Also, it's DVs will be set to match the quantities of the first four items in yo
 
 #Engine Functions
 -----------------------------------------------
-**Extra Options Menu**  
+#### Extra Options Menu  
 Press SELECT on the main options menu to go to the extra menu where several new features can be toggled.  
 
-**Activate Color Correction**  
+#### Activate Color Correction  
 This applies when playing or emulating as a Gameboy Color game.  
 It's assumed you are using a modern backlit screen with no other color correction.  
 Under these stated conditions, the colors will be highly saturated.  
@@ -159,17 +168,17 @@ Note: Can also be toggled in the extra options menu.
 Changing the destination code of the rom header to 00 (JP) defaults this to ON and pressing SELECT turns it OFF.  
 Use the BGB emulator to easily change the destination code and fix the header checksum (https://youtu.be/2AaCkM597iU).  
 
-**Change the Audio Type**  
+#### Change the Audio Type  
 Updated Audio mixing has been ported over from Pokemon Yellow.  
 Cycle through audio types on the extra options menu.  
 You can cycle through mono sound and three types of stereo mixing.  
 
-**60 FPS Mode**  
+#### 60 FPS Mode  
 This feature is more of a proof-of-concept and is still kinda rusty.  
 Toggle this on the extra options menu.  
 Playing as a GBC game will take advantage of the GBC's double-speed processor mode.  
 
-**Zero-Delay Text**  
+#### Zero-Delay Text  
 This feature reinstitutes a speed-running trick that makes text print with zero frame delay.  
 Toggle this on the extra options menu.  
 Please note that other text speed selections do nothing while this feature is active.  
@@ -177,7 +186,7 @@ Please note that other text speed selections do nothing while this feature is ac
 
 #Difficulty Settings
 -----------------------------------------------
-**Hard Mode**  
+#### Hard Mode  
 Toggle this on the extra options menu.  
 Playing in hard mode imposes several changes to the game's systems that increase difficulty:  
 1 - Enemy trainer pokemon are assigned level-appropriate StatEXP whereas they previously had none.  
@@ -189,12 +198,12 @@ Playing in hard mode imposes several changes to the game's systems that increase
 7 - Non-link battles in hard mode use the Stadium 1 formulas for critical hit probability.  
 8 - Wild pokemon DVs get 1 re-roll each if less than 4, biasing them upwards a little bit
 
-**AI Trainer Switching**  
+#### AI Trainer Switching  
 - Toggle this on the extra options menu.  
 - This feature allows enemy trainers to switch somewhat intelligently.
 - Note: If disabled, Jugglers are unaffected because their official gimmick is that they switch randomly.
 
-**Obedience Level Cap**  
+#### Obedience Level Cap  
 Not available in the Lite patches.  
 There is now an obedience level cap that can be toggled in the extra options menu.  
 While active, the current maximum obedience level will display in the extra options menu.  
@@ -204,7 +213,7 @@ This is intended as an alternative to, and not to be used with, the Scale Enemy 
 It provides a different challenge where one is forced to keep a team within the game's level curve.  
 Players should deactivate this feature for post-game adventuring past the level-cap.  
 
-**Scale Enemy Trainer Levels**  
+#### Scale Enemy Trainer Levels  
 Not available in the Lite patches.  
 Talk to the aide in the lower-right section of Oak's lab to toggle this feature.  
 While active, enemy trainer roster levels will scale upwards relative to the highest-level pokemon in your party.  
@@ -217,7 +226,7 @@ Warning - The difficulty will be compounded if both trainer scaling and hard mod
 -----------------------------------------------
 Note: These are not available in the Lite patches.    
 
-**Wild & Starter Pokemon Randomization**  
+#### Wild & Starter Pokemon Randomization  
 The girl in Oak's lab toggles on/off a built-in randomizer for wild pokemon.  
 It shuffles all pokemon that can be gained through walking, surfing, fishing, or from the game corner.  
 If activated early enough in the game, your starter pokemon choices are randomized as well.  
@@ -231,18 +240,18 @@ Shuffling is done using three internal pokemon lists defined by base-stat-total:
 Pokemon are only shuffled within their own tier list in order to maintain some modicum of balance.  
 The girl will also ask if full randomization is preferred, which will combine the tiers into one big list.  
 
-**Regular Trainer Randomization**  
+#### Regular Trainer Randomization  
 One of Oak's Aides has been added to the Viridian Pokemon Center. Talk to him to toggle this feature.  
 This randomizes the teams of regular no-name trainers that do not have roster customization.  
 The randomization method is the same as for the previously mentioned wild pokemon.  
 
-**Sleep, Freeze, and Item Clauses**  
+#### Sleep, Freeze, and Item Clauses  
 The house to the lower-left of Viridian Gym is home to three new NPCs named the Clause Brothers.  
 Each one toggles enforcement of either the item, sleep, or freeze clause from Pokemon Stadium.  
 The sleep clause in particular works like it does in Stadium with respect to using the Rest move.  
 The clauses apply to the player and AI equally, and they only apply during non-link trainer battles.  
 
-**Trapping Move Clause**  
+#### Trapping Move Clause  
 - A fourth brother has been added for this new clause.
   - A counter tracks if the player or the opponent use trapping moves like Wrap multiple times in a row. 
   - The counter increments only if a trapping effect move is selected to be used and it does not miss.
@@ -252,7 +261,7 @@ The clauses apply to the player and AI equally, and they only apply during non-l
   - The counter only gets reset by switching or using a move that does not have the trapping effect. 
   - Resetting the counter will restore normal priority to trapping effect moves.
 
-**Hyper Beam Clause**  
+#### Hyper Beam Clause  
 - Added a fifth Clause Brother for the hyper beam clause.
 - Hyper beam will recharge if it KOs the opponent.
 
@@ -261,31 +270,31 @@ The clauses apply to the player and AI equally, and they only apply during non-l
 -----------------------------------------------
 Note: These are not available in the Lite patches.    
 
-**Running Shoes**  
+#### Running Shoes  
 Hold the B button to move at double your normal speed.  
 This also works when surfing or using your bike.  
 
-**One-Button HM Usage**  
+#### One-Button HM Usage  
 You must still have the correct badge and move on one of your pokemon to use a HM in this way.  
 HM01 - Press SELECT when facing a shrub or grass tile to use CUT.  
 HM03 - Press SELECT when facing a shore to use SURF.  
 HM05 - Press SELECT in a dark area to light it with FLASH.  
 HM04 - Press SELECT while facing a boulder to activate STRENGTH. Your pokemon's cry plays and the screen will flash.  
 
-**Quick Fishing Button Combo**  
+#### Quick Fishing Button Combo  
 You must have a fishing rod in your bag.  
 Face against a shore. You may have to bump against it a single time.  
 Press and hold A. While doing that, press SELECT. You can now release the two buttons.  
 This will prompt the game to choose the best rod in your bag and use it.  
 
-**Quick Bike Button Combo**  
+#### Quick Bike Button Combo  
 You must have the bicycle in your bag.  
 You must not be facing a shore.  
 Text for NPCs, signs, objects, etc, have priority, so do not face toward these things.  
 Press and hold A. While doing that, press SELECT. You can now release the two buttons.  
 This will tell the game to get on your bike. You can also get off your bike the same way.  
 
-**Extra Bag Pocket**  
+#### Extra Bag Pocket  
 The bag now supports an additional item list for an extra 20 slots of space.  
 Press START while in the bag menu to hot-swap the item list that populates the active bag.  
 This also works in battle or when depositing items into the PC.  
@@ -293,18 +302,18 @@ In general, the non-active item list gets recognized by the game's systems.
 For example, you can enter the Cinnabar Gym even if the Secret Key is in the non-active bag space.  
 For certain unique systems, like Pokemon Stadium compatibility, only the active bag list is detected.  
 
-**Bag Auto-Sort**  
+#### Bag Auto-Sort  
 You can now automatically sort all the items in the active bag space or the PC item box.  
 Hold SELECT and press START while on the bag or box menu to auto-sort your items.  
 
-**Display Pokemon DVs**  
+#### Display Pokemon DVs  
 Determinant Values (DVs) are the predecessors to the Individual Values (IVs) used in Gen 3 and onwards.  
 Unlike IVs, DV are on a scale from 0 to 15.  
 On the pokemon menu, select a pokemon and place the cursor over STATS.  
 While holding the START button, press the A button to enter the pokemon's status screen.  
 In place of the pokemon's HP and stat values, it's corresponding DVs will be displayed instead.  
 
-**Display Pokemon StatEXP**  
+#### Display Pokemon StatEXP  
 Stat Experience (StatEXP) is the predecessor to the Effort Values (EVs) used in Gen 3 and onwards.  
 Unlike EVs, StatEXP values are on a scale from 0 to 65535 and there is no sum total limit between stats.  
 At level 100, a pokemon gains extra points in a stat equal to 0.25 x SQRT(StatEXP) rounded down.  
@@ -312,25 +321,25 @@ On the pokemon menu, select a pokemon and place the cursor over STATS.
 While holding the SELECT button, press the A button to enter the pokemon's status screen.  
 In place of the pokemon's HP and stat values, it's corresponding StatEXP values will be displayed instead.  
 
-**Forfeit Trainer Battles**  
+#### Forfeit Trainer Battles  
 You can now forfeit a trainer battle to force yourself to black out.  
 This can be useful for escaping in-battle softlock scenarios or creating variants of Nuzlocke rules.  
 On the main battle menu, place the cursor over RUN.  
 While holding the SELECT button, press the A button.  
 You will be asked to confirm your decision. Choose YES to forfeit or NO to cancel.  
 
-**View a Shiny Palette**  
+#### View a Shiny Palette  
 This applies when playing or emulating as a Gameboy Color or Super Gameboy game.  
 Choose a pokemon in the pokedex and place the cursor over DATA.  
 While holding the SELECT button, press the A button to view it's pokedex entry.  
 The pokedex entry will display the pokemon with its shiny palette swap.  
 
-**Audio Cue for Owned Pokemon**  
+#### Audio Cue for Owned Pokemon  
 On the main battle menu, place the cursor over an option in the left column (FIGHT or ITEM).  
 Press the SELECT button.  
 The active enemy pokemon will play its cry if that species is registered as Owned in your pokedex.  
 
-**New Game Plus**  
+#### New Game Plus  
 Still somewhat experimental.  
 Activated under these conditions:  
 1 - Must have an existing non-corrupt game save on-file.  
@@ -352,12 +361,12 @@ The player can now choose whether or not to generate a new Trainer ID when selec
 -----------------------------------------------
 Note: These are not available in the Lite patches.    
 
-**Play as a Female Trainer**  
+#### Play as a Female Trainer  
 When choosing NEW GAME, you will be asked if you are a boy or a girl.  
 Choose GIRL to play as the female trainer.  
 Choose BOY to play as the usual male trainer.  
 
-**Temporary Field Move Slots**  
+#### Temporary Field Move Slots  
 When teaching a pokemon a field move outside of battle, such as with a HM, this feature becomes apparent.  
 You will be asked if you would like to teach it as a temporary field move.  
 If so, it will be learned into a special field move slot that is separate from the normal list of four moves.  
@@ -370,12 +379,12 @@ If all four of a pokemon's regular moves are field moves, its temporary field mo
 But if a fifth field move in the temporary slot is a HM, it can still be activated via One-Button HM Usage.  
 Teaching a TM as a field move will not consume the TM.  
 
-**Rematch Enemy Trainers**  
+#### Rematch Enemy Trainers  
 The gym leaders and most trainers can be rematched.  
 Simply talk to them once or twice. Select YES when prompted.  
 If Giovanni has disappeared from his gym, exit and re-enter the gym to bring him back.  
 
-**Reworked Fishing**  
+#### Reworked Fishing  
 - The locations of the Good Rod and the Super Rod have been swapped.  
 - Route 12 has been altered to give access to its Fishing Guru without needing the Pokeflute.  
 - All rods now randomly add 0 to 7 levels to anything it hooks.  
@@ -389,13 +398,13 @@ If Giovanni has disappeared from his gym, exit and re-enter the gym to bring him
   - Goldeen, Psyduck, Shellder
   - Goldeen, Shellder, Horsea, Tentacool
   
-**Improved itemfinder function**  
+#### Improved Itemfinder Function  
 - If an item is detected, it will play 1 to 3 chimes depending on how close it is (more chimes means closer to the item).
 - Lines will point in the direction of the item and flash with the chimes.
 - If the player is right on top of the item, no lines will show and the chime will play four times.
 - If the SELECT button is held while selecting to USE the itemfinder, then the original itemfinder function is used.
 	
-**Reworked Daycare**  
+#### Reworked Daycare  
 The daycare lets you select moves to forget (if any) upon retreiving your pokemon.  
 Retrieving a daycare pokemon that could have evolved via level will trigger evolution and learn any missed-out moves.  
 The daycare experience gain has been recalibrated.  
@@ -407,13 +416,19 @@ The downside of not gaining statexp in the daycare still remains as a tradeoff.
 Consider using the daycare as a way to outsource some grinding while you go focus on other things.  
 And yes, pokemon with HM moves are now allowed in the daycare.  
 
-**The Shimmer**  
+#### The Shimmer  
 - This is a cheat feature for those who want more viability when using certain low-regarded pokemon.
   - Toggled ON/OFF via the glass pokeball decoration in the rival's house.
   - Pokemon Eligible: EKANS, CATERPIE, METAPOD, WEEDLE, KAKUNA, ZUBAT, PSYDUCK, PARAS, PONYTA, RATTATA, SANDSHREW, HORSEA, GOLDEEN, VENONAT, JIGGLYPUFF, ARBOK, BEEDRILL, BUTTERFREE, DITTO, FARFETCHD, GOLBAT, GOLDUCK, HITMONCHAN, LICKITUNG, ONIX, PARASECT, PINSIR, PORYGON, RAPIDASH, RATICATE, SANDSLASH, SEADRA, SEAKING, VENOMOTH, WIGGLYTUFF
   - The shimmer factor appears randomly and secretly, being more likely to occur by training and sending out eligible 'mons.
+    - Each time an eligible 'mon is sent out into battle triggers the random chance of it occurring.  
+    - The base chance is 1-in-256.  
+    - The base chance increases by an additional +(1-in-256) for every 2048 StatEXP the 'mon has in its HP stat.  
   - The shimmer only manifests in 'mons that are fully evolved, even if their pre-evos gained the secret shimmer factor.
   - When the shimmer manifests as a 'mon gets sent out, that 'mon gets a large boost to some stats that are low-to-poor.
+  - The boost when the shimmer activates is as follows:
+    - Affects the pokemon's unmodified Attack, Defense, Speed, and Special when it gets sent into battle.  
+	- If a stat is less than 8/3rds its level, then add its level to that stat.  
   - There is a slight chance that the shimmer will manifest on applicable enemy trainer pokemon.
   - Certain select enemy trainers will always manifest the shimmer on their applicable pokemon.
 
@@ -422,7 +437,7 @@ And yes, pokemon with HM moves are now allowed in the daycare.
 -----------------------------------------------
 Note: These are not available in the Lite patches.    
 
-**Caught Symbol and Gender Symbol**  
+#### Caught Symbol and Gender Symbol  
 Talk to the aide in the lower-left section of Oak's lab to toggle this feature after obtaining the pokedex.  
 While active, it has the following effects:  
 1 - Wild pokemon have a gender symbol by their names if applicable.  
@@ -430,61 +445,72 @@ While active, it has the following effects:
 3 - Enemy wild pokemon that have already been registered as Owned will display a pokeball symbol in battle.  
 Gender is determined the same way as Gen 2 for the purposes of cross-generation transfers.  
 
-**Move Deleter and Relearner**  
+#### Move Deleter and Relearner  
 Two new NPCs are added to the Saffron City house below COPYCAT's house.  
 Talk to the little girl to delete moves.  
 Talk to her tutor to relearn moves for a small fee.  
 
-**Coin Gentleman**  
+#### Coin Gentleman  
 There is a gentleman added to the Celadon Hotel as an alternative to playing the slots.  
 He will give you free game corner coins if you show him the pokemon he requests.  
 His request changes every time you enter the hotel, so make use of the hotel's PC to the right.  
 Place his requested pokemon at the top of your team and speak to him to get your reward.  
 
-**Catch-Up EXP Booster**  
+#### Catch-Up EXP Booster  
 Talk to the aide in the Celadon Diner to toggle this feature.  
 While active, EXP gained is boosted if the active pokemon's level is lower than that of the fainted enemy.  
 The boost is 1.5 multiplied by an additional 1.5 for every 3 levels of difference.  
 For example, a level difference of 9 results in an EXP multiplier of (1.5)^4 = 5.0625.  
 Use this feature to help you train-up new team members in the mid-to-late game.  
 
-**Get a Free Paras**  
+#### Get a Free Paras  
 Go to the small house on Route 2 just below the exit of Diglett's Cave.  
 The Aide NPC inside the house will now gift you a Paras.  
 You can use this Paras if you ever find yourself without a pokemon that can learn Cut.  
 
-**Drink Stand**  
+#### Joe's Drink Stand  
 A new drink stand has been set up on the Route 19 beach below Fuschia City.  
 It sells vending machine drinks in multiples like a pokemart.  
 
-**Cloning Genetically Modified Pokemon**  
+#### Cloning Genetically Modified Pokemon  
 This process clones your 1st spot pokemon and modifies it with DNA from your 2nd spot pokemon.  
 It does this by treating a pokemon's two bytes of DV values as if they were two genes with two alleles each.  
-Gene-A has the Attack DV as its hi-side allele and the Defense DV as its lo-side allele.  
-Gene-B has the Speed DV as its hi-side allele and the Special DV as its lo-side allele.  
+Gene-A has the Attack DV as its hi-side (dominant) allele and the Defense DV as its lo-side (recessive) allele.  
+Gene-B has the Speed DV as its hi-side (dominant) allele and the Special DV as its lo-side (recessive) allele.  
 The A-genes from the two donor pokemon will be mixed to make the clone's A-gene.  
 The B-genes from the two donor pokemon will be mixed to make the clone's B-gene.  
 Mixing two genes is done via Punnett Squares, and a random result is chosen based on its ratios.  
-Within a Punnett quadrant, a hi allele makes the upper digits and a lo allele makes the lower digits.  
-If two hi allels or two lo alleles fall within a Punnet quadrant, their order is randomly selected.  
+A DV byte is assembled for each Punnett quadrant:  
+  - Dominant alleles make up the upper four bits.  
+  - Recessive alleles make up the lower four bits.  
+  - When there are two dominant or two recessive alleles...  
+    - Randomly choose one of the alleles to make up the upper four bits, changing to or staying dominant.  
+    - The other allele will make up the lower four bits, changing to or staying recessive.  
 
-Example: Mixing gene hexadecimal values of $AB from one pokemon with $CD from another pokemon.  
-One of the four quadrants will be randomly chosen as a new value containing two DVs.  
-__ __ __ _C_ __ __ __ __ D  
-__ xxxxxxxxxxxxxxxxxxxx  
-A | AC or CA | __ _AD_ __ |  
-__ xxxxxxxxxxxxxxxxxxxx  
-B | __ _CB_ __ | BD or DB |  
-__ xxxxxxxxxxxxxxxxxxxx  
+Allele - Stat    
+A - Attack  
+a - Defense  
+B - Speed  
+b - Special  
+
+| Parent 1 | Parent 2 A  | Parent 2 a  |  
+|:--------:|:-----------:|:-----------:|  
+|    A     |A1A2 or A2A1 |    A1a2     |  
+|    a     |    A2a1     |a1a2 or a2a1 |  
+
+| Parent 1 | Parent 2 B  | Parent 2 b  |  
+|:--------:|:-----------:|:-----------:|  
+|    B     |B1B2 or B2B1 |    B1b2     |  
+|    b     |    B2b1     |b1b2 or b2b1 |  
 
 Talk to the new scientist in the fossil room of the Cinnabar Lab to get started.  
-For a small fee, a gene sequence listing the clone's new DV alleles in order is randomly determined.  
-If the clone's genes are acceptable, you may pay a larger fee to gestate the clone.  
+For a small fee, a gene sequence listing the clone's new DV values in order is randomly determined.  
+If the clone's DVs are acceptable, you may pay a larger fee to gestate the clone.  
 Pro-Tip: This makes it possible to selectively breed for shiny pokemon in a more realistic way.  
 
 Example of selecting for a shiny pokemon:  
 - A shiny pokemon in gen 2 has the 2-byte hex value of $XAAA for its DVs.
-  - Wherein 'X' is the Attack DV composed of the 4 bits yy1y.
+  - Wherein 'X' is the Attack DV composed of the 4 bits %yy1y.
   - And 'y' bits are "don't care" values that can be either 0 or 1.
 - The first goal is to get $AA as the value for the B-gene.
   - The minium requirement is to cross two pokemon that both have at least one $A in their B-genes.
@@ -501,13 +527,27 @@ Example of selecting for a shiny pokemon:
   - Keep in mind that the default chance of a shiny pokemon is 1/8192.
   - You can boost the chances higher by increasing the number of donor $A alleles and optimizing allele placement.
   - The chances of getting a shiny by crossing two shiny donors is 50%.
-  
+
+Example:  
+
+| Parent 1 | Parent 2 $4 | Parent 2 $A |  
+|:--------:|:-----------:|:-----------:|  
+|    $F    | $4F or $F4  |    $FA      |  
+|    $5    |    $45      | $5A or $A5  |  
+
+| Parent 1 | Parent 2 $A | Parent 2 $7 |  
+|:--------:|:------------|:-----------:|  
+|    $9    | $9A or $A9  |    $97      |  
+|    $A    |    $AA      | $7A or $A7  |  
+
+Top-right quadrant for the A-gene and bottom-left quadrant for the B-gene gives shiny DVs of FAAA.  
+
 
 #Additions to the Post-Game
 -----------------------------------------------
 Note: These are not available in the Lite patches.    
 
-**SS Anne Tournament**  
+#### SS Anne Tournament  
 You can return to the SS Anne after beating the Elite-4. Find the Gym Guy hanging out in the kitchen.  
 He is organizing a little tournament with the following rules:  
 1 - Seven matches to win.  
@@ -519,70 +559,101 @@ He is organizing a little tournament with the following rules:
 7 - No breaks allowed in-between battles.  
 Winning the tournament rewards you with a Master Ball.  
 
-**Rare Item Shop**  
-The 3rd floor of the Celadon Dept. Store has a shop open up after beating the Elite-4.  
-It sells things like Fossils, Rare Candy, and Moon Stones.  
+#### Rare Item Shop  
+The 3rd floor of the Celadon Department Store has a shop open up after beating the Elite-4.  
+It sells MASTER BALL, MAX REVIVE, RARE CANDY, MOON STONE, DOME FOSSIL, HELIX FOSSIL, OLD AMBER, and the EXP ALL.  
 
-**Uncapped Vitamins**  
+#### Uncapped Vitamins  
 After beating the Elite-4, vitamins have no limit placed upon them when used on pokemon of level > 30.  
 
-**Selling Pokemon**  
+#### Selling Pokemon  
 Find the house with the game corner CHIEF in Celadon City.  
 Talk to him after beating the Elite-4 to find he's in some dire straights.  
 He will offer to buy the pokemon in your team's first slot from you.  
 
-**Bulk Coin Seller**  
-One of the Rocket grunts walking around Celadon City will now sell you 1000 coins at a time.  
+#### Bulk Coin Seller  
+One of the Rocket grunts walking around the top left corner of Celadon City will now sell you 1000 coins at a time.  
 
-**Special Safari Event**  
+#### Special Safari Event  
 A new NPC can be utilized in the Safari Zone Gate after beating the Elite-4.  
 Talk to him to toggle special parameters that have the following effects on the Safari Zone:  
-1 - All pokemon encountered will have above-average DVs.  
-2 - There is a rare chance for any non-legendary pokemon to appear.  
+- All pokemon encountered will have above-average DVs.  
+- There is a rare chance for any non-legendary pokemon to appear.  
 
-**Random Battle Generator and the M.GENE**  
-There is a sketchy guy added to the west-east underground path.  
-After the Elite-4 are beaten, he will offer to engage you in randomized battles.  
-Win 5 matches in a row against him without leaving the area to get the new M.GENE item.  
-The M.Gene can be used on a pokemon out of battle in order to re-randomize its DVs with above-average values.  
-
-**Mirror Match Battle Generator**  
+#### Mirror Match Battle Generator  
 Pagliacco, A pokemaniac with a flair for theatrics, has been added to the north-south underground path.  
 After the Elite-4 are beaten, he will offer to engage you in a mirror match against your own party.  
 
-**Special Trainer Battles**  
-There are four special trainers to find and defeat after beating the Elite-4.  
-Talk to Oak at his lab to start a chain of hints for finding the four trainers.  
+#### Mr. Fuji and the M.GENE  
+Put Mewtwo at the head of your party and talk to Mr. Fuji to get the new M.GENE consumable item.  
+The M.Gene can be used on a pokemon out of battle in order to re-randomize its DVs with above-average values.  
+This constitutes a scrambling of DNA, so it may affect that pokemon's sex and shiny status.  
 
-**The Secret of the MIST STONE**  
+#### Random Battle Generator  
+There is a sketchy guy added to the west-east underground path.  
+After the Elite-4 are beaten, he will offer to engage you in randomized battles.  
+Win 5 matches in a row against him without leaving the area to get more M.GENE items.  
+
+#### Finding Mew  
+Mew is available to catch after viewing your completed 'Dex diploma in the Celadon Gamfreak building.  
+Mew shows up on only one map, it is level 70, and it is a random encounter.  
+A message will hint that you are on the right map.  
+The random encounter for Mew only happens a single time. You have only one opportunity to catch it.  
+
+#### The Secret of the MIST STONE  
 The MIST STONE will max-out all the stat exp of the lvl > 30 pokemon on which it is used.  
 If all the stat exp is already at max, then it will set all the DVs to maximum instead.  
 But this assumes you are able to find the secret room for obtaining it.  
+Here's a hint. There is a cave entrance hidden on the overworld just out of sight off the beaten path.  
+
+#### Special Trainer Battles  
+There are four special trainers to find and defeat after beating the Elite-4.  
+The first is Oak. Talk him at his lab, and select NO when he asks to rate your 'Dex.  
+Each victory will hint towards the next special trainer's location.  
+Beating the fourth special trainer at the Vermilion dock will hint to where Mew is located.  
+Beating all four special trainers will enable a final fifth battle outside Bill's Villa.  
+Beating the fifth special trainer will:
+- Respawn all the legendaries
+- Reset the Mew event so it can be re-encounterd
+- Reset the Mist Stone event to make it re-obtainable
+- Reset the fifth trainer itself, so you must defeat the other four again (any order) to re-challenge
+
+#### Bill's Secret Garden  
+It is possible to get behind Bill's house if you show him a "new species" of pokemon.  
+The area behind this house will let you encounter rare pokemon at level 5 such as the starters.  
+These pokemon have a 1-in-128 chance to be shiny.  
+
+#### The Scourge of Missingno  
+Missingno can activated after viewing your completed 'Dex diploma in the Celadon Gamfreak building.  
+Talk to the old man in Viridian and watch his catching tutorial. Then start surfing up and down the east Cinnabar shore.  
+Win or lose, you have to reactivate the battle via the old man.  
+If you win the battle, the item in your 6th bag slot will be multiplied.  
+
+#### The Scourge of Missingno Part II  
+An even harder Missingno battle can be challenged.  
+It works the same as previous, except the player should start surfing up and down the east Seafoam shore.  
+If you win the battle, the item in your 6th bag slot will be multiplied and a special flair will be added to your diploma.  
 
 
 #Pro-Tips
 -----------------------------------------------
 Note: These are not applicable to the Lite patches, except for increased trainer aggression. Really...buy healing items.  
 
-**Gift, Prize, and Trade Pokemon**  
+#### Gift, Prize, and Trade Pokemon  
 Pokemon that are given to you by NPCs have above-average DVs.  
 This applies whether it is a gift, in-game trade, or a purchase.  
 This means that prize pokemon from the game corner will always have good stats.  
 And buying a magikarp from a shady figure might not be such a bad investment.  
 
-**Use Those TMs**  
-Though still single-use, all TMs can be repurchased from pokemarts around the region.  
-So don't be shy about using TMs acquired from NPCs and exploration.  
-
-**Stock-Up on Items**  
+#### Stock-Up on Items  
 Enemy trainers are more aggressive about attacking, so your team incurs more damage over time.  
 Be sure to purchase a reasonable stock of healing items to counter the increased attrition.  
 
-**Big EXP Gains**  
+#### Big EXP Gains  
 The Catch-Up Booster bonus compounds with other 1.5x EXP bonuses in the game.  
 With this is in mind, activate level-scaling and do trainer rematches with a traded pokemon to gain loads of EXP.  
 
-**Training in Post-Game Without Battling**  
+#### Training in Post-Game Without Battling  
 Here is an alternative to grinding out battles in the post-game.  
 1 - Catch some pokemon.  
 2 - Sell them to the game corner chief.  
@@ -590,31 +661,133 @@ Here is an alternative to grinding out battles in the post-game.
 4 - Take note that vitamins are uncapped in the post-game for 'mons with lvl > 30.  
 5 - Use your purchases to train your roster pokemon without battling.  
 
-**Secret Hints**  
-1 - Try winning the SS Anne tournament with a Pikachu in your party.  
-2 - Want your 1st-roster-slot Dragonite to be able to learn Fly? Maybe Lance can help you.  
-3 - The fourth special trainer hints at the method to find Mew. But Mew only appears once.  
-4 - There is a fifth special trainer outside Bill's house. Victory respawns the legendaries, Mew, and mist stone.  
-5 - The Vermilion Dock has three hidden items.  
-6 - Fish in the lowest level of Cerulean Cave for something strange.  
-7 - Place a level 100 Chansey at the top of your party and use a repel. You're bound to find something shiny.  
-8 - When going to the game corner, try having your 1st-slot pokemon know Pay Day. It may tip you off.  
-9 - After getting your 'dex diploma, Missingno can be activated on either Seafoam or Cinnabar. Prepare your sixth item slot for victory. Beating the seafoam Missingo battle will add an achievement to your diploma.  
-10 - Mercy is granted if you encounter an enemy trainer with a shiny pokemon.  
-11 - Put Mewtwo at the top of your party in the post-game. How will Mr. Fuji react?  
-12 - Bill's secret garden? He'll never tell! Could showing him a new species pokemon persuade him?  
-13 - Search all over the Kanto overworld to find a secret cave room, or else you'll never get a mist stone.   
+  
+#Item and Pokemon Availability
+-----------------------------------------------
+Note: These are not applicable to the Lite patches.  
 
-**Gameshark Codes**  
-Here are some freshly-baked cheat codes unique to Shin Pokemon.  
-  - 010042DA: If your play-clock was maxed at 255 from a previous save file, this will unlock the expanded game clock.  
-  - 0180C4CF: The next encounter will be a shiny pokemon.
-  - 01xx21D7: Resets the options and changes the player graphics to male (xx=00) or female (xx=01).
+#### Expanded TM Availability  
+Though still single-use, all TMs can be repurchased around the region.  
+So don't be shy about using TMs acquired from NPCs and exploration.  
+- Viridian Mart
+  - Egg Bomb
+  - Softboiled
+- Pewter Mart
+  - Pay Day
+  - Dream Eater
+- Cerulean Mart
+  - Whirlwind
+  - Bide
+- Vermilion Mart
+  - Water Gun
+  - Thunder Wave
+- Lavender Mart
+  - Bubble Beam
+  - Dig
+  - Rest
+  - Rockslide
+- Celadon Mart 2F
+  - Doubleteam
+  - Reflect
+  - Razorwind
+  - Horn Drill
+  - Dragon Rage
+  - Mega Punch
+  - Mega Kick
+  - Takedown
+  - Submission
+- Celadon Mart 5F
+  - Body Slam
+  - Rage
+  - Self-Destruct
+- Celadon Prize Corner
+  - Thunderbolt
+  - Hyper Beam
+  - Blizzard
+- Fuschia Mart
+  - Teleport
+  - Mimic
+  - Swift
+  - Tri-Attack
+  - Substitute
+- Saffron Mart
+  - Double-Edge
+  - Counter
+  - Seismic Toss
+  - Metronome
+- Cinnabar Mart
+  - Swords Dance
+  - Toxic
+  - Ice Beam
+  - Mega Drain
+  - Skull Bash
+  - Psywave
+- Indigo Mart
+  - Solar Beam
+  - Thunder
+  - Earthquake
+  - Fissure
+  - Psychic
+  - Fire Blast
+  - Sky Attack
+  - Explosion
+
+#### Changes to item locations  
+- Additional hidden potion in viridian city
+- Added a hidden potion on route 22
+- Added two hidden repels to pewter city
+- Water Gun TM has been replaced by a super repel in Mt. Moon, and it is now found in the Pewter Museum
+- Added a hidden great ball and pokedoll on route 6
+- Added a hidden max revive on route 11
+- Added a hidden ultra ball on route 8
+- Added a hidden max revive in celadon city
+- Added a hidden super potion in celadon city
+- Hidden Hyper Beam TM on the vermilion dock
+- Hidden nugget on the vermilion dock
+
+#### Changes to Mart Inventories  
+- Pewter city has ethers
+- Cerulean mart sells escape rope per Yellow version
+- Lavender town has max ethers
+- Fuschia mart sells hyper potions per Yellow version
+- Saffron city has elixers
+- Cinnabar island has max elixers
+
+#### Full Pokemon Availability  
+- route 22 super rod data has changed to give psyduck & poliwag
+- sandshrew (5.1%) and ekans (5.1%) on route 3
+- bulbasaur on route 4 (4.3%)
+- squirtle on route 6 (4.3%)
+- charmander on route 25 (4.3%)
+- bellsprout (4.3%: red, blue-jp) or oddish (4.3%: blue, green) on route 24
+- meowth (9.8%: red) or mankey (9.8%: blue, green, blue-jp) on route 5
+- snorlax in digletts cave (5.1%)
+- magnemite on route 10 (5.1%)
+- cubone added to rock tunnel (5.1% floor 1 and 6.3% floor 2)
+- vulpix (4.3%: red, blue-jp) or growlithe (4.3%: blue, green) on route 8
+- ponyta on route 7 (9.8%)
+- farfetchd on route 12 (6.3%) and route 13 (4.3%)
+- dodrio on route 17 (5.1%)
+- version-swapped pinser/scyther in safari zone central-area
+- lickitung (5.1% red, blue, green) in safari zone east
+- kangaskhan (5.1% blue-jp) in safari zone east
+- tauros (5.1% blue-jp) in safari zone north
+- jynx (5.1% red, blue, green) in safari zone north
+- mr mime in safari zone west (5.1%) 
+- lapras replaces krabby when using super rod in safari zone
+- porygon in the power plant in red version (1.2%)
+- electabuzz in power plant in all versions (9.4% red and 5.1% all others)
+- magmar in pokemon mansion basement in all versions (4.3%)
+- tentacruel on water routes 19, 20, and 21 (6.3%)
+- seaking on water routes 19, 20, and 21 (4.3%)
+- eevee on route 21 grass (5.5%)
+- hitmonchan (5.1%) & hitmonlee (5.1%) in victory road 3f
+- version-swapped sandslash/arbok in cerulean cave 1f
 
 
 #Built-In Nuzlocke Mode
 -----------------------------------------------
-Note: Not available in the Lite patches.    
+Note: Not available in the Lite patches.  
 
 - Toggle this mode in the extra options menu.  
   
@@ -673,3 +846,56 @@ Note: Not available in the Lite patches.
 - Removing the death marker:
   - The only way to undo this is by modifying the dead pokemon's catch rate.
   - This is usually done via the Gen-2 time capsule and trading it back without a hold item or a different hold item.
+
+
+#Cheats and Secrets (SPOILERS)
+-----------------------------------------------
+Note: These are not applicable to the Lite patches. 
+
+#### Mew, Bill's Garden, and the Mist Stone  
+The secret room's entrance can be found off the south-east corner of Silence Bridge.  
+The journal inside will hint that Bill wants to see a New Species of pokemon.  
+If the 'Dex Diploma has been viewed, Mew can be encountered and caught on the lowest level of the Cerulean Cave.  
+Show Mew to Bill, and he will let you into his secret garden.  
+Return to the journal in the secret room, and you will recieve a Mist Stone.  
+Follow the path in the secret room, look for a hidden Nugget and Moon Stone, and exit into Diglett's Cave.  
+
+#### Pikachu Learning Surf  
+Beat the SS. Anne post-game tournament with a Pikachu in your party.  
+The Pikachu's catch rate byte will be modified, and it will be allowed to learn the Surf HM.  
+
+#### Dragonite Learning Fly  
+Beat Lance with a Dragonite in your 1st party slot.  
+The Dragonite's cry will play and its catch rate byte will be modified.  
+It will now be allowed to learn the Fly HM.  
+
+#### The Surfboard  
+The truck at the Vermilion Dock holds the Surfboard as a hidden item.  
+The surfboard substitutes for a pokemon that knows how to Surf.  
+
+#### Strange Dittos  
+Use the super rod in the bottom of Cerulean Cave.  
+You will fush up Dittos that are above level 100.  
+These give the most EXP and StatEXP when knocked out.  
+
+#### Better Chances for Shiny Pokemon  
+Having a level-100 Chansey at the top of your party will increase your shiny chances.  
+Encountering a shiny is unaffected by repels.  
+Place a level-100 Chansey at the top of your party and use a repel to effectively grind shiny pokemon.  
+
+#### Shiny Mercy  
+Playing with hard mode ON allows enemy trainer pokemon to be shiny.  
+If this happens to you, the next wild pokemon you encounter will be shiny as a form of mercy.  
+
+#### Cheat at the Slots  
+A pkmn with Pay Day in the 1st party slot will play its cry when interacting with a lucky slot machine.  
+A pkmn with Pay Day in the 1st party slot will play its cry when a slot machine enters payout modes.  
+- 1 cry for a normal payout on the next pull
+- 2 cries to signal the possibility of all 7s/bars on the next pull
+- 3 cries to signal that super payout mode had been entered
+
+#### Gameshark Codes  
+Here are some freshly-baked cheat codes unique to Shin Pokemon.  
+  - 010042DA: If your play-clock was maxed at 255 from a previous save file, this will unlock the expanded game clock.  
+  - 0180C4CF: The next encounter will be a shiny pokemon.
+  - 01xx21D7: Resets the options and changes the player graphics to male (xx=00) or female (xx=01).
