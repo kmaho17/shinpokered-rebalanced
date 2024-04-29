@@ -1408,11 +1408,11 @@ v1.24.1
 - eevee on route 21 grass (5.5%)
 - hitmonchan (5.1%) & hitmonlee (5.1%) in victory road 3f
 - version-swapped pinser/scyther in safari zone central-area
-- lickitung (5.1% red, blue, green) in safari zone 1
-- kangaskhan (5.1% blue-jp) in safari zone 1
-- tauros (5.1% blue-jp) in safari zone 2
-- jynx (5.1% red, blue, green) in safari zone 2
-- mr mime in safari zone 3 (5.1%) 
+- lickitung (5.1% red, blue, green) in safari zone east
+- kangaskhan (5.1% blue-jp) in safari zone east
+- tauros (5.1% blue-jp) in safari zone north
+- jynx (5.1% red, blue, green) in safari zone north
+- mr mime in safari zone west (5.1%) 
 - lapras replaces krabby when using super rod in safari zone
 - magnemite on route 10 (5.1%)
 - ponyta on route 7 (9.8%)
