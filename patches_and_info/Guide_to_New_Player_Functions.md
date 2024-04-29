@@ -104,6 +104,15 @@ Exept for on the Lite patches, certain moves now affect catching mechanics if kn
 - Take Down - improves the ball factor of non-safari balls by 2.  
 - Egg Bomb - improves the ball factor of non-safari balls by 2 and additive +10 to catch rate per toss of a non-safari ball.  
 
+#### Level-Up Moves and Learnable TM/HMs  
+Learnable moves via level and TM/HM have been adapted from Yellow version.  
+It is not an exact copy. Particularly so with Eevee and its evolutions since Yellow had it serve as a boss-only Pokemon.  
+Stone-based evolutions also get to learn a few more moves by level-up.  
+Certain pokemon gain an extra TM move or two in their level-up list to play nicer with the AI.  
+For full details, see the...
+- [evos_moves source file](https://github.com/jojobear13/shinpokered/blob/master/data/evos_moves.asm)
+- [base stats file repository](https://github.com/jojobear13/shinpokered/tree/master/data/baseStats)
+
 
 #Debug Functions
 -----------------------------------------------
