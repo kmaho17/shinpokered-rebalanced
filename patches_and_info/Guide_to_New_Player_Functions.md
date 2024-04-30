@@ -806,6 +806,8 @@ So don't be shy about using TMs acquired from NPCs and exploration.
 Note: Not available in the Lite patches.  
 
 - Toggle this mode in the extra options menu.  
+
+- This mode DOES NOT check if you have obtained pokeballs yet. It is in full effect when toggled to ON.  
   
 - Rule 1: A pokemon that faints is considered dead and can no longer be used.
   - Revival items cannot be used in battle.
