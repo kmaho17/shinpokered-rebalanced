@@ -336,6 +336,7 @@ Cheats and Secrets!
 [View the Consolidated Changelog Document from 1.23 to 1.24.0](/patches_and_info/changelog_from_v1.23.md)  
 
 v1.24.5-X (experimental)
+- * Fixed missing punctuation in Oak's pokedex evaluation
 - * Corrected the text in green & red-jp pokedex entries
 - * Fixed a bug in the AI that caused trainers to use poison-effect moves inaccurately
 - Fixed full randomization option not activating
@@ -743,6 +744,7 @@ v1.24.1
   - Fixed inaccurate text when getting the rock slide TM
   - Adjusted some city names on signs
   - Fixed incorrect sign text in safari area 1
+  - Fixed missing punctuation in Oak's pokedex evaluation
 - Made adjustments to the game text
   - When a pkmn is caught and fills the box, a reminder is printed that the box is full
   - PC has a text prompt to tell you if its full after depositing
