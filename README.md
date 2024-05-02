@@ -363,7 +363,8 @@ v1.24.5-X (experimental)
 - Boosted Eevee encounter rate to 5.5%
 - The shimmer transformation's text box no longer requires a button prompt to scroll through
 - The battle clauses between link players now sync and are applied during battles
-  
+- The stat displays of the active pokemon in battle will display its current-time stats instead of its unmodified stats
+ 
 v1.24.5
 - Minor text edit for SS Anne npc in post-game.
 - Minor fix for Itemfinder when there are multiple hidden items on screen.
@@ -1042,6 +1043,7 @@ v1.24.1
   - The SS Anne encounter
 - Adjusted the parity of in-game trades across versions
 - Increased the speed of the HP bar animation
+- The stat displays of the active pokemon in battle will display its current-time stats instead of its unmodified stats
   
   
 #Additions

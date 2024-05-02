@@ -36,6 +36,7 @@ Having your Raging pokemon tank a multi-hit move is a great way to setup for a p
 #### Bide  
 Each hit of a multi-hit move now adds to Bide's damage instead of just the first.  
 Needless to say, using Double Kick on a Bide-user has the potential to backfire horribly.  
+Bide can still hit targets in the fly/dig state because, though technically a bug, why make Bide an even worse move?  
 
 #### Transform  
 Move slots cannot be rearranged when transformed to prevent acquiring glitch moves.  
@@ -58,9 +59,9 @@ This matches what Pokemon Stadium enforces upon trapping moves.
 Additionally, except for the Lite patches, a 'poof' animation plays to signal the last turn of a trapping move.  
 
 #### Critical Hits  
-If a critical hit would do less damage than its non-critical value, the non-critical value will be used instead.  
+If a critical hit would do less damage than its non-critical amount, the non-critical amount will be used instead.  
 Furthermore, the effect for Dire Hit and Focus Energy now work correctly and quadruple the critical hit rate.  
-Each hit of a multi-hit move has a chance to critically hit.  
+Also, each hit of a multi-hit move (such as Fury Attack) now has its own chance to critically hit.  
 
 #### Accuracy, X-Accuracy, and One-Hit-K.O. Moves  
 The 1-in-256 chance to miss bug on all moves has been fixed.  
@@ -281,6 +282,11 @@ The clauses apply to the player and AI equally, and they only apply during non-l
   - Any active clauses between your opponent and yourself are applied to both players.  
   - A splash screen before battle will desplay the enforced clauses.  
 
+#### Active Pokemon Stat Displays  
+- The stat displays of the active pokemon in battle will:
+  - Display its current-moment stats instead of its unmodified stats.  
+  - For example, using swords dance will reflect on the active pokemon's status screen in battle.  
+
 
 #Button-Activated Features
 -----------------------------------------------
@@ -423,14 +429,14 @@ If Giovanni has disappeared from his gym, exit and re-enter the gym to bring him
 #### Reworked Daycare  
 The daycare lets you select moves to forget (if any) upon retreiving your pokemon.  
 Retrieving a daycare pokemon that could have evolved via level will trigger evolution and learn any missed-out moves.  
-The daycare experience gain has been recalibrated.  
-It no longer gives 1 exp per step.  
+The daycare experience gain has been recalibrated. It no longer gives 1 exp per step.  
 Instead, it falsifies the act of farming wild encounters against a pokemon with a base exp value of 56.  
 The falsified encounter starts at level 5, and it increases 5 more levels per badge obtained.  
 With 8 badges, using the daycare is essentially a faster way of farming level 45 basic pokemon.  
 The downside of not gaining statexp in the daycare still remains as a tradeoff.  
 Consider using the daycare as a way to outsource some grinding while you go focus on other things.  
 And yes, pokemon with HM moves are now allowed in the daycare.  
+The daycare now has a PC for the player's convenience.  
 
 #### The Shimmer  
 - This is a cheat feature for those who want more viability when using certain low-regarded pokemon.
