@@ -452,7 +452,7 @@ The daycare now has a PC for the player's convenience.
     - Affects the pokemon's unmodified Attack, Defense, Speed, and Special when it gets sent into battle.  
 	- If a stat is less than 8/3rds its level, then add its level to that stat.  
   - There is a slight chance that the shimmer will manifest on applicable enemy trainer pokemon.
-  - Certain select enemy trainers will always manifest the shimmer on their applicable pokemon.
+  - Certain boss-like enemy trainers will always manifest the shimmer on their applicable pokemon.
 
 
 #Trainer-Aiding Features
@@ -813,9 +813,10 @@ Note: Not available in the Lite patches.
 
 - Toggle this mode in the extra options menu.  
 
-- This mode DOES NOT check if you have obtained pokeballs yet. It is in full effect when toggled to ON.  
+- This mode **DOES NOT** check if you have obtained pokeballs yet. It is in full effect when toggled to ON.  
   
-- Rule 1: A pokemon that faints is considered dead and can no longer be used.
+#### Rule 1:  
+- A pokemon that faints is considered dead and can no longer be used.
   - Revival items cannot be used in battle.
   - If a battle ends with no forfeiture, all pokemon with 0 HP are marked dead.
   - If a battle ends in a forfeit, all pokemon with 0 HP before the forfeit are marked dead.
@@ -827,7 +828,8 @@ Note: Not available in the Lite patches.
   - This allows a player to continue the game with boxed pokemon in case of a total party loss.
   - Dead pokemon transferred to Gen-2 games will be holding a pokeball.
 
-- Rule 2: You can only catch the 1st wild pokemon that you encounter in an area.
+#### Rule 2:  
+- You can only catch the 1st wild pokemon that you encounter in an area.
   - An "area" is defined by the name displayed on the town map.
   - You will be unable to throw balls in subsequent wild battles in that area.
   - Static wild battles count for this as well.
@@ -836,40 +838,175 @@ Note: Not available in the Lite patches.
   - Story wild battles (Old Man tutorial, Ghost Marowak, and Tower Ghosts) do not apply.
   - Pokemon gained outside of battle (gifts, prizes, in-game trades, etc) do not apply.
   
-- Rule 3 (Optional): Nickname every pokemon you obtain.
+#### Rule 3 (Optional):  
+- Nickname every pokemon you obtain.
   - You will always go straight to the nickname screen without a Yes/No prompt.
   - You can still opt out of a nickname by leaving the entry field blank.
   
-- Built-in exceptions:
-  - Shiny Clause: Nothing prevents you from throwing balls to catch a wild shiny pokemon.
-  - Duplication Clause: Encountering a wild "owned" pokemon will not activate Rule 2.
-  - Rule 2 resets for the Safari Zone area upon paying the entrance fee.
-  - Catching a pokemon, even if owned, always activates Rule 2. Important for the Safari Zone and New Game+.
-  - Dead pokemon can still use field moves (HM moves, Teleport, etc).
+#### Built-in exceptions:  
+- Shiny Clause: Nothing prevents you from throwing balls to catch a wild shiny pokemon.
+- Duplication Clause: Encountering a wild "owned" pokemon will not activate Rule 2.
+- Rule 2 resets for the Safari Zone area upon paying the entrance fee.
+- Catching a pokemon, even if owned, always activates Rule 2. Important for the Safari Zone and New Game+.
+- Dead pokemon can still use field moves (HM moves, Teleport, etc).
 
-- Visual Aides:
-  - An Up-Down-Arrow symbol will display on the HUD of a wild pokemon if a ball is allowed to be tossed.
-  - This symbol follows Rule 2 and any built-in exceptions previously described.
+#### Visual Aides:  
+- An Up-Down-Arrow symbol will display on the HUD of a wild pokemon if a ball is allowed to be tossed.
+- This symbol follows Rule 2 and any built-in exceptions previously described.
 
-- Nuzlocke and the Safari Zone:
-  - The Safari Zone is not inherently limited to a single catch opportunity in nuzlocke mode.
-  - Entering the Safari Zone gives the player an opportunity to catch 1 pokemon per visit.
-  - This opportunity presents itself again each time the player pays the entry fee.
+#### Nuzlocke and the Safari Zone:  
+- The Safari Zone is not inherently limited to a single catch opportunity in nuzlocke mode.
+- Entering the Safari Zone gives the player an opportunity to catch 1 pokemon per visit.
+- This opportunity presents itself again each time the player pays the entry fee.
 
-- Nuzlocke and New Game+:
-  - New Game+ preserves the pokedex.
-  - This means the Duplication Clause will prevent Rule 2 from activating.
-  - In light of this, Rule 2 will always activate on an area upon the first catch made there.
-  
-- Dead pokemon and toggling Nuzlocke mode:
-  - It is possible to cheat by turning off nuzlocke mode, healing a dead pokemon, then turning it back on.
-  - If this is done, the healed pokemon is still considered dead.
-  - This means that party-wide healing will make it useless and medicine still has no effect.
-  - This has the potential for a kind of "undead run" rule variant.
+#### Nuzlocke and New Game+:  
+- New Game+ preserves the pokedex.
+- This means the Duplication Clause will prevent Rule 2 from activating.
+- In light of this, Rule 2 will always activate on an area upon the first catch made there.
+
+#### Dead pokemon and toggling Nuzlocke mode:
+- It is possible to cheat by turning off nuzlocke mode, healing a dead pokemon, then turning it back on.
+- If this is done, the healed pokemon is still considered dead.
+- This means that party-wide healing will make it useless and medicine still has no effect.
+- This has the potential for a kind of "undead run" rule variant.
  
-- Removing the death marker:
-  - The only way to undo this is by modifying the dead pokemon's catch rate.
-  - This is usually done via the Gen-2 time capsule and trading it back without a hold item or a different hold item.
+#### Removing the death marker:  
+- The only way to unmark a pokemon from being "dead" is by modifying its catch rate.
+- This is usually done via the Gen-2 time capsule and trading it back without a hold item or a different hold item.
+
+
+#Changes to Trainers (SPOILERS)  
+-----------------------------------------------
+Note: These are not applicable to the Lite patches.  
+
+#### Regular Trainer Changes
+- Certain Trainers have undergone slight roster changes so that all pokemon can be seen under normal game settings.
+  - Lvl 24 lass on route 8 gains exchanges two meowths for jigglypuff and eevee
+  - Lvl 22 lass on route 8 exchanges one clefairy for clefable
+  - Lvl 24 jr.trainer-f on route 13 exchages one meowth for dratini
+  - Lvl 36 super nerd in cinnabar gym exchanges one vulpix for a flareon
+  - Lvl 21 engineer on route 11 exchanges his magnemite for a porygon
+  - Lvl 18 engineer on route 11 exchanges two magnemites for ditto and electrode
+  - Lvl 24 fisher on route 12 gains omanyte and kabuto
+  - Lvl 35 beauty on route 20 swaps her seaking with a vaporeon
+  - Lvl 20 rocker in vermilion gym replaces one voltorb with pikachu
+  - Lvl 29 rocker on route 12 replaces its voltorb and electrode with electabuzz and jolteon
+  - Lvl 48 juggler in victory road 2F replaces its mr. mime with tangela an golem
+  - Lvl 34 juggler in fuschia gym with drowzee and kadabra replaced by cooltrainer-f with golbat and venomoth (easter egg)
+  - Lvl 31 juggler in fuschia gym with drowzees and kadabras becomes lvl 33 with oddish, gastly, venonat, and koffing
+  - Lvl 38 juggler in fuschia gym exchanges his hypno for two exeggute
+  - Lvl 36 blackbelt in the dojo exchanges his primape for poliwrath
+  - Dojo master increased to level 38
+  
+#### Rival / Gym Leader / Elite 4 Guide  
+- Route 22 Rival
+  - L9 pidgey - gust, sand attack
+  - pick one
+    - L8 charmander - scratch, growl
+	- L8 squirtle - tackle, tail whip, bubble
+	- L8 bulbasaur - tackle, growl, leech seed
+- Brock
+  - L12 geodude - tackle, defense curl
+  - L15 onix - tackle, screech, bind, bide
+- Cerulean City Rival
+  - L18 pidgeotto - gust, sand attack, quick attack
+  - L15 abra - teleport, counter, tri attack
+  - L15 rattata - tackle, tail whip, quick attack, hyper fang
+  - pick one
+    - L17 charmander - scratch, growl, ember, leer
+	- L17 squirtle - tackle, tail whip, bubble, water gun
+	- L17 bulbasaur - tackle, growl, leech seed, vine whip
+- Misty
+  - L18 staryu - tackle, water gun
+  - L22 starmie - tackle, water gun, harden, bubblebeam
+- SS Anne Rival
+  - L19 pidgeotto - gust, sand attack, quick attack
+  - L16 raticate - tackle, tail whip, quick attack, hyper fang
+  - L18 kadabra - teleport, confusion, disable
+  - pick one
+    - L20 charmeleon - scratch, growl, ember, leer
+	- L20 wartortle - tackle, tail whip, bubble, water gun
+	- L20 ivysaur - tackle, growl, leech seed, vine whip
+- Surge
+  - L18 pikachu - thunder wave, quick attack, thundershock, double team
+  - L21 voltorb - tackle, screech, sonic boom
+  - L25 raichu - thunderbolt, tail whip, thunder wave, slam
+- Pokemon Tower Rival
+  - L25 pidgeotto - gust, sand attack, quick attack
+  - L20 kadabra - teleport, confusion, disable
+  - variant 1
+    - L23 exeggcute - barrage, hypnosis
+    - L22 gyarados - bite, dragon rage, leer, hydro pump
+    - L25 charmeleon - growl, ember, leer, rage
+  - variant 2
+    - L23 growlithe bite, roar, ember, leer
+	- L22 exeggcute - barrage, hypnosis
+	- L25 wartortle - tail whip, bubble, water gun, bite
+  - variant 1
+    - L23 gyarados - bite, dragon rage, leer, hydro pump
+    - L22 growlithe bite, roar, ember
+	- L25 ivysaur - growl, leech seed, vine whip, poison powder
+- Erika
+  - L29 tangela - constrict, bind, absorb, vine whip
+  - L33 victreebel - growth, sleep powder, wrap, razor leaf
+  - L33 vileplume - poison powder, mega drain, sleep powder, petal dance
+- Koga
+  - L37 koffing - explosion, double-team, sludge, smokescreen
+  - L39 muk - disable, substitute, minimize, sludge
+  - L38 venonat - takedown, supersonic, mega drain, sleep powder
+  - L43 weezing - toxic, sludge, mimic, explosion
+- Silph Co. Rival
+  - L37 pidgeot - wing attack, sand attack, quick attack, whirlwind
+  - L35 alakazam - psybeam, confusion, disable, recover
+  - variant 1
+    - L38 exeggcute - reflect, leech seed, poison powder, stun spore
+    - L35 gyarados - bite, dragon rage, leer, hydro pump
+    - L40 charizard - slash, ember, leer, rage
+  - variant 2
+    - L38 growlithe - roar, ember, leer, takedown
+    - L35 exeggcute - hypnosis, reflect, leech seed, stun spore
+	- L40 blastoise - bubble, water gun, bite, withdraw
+  - variant 3
+    - L38 gyarados - bite, dragon rage, leer, hydro pump
+    - L35 growlithe - roar, ember, leer, takedown
+	- L40 venusaur - leech seed, vine whip, poison powder, razor leaf
+- Sabrina
+  - L37 kadabra - reflect, disable, psybeam, recover
+  - L37 mr.mime - confusion, barrier, light screen, seismic toss
+  - L38 venomoth - supersonic, leech life, stun spore, psybeam
+  - L43 alakazam - psywave, recover, psychic, reflect
+- Blaine
+  - L40 ninetails - quick attack, swift, confuse ray, flamethrower
+  - L43 magmar - strength, counter, confuse ray, fire punch
+  - L43 rapidash - tail whip, stomp, double-edge, fire spin
+  - L47 arcanine - fire blast, bite, leer, takedown
+- Giovanni
+  - L46 kangaskhan - earthquake, hyper beam, fissure, dizzy punch
+  - L45 dugtrio - fissure, dig, sand attack, slash
+  - L46 nidoqueen - earthquake, double kick, thunder, body slam
+  - L47 nidoking - earthquake, double kick, ice beam, thrash
+  - L52 rhydon - rock slide, body slam, double team, earthquake	
+- Route 22 Rival Rematch
+  - L47 pidgeot - wing attack, agility, quick attack, whirlwind
+  - L45 rhyhorn - fury attack, stomp, horn drill, tail whip
+  - L50 alakazam - psybeam, psychic, reflect, recover
+  - variant 1
+    - L45 exeggcute - solar beam, leech seed, poison powder, stun spore
+    - L47 gyarados - bite, dragon rage, leer, hydro pump
+    - L53 charizard - slash, flamethrower, leer, rage
+  - variant 2
+    - L45 growlithe - agility, ember, leer, takedown
+    - L47 exeggcute - solar beam, leech seed, poison powder, stun spore
+	- 53 blastoise - hydro pump, skull bash, bite, withdraw
+  - variant 3
+    - L45 gyarados - bite, dragon rage, leer, hydro pump
+    - L47 growlithe - agility, ember, leer, takedown
+	- L53 venusaur - growth, vine whip, poison powder, razor leaf
+- Lorelei
+- Bruno
+- Agatha
+- Lance
+- Champion Rival
 
 
 #Cheats and Secrets (SPOILERS)
@@ -899,7 +1036,7 @@ The surfboard substitutes for a pokemon that knows how to Surf.
 
 #### Strange Dittos  
 Use the super rod in the bottom of Cerulean Cave.  
-You will fush up Dittos that are above level 100.  
+You will fish up Dittos that are above level 100.  
 These give the most EXP and StatEXP when knocked out.  
 
 #### Better Chances for Shiny Pokemon  
@@ -923,3 +1060,5 @@ Here are some freshly-baked cheat codes unique to Shin Pokemon.
   - 010042DA: If your play-clock was maxed at 255 from a previous save file, this will unlock the expanded game clock.  
   - 0180C4CF: The next encounter will be a shiny pokemon.
   - 01xx21D7: Resets the options and changes the player graphics to male (xx=00) or female (xx=01).
+
+

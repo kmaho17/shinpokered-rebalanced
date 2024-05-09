@@ -55,7 +55,7 @@ SpecialTrainerMoves:
 	db 2,2,COUNTER
 	db 2,3,TRI_ATTACK
 	;rattata - tackle, tail whip, quick attack, hyper fang
-	;squirtle
+	;squirtle - tackle, tail whip, bubble, water gun
 	db 0
 
 	db SONY1, $8
@@ -64,7 +64,7 @@ SpecialTrainerMoves:
 	db 2,2,COUNTER
 	db 2,3,TRI_ATTACK
 	;rattata - tackle, tail whip, quick attack, hyper fang
-	;bulbasaur
+	;bulbasaur - tackle, growl, leech seed, vine whip
 	db 0
 
 	db SONY1, $9
@@ -73,7 +73,7 @@ SpecialTrainerMoves:
 	db 2,2,COUNTER
 	db 2,3,TRI_ATTACK
 	;rattata - tackle, tail whip, quick attack, hyper fang
-	;charmander
+	;charmander - scratch, growl, ember, leer
 	db 0
 	
 	db MISTY,$1
