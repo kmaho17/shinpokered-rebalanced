@@ -164,7 +164,7 @@ SpecialTrainerMoves:
 	db 0
 	
 	db LORELEI,$1
-	;dewgong -  bubblebeam, aurora beam, rest, takedown
+	;dewgong - bubblebeam, aurora beam, rest, takedown
 	db 1,1,BUBBLEBEAM
 	;cloyster - clamp, supersonic, aurora beam, spike cannon
 	db 2,2,SUPERSONIC
@@ -299,7 +299,7 @@ SpecialTrainerMoves:
 	;gyarados - ice beam, body slam, hydro pump, hyperbeam
 	db 5,1,ICE_BEAM
 	db 5,2,BODY_SLAM
-	;charizard - swords dance, slash, fire blast, fire spin
+	;charizard - fly, slash, fire blast, fire spin
 	db 6,1,FLY
 	db 6,3,FIRE_BLAST
 	db 0

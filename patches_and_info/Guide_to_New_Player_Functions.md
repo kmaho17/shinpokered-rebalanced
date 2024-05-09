@@ -443,7 +443,7 @@ The daycare now has a PC for the player's convenience.
   - Toggled ON/OFF via the glass pokeball decoration in the rival's house.
   - Pokemon Eligible: EKANS, CATERPIE, METAPOD, WEEDLE, KAKUNA, ZUBAT, PSYDUCK, PARAS, PONYTA, RATTATA, SANDSHREW, HORSEA, GOLDEEN, VENONAT, JIGGLYPUFF, ARBOK, BEEDRILL, BUTTERFREE, DITTO, FARFETCHD, GOLBAT, GOLDUCK, HITMONCHAN, LICKITUNG, ONIX, PARASECT, PINSIR, PORYGON, RAPIDASH, RATICATE, SANDSLASH, SEADRA, SEAKING, VENOMOTH, WIGGLYTUFF
   - The shimmer factor appears randomly and secretly, being more likely to occur by training and sending out eligible 'mons.
-    - Each time an eligible 'mon is sent out into battle triggers the random chance of it occurring.  
+    - Each time an eligible 'mon is sent out into battle will trigger a random chance of it occurring.  
     - The base chance is 1-in-256.  
     - The base chance increases by an additional +(1-in-256) for every 2048 StatEXP the 'mon has in its HP stat.  
   - The shimmer only manifests in 'mons that are fully evolved, even if their pre-evos gained the secret shimmer factor.
@@ -503,11 +503,11 @@ The A-genes from the two donor pokemon will be mixed to make the clone's A-gene.
 The B-genes from the two donor pokemon will be mixed to make the clone's B-gene.  
 Mixing two genes is done via Punnett Squares, and a random result is chosen based on its ratios.  
 A DV byte is assembled for each Punnett quadrant:  
-  - Dominant alleles make up the upper four bits.  
-  - Recessive alleles make up the lower four bits.  
-  - When there are two dominant or two recessive alleles...  
-    - Randomly choose one of the alleles to make up the upper four bits, changing to or staying dominant.  
-    - The other allele will make up the lower four bits, changing to or staying recessive.  
+- Dominant alleles make up the upper four bits.  
+- Recessive alleles make up the lower four bits.  
+- When there are two dominant or two recessive alleles...  
+  - Randomly choose one of the alleles to make up the upper four bits, changing to or staying dominant.  
+  - The other allele will make up the lower four bits, changing to or staying recessive.  
 
 Allele - Stat    
 A - Attack  
@@ -603,7 +603,7 @@ Talk to him to toggle special parameters that have the following effects on the 
 - There is a rare chance for any non-legendary pokemon to appear.  
 
 #### Mirror Match Battle Generator  
-Pagliacco, A pokemaniac with a flair for theatrics, has been added to the north-south underground path.  
+Pagliacco, a pokemaniac with a flair for theatrics, has been added to the north-south underground path.  
 After the Elite-4 are beaten, he will offer to engage you in a mirror match against your own party.  
 
 #### Mr. Fuji and the M.GENE  
@@ -1003,10 +1003,45 @@ Note: These are not applicable to the Lite patches.
     - L47 growlithe - agility, ember, leer, takedown
 	- L53 venusaur - growth, vine whip, poison powder, razor leaf
 - Lorelei
+  - L54 dewgong - bubblebeam, aurora beam, rest, takedown
+  - L54 cloyster - clamp, supersonic, aurora beam, spike cannon
+  - L55 slowbro - surf, ice beam, amnesia, psychic
+  - L56 jynx - psychic, ice punch, lovely kiss, thrash
+  - L56 lapras - body slam, confuse ray, blizzard, hydro pump
 - Bruno
+  - L53 onix - rock slide, screech, slam, dig
+  - L55 hitmonchan - ice punch, thunder punch, mega punch, submission
+  - L55 hitmonlee - rolling kick, focus energy, hi jump kick, mega kick
+  - L56 onix - bind, body slam, explosion, earthquake
+  - L58 machamp - earthquake, focus energy, siesmic toss, submission
 - Agatha
+  - L55 haunter - confuse ray, mimic, hypnosis, dream eater
+  - L56 gengar - confuse ray, substitute, thunderbolt, mega drain
+  - L56 golbat - screech, confuse ray, double edge, mega drain
+  - L58 arbok - earthquake, glare, screech, acid
+  - L60 gengar - confuse ray, psychic, hypnosis, dream eater
 - Lance
+  - L58 gyarados - dragon rage, bite, hydro pump, hyperbeam
+  - L56 dragonair - thunder wave, reflect, thunderbolt, hyperbeam
+  - L56 dragonair - surf, body slam, ice beam, hyperbeam
+  - L60 aerodactyl - supersonic, fire blast, fly, hyperbeam
+  - L62 dragonite - blizzard, fire blast, thunder, hyperbeam
 - Champion Rival
+  - L61 pidgeot - sky attack, tri-attack, mimic, double team
+  - L59 alakazam - thunderwave, recover, psychic, reflect
+  - L61 rhydon - thunderbolt, earthquake, rock slide, takedown
+  - variant 1
+    - L61 exeggutor - leech seed, stomp, solar beam, hypnosis
+    - L63 gyarados - ice beam, body slam, hydro pump, hyperbeam
+    - L65 charizard - fly, slash, fire blast, fire spin
+  - variant 2
+    - L61 arcanine - reflect, rest, double edge, flamethrower
+    - L63 exeggutor - leech seed, stomp, solar beam, hypnosis
+	- L65 blastoise - blizzard, reflect, skull bash, hydro pump
+  - variant 3
+    - L61 gyarados - ice beam, body slam, hydro pump, hyperbeam
+    - L63 arcanine - reflect, rest, double edge, flamethrower
+	- L65 venusaur - razor leaf, toxic, sleep powder, solar beam
 
 
 #Cheats and Secrets (SPOILERS)
