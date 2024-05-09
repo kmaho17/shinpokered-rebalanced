@@ -284,7 +284,7 @@ The clauses apply to the player and AI equally, and they only apply during non-l
   - The item clause is not applicable because items are not usable in link battles by default.  
   - There is a clipboard in the Colosseum that is used to reset and re-select your battle clauses.  
   - Any active clauses between your opponent and yourself are applied to both players.  
-  - A splash screen before battle will desplay the enforced clauses.  
+  - A splash screen before battle will display the enforced clauses.  
 
 #### Active Pokemon Stat Displays  
 - The stat displays of the active pokemon in battle will:
