@@ -815,7 +815,7 @@ Note: Not available in the Lite patches.
 
 - This mode **DOES NOT** check if you have obtained pokeballs yet. It is in full effect when toggled to ON.  
   
-#### Rule 1:  
+#### Rule 1: Pokemon Death  
 - A pokemon that faints is considered dead and can no longer be used.
   - Revival items cannot be used in battle.
   - If a battle ends with no forfeiture, all pokemon with 0 HP are marked dead.
@@ -828,7 +828,7 @@ Note: Not available in the Lite patches.
   - This allows a player to continue the game with boxed pokemon in case of a total party loss.
   - Dead pokemon transferred to Gen-2 games will be holding a pokeball.
 
-#### Rule 2:  
+#### Rule 2: Restricted Catching  
 - You can only catch the 1st wild pokemon that you encounter in an area.
   - An "area" is defined by the name displayed on the town map.
   - You will be unable to throw balls in subsequent wild battles in that area.
@@ -838,39 +838,39 @@ Note: Not available in the Lite patches.
   - Story wild battles (Old Man tutorial, Ghost Marowak, and Tower Ghosts) do not apply.
   - Pokemon gained outside of battle (gifts, prizes, in-game trades, etc) do not apply.
   
-#### Rule 3 (Optional):  
+#### Rule 3 (Optional): Nicknaming 
 - Nickname every pokemon you obtain.
   - You will always go straight to the nickname screen without a Yes/No prompt.
   - You can still opt out of a nickname by leaving the entry field blank.
   
-#### Built-in exceptions:  
+#### Built-in exceptions: Clauses  
 - Shiny Clause: Nothing prevents you from throwing balls to catch a wild shiny pokemon.
 - Duplication Clause: Encountering a wild "owned" pokemon will not activate Rule 2.
 - Rule 2 resets for the Safari Zone area upon paying the entrance fee.
 - Catching a pokemon, even if owned, always activates Rule 2. Important for the Safari Zone and New Game+.
 - Dead pokemon can still use field moves (HM moves, Teleport, etc).
 
-#### Visual Aides:  
+#### Visual Aides  
 - An Up-Down-Arrow symbol will display on the HUD of a wild pokemon if a ball is allowed to be tossed.
 - This symbol follows Rule 2 and any built-in exceptions previously described.
 
-#### Nuzlocke and the Safari Zone:  
+#### Nuzlocke and the Safari Zone  
 - The Safari Zone is not inherently limited to a single catch opportunity in nuzlocke mode.
 - Entering the Safari Zone gives the player an opportunity to catch 1 pokemon per visit.
 - This opportunity presents itself again each time the player pays the entry fee.
 
-#### Nuzlocke and New Game+:  
+#### Nuzlocke and New Game+  
 - New Game+ preserves the pokedex.
 - This means the Duplication Clause will prevent Rule 2 from activating.
 - In light of this, Rule 2 will always activate on an area upon the first catch made there.
 
-#### Dead pokemon and toggling Nuzlocke mode:
+#### Dead pokemon and toggling Nuzlocke mode
 - It is possible to cheat by turning off nuzlocke mode, healing a dead pokemon, then turning it back on.
 - If this is done, the healed pokemon is still considered dead.
 - This means that party-wide healing will make it useless and medicine still has no effect.
 - This has the potential for a kind of "undead run" rule variant.
  
-#### Removing the death marker:  
+#### Removing the death marker  
 - The only way to unmark a pokemon from being "dead" is by modifying its catch rate.
 - This is usually done via the Gen-2 time capsule and trading it back without a hold item or a different hold item.
 
