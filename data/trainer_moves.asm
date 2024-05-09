@@ -300,7 +300,7 @@ SpecialTrainerMoves:
 	db 5,1,ICE_BEAM
 	db 5,2,BODY_SLAM
 	;charizard - swords dance, slash, fire blast, fire spin
-	db 6,1,SWORDS_DANCE
+	db 6,1,FLY
 	db 6,3,FIRE_BLAST
 	db 0
 
