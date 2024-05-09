@@ -19,6 +19,7 @@ Except for the Lite patches, pokemon that evolve by trade can also evolve by oth
   - Haunter: Hinted at by the Lavender Town NPC that asks if you believe in ghosts. Use a thunder stone at level 35.  
   - Graveler: Hinted at by a Cinnabar Island NPC that talks about the mansion. Use a fire stone at level 35.  
   - Machoke: Hinted at by a house NPC in Pewter City that talks about trainers teaching pokemon. Use a leaf stone at level 35.  
+
 Evolution by trade is still allowed and works as normal.  
   
 #### Type Interactions  
@@ -44,6 +45,7 @@ When transforming into a pokemon and copying its Transform move, the PP of the c
 - The PP of the Transform move getting copied is read at the current instant.
 - If > 5, then the copy Transform is set to 5 PP.
 - If <= 5, then the copy transform is set to the current instant PP - 1.
+
 This will prevent endless battles between two pokemon who can only transform.  
 
 #### Sleep Status  
@@ -145,6 +147,7 @@ Toggled on/off via the following method:
 3 - While continuing to hold DOWN, press and hold SELECT.  
 4 - While still continuing to hold the two aforementioned buttons, press A.  
 5 - The start menu should close. A PC "boot up" sfx will play to indicate ON, or "shutdown" sfx to indicate OFF.  
+
 Zero damage is not displayed.  
 Damage is not displayed if either pokemon has zero HP remaining.  
 
@@ -173,6 +176,7 @@ Under these stated conditions, the colors will be highly saturated.
 Press SELECT at the copyright screen when the game first boots (before the Gamefreak logo). 
 - A sfx will play and a symbol with appear at the bottom right to let you know that it worked.  
 - This will fix the saturated colors.  
+
 Note: Can also be toggled in the extra options menu.  
 
 Changing the destination code of the rom header to 00 (JP) defaults this to ON and pressing SELECT turns it OFF.  
@@ -368,6 +372,7 @@ Activated under these conditions:
 2 - Must have beaten the Elite-4 in the on-file save.  
 3 - Press and hold SELECT while choosing the NEW GAME option.  
 4 - A jingle will play to indicate NG+ has activated and the SELECT button can now be released.  
+
 Preserves ONLY the following information (your current party will be lost):  
 - Boxed pokemon  
 - Play clock  
@@ -376,6 +381,7 @@ Preserves ONLY the following information (your current party will be lost):
 - Option screen selections  
 - Trainer ID (boxed pokemon won't count as traded)  
 - Wild pokemon randomizer seed
+
 The player can now choose whether or not to generate a new Trainer ID when selecting New Game Plus.  
 
 
@@ -465,6 +471,7 @@ While active, it has the following effects:
 1 - Wild pokemon have a gender symbol by their names if applicable.  
 2 - If applicable, a gender symbol is added to a pokemon's status screen.  
 3 - Enemy wild pokemon that have already been registered as Owned will display a pokeball symbol in battle.  
+
 Gender is determined the same way as Gen 2 for the purposes of cross-generation transfers.  
 
 #### Move Deleter and Relearner  
@@ -579,6 +586,7 @@ He is organizing a little tournament with the following rules:
 5 - You must have an open item slot to claim your prize.  
 6 - Any trainer can appear with any three pokemon (excluding mew and mewtwo).  
 7 - No breaks allowed in-between battles.  
+
 Winning the tournament rewards you with a Master Ball.  
 
 #### Rare Item Shop  
