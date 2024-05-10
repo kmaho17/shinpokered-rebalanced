@@ -364,6 +364,8 @@ v1.24.5-X (experimental)
 - The shimmer transformation's text box no longer requires a button prompt to scroll through
 - The battle clauses between link players now sync and are applied during battles
 - The stat displays of the active pokemon in battle will display its current-time stats instead of its unmodified stats
+- Giovanni gym battle exchanges rhyhorn for kangaskhan
+- Champion Rival's charizard swaps out swords dance for fly
  
 v1.24.5
 - Minor text edit for SS Anne npc in post-game.
