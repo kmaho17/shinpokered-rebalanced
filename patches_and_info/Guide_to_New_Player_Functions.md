@@ -434,7 +434,9 @@ If Giovanni has disappeared from his gym, exit and re-enter the gym to bring him
 	
 #### Reworked Daycare  
 The daycare lets you select moves to forget (if any) upon retreiving your pokemon.  
-Retrieving a daycare pokemon that could have evolved via level will trigger evolution and learn any missed-out moves.  
+After trying to learn all the moves it can up to its new level, it will try to evolve if applicable.  
+After evolving, it tries to learn any other moves between its evolution threshold level and its new level.  
+If it can evolve again by level, it wil try to do so and once more try to learn any moves it may have missed.  
 The daycare experience gain has been recalibrated. It no longer gives 1 exp per step.  
 Instead, it falsifies the act of farming wild encounters against a pokemon with a base exp value of 56.  
 The falsified encounter starts at level 5, and it increases 5 more levels per badge obtained.  

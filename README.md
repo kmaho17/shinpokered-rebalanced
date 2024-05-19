@@ -366,6 +366,7 @@ v1.24.5-X (experimental)
 - The stat displays of the active pokemon in battle will display its current-time stats instead of its unmodified stats
 - Giovanni gym battle exchanges rhyhorn for kangaskhan
 - Champion Rival's charizard swaps out swords dance for fly
+- Fixed a problem with undergoing multiple evolutions when taking a pokemon out of the daycare
  
 v1.24.5
 - Minor text edit for SS Anne npc in post-game.
