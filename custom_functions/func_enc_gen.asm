@@ -272,12 +272,12 @@ GetWeightedLevel:
 	jr nz, .loop6
 
 .prepareDividend
-	xor a
-	ld [H_DIVIDEND+0], a
-	ld [H_DIVIDEND+1], a
 	ld a, d
-	ld [H_DIVIDEND+2], a
+	ld [H_DIVIDEND+0], a
 	ld a, e
+	ld [H_DIVIDEND+1], a
+	xor a
+	ld [H_DIVIDEND+2], a
 	ld [H_DIVIDEND+3], a
 
 .getdivisor
