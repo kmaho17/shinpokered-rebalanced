@@ -367,7 +367,9 @@ v1.24.5-X (experimental)
 - Giovanni gym battle exchanges rhyhorn for kangaskhan
 - Champion Rival's charizard swaps out swords dance for fly
 - Fixed a problem with undergoing multiple evolutions when taking a pokemon out of the daycare
-- Trainer level scaling has been dampened outside of hard mode so that it is based on a weighted average
+- Trainer level scaling has been dampened outside of hard mode
+  - It is now based on a weighted average for regular trainers in normal difficulty
+  - Gym leaders always use the absolute level scaling regardless of difficulty
  
 v1.24.5
 - Minor text edit for SS Anne npc in post-game.
@@ -1061,8 +1063,8 @@ v1.24.1
     - Pokemon that evolve >= level 30 will evolve at 8/7x the original level 
   - Gym leaders and the E4 scale slightly higher than normal trainers
   - If trainer scaling is on, you do not need to beat the 1st route 22 rival solo to get oak's pokeballs
-  - In hard mode, the scaling is based on the absolute highest level of your team
-  - In normal difficulty, the scaling is based on a weighted average of your team's levels
+  - In hard mode, or against gym leaders, the scaling is based on the absolute highest level of your team
+  - In normal difficulty against regular trainers, the scaling is based on a weighted average of your team's levels
 - Playing on hard mode provides increased difficulty
   - Pressing RIGHT while the cursor is in the BATTLE STYLE box will toggle the feature on/off
   - Contrasting this, pressing LEFT will let you select a battle style without toggling difficulty

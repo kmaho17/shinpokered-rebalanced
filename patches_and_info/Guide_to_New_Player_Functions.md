@@ -232,7 +232,7 @@ Not available in the Lite patches.
 Talk to the aide in the lower-right section of Oak's lab to toggle this feature.  
 While active, enemy trainer roster levels will scale upwards relative to the highest-level pokemon in your party.  
 Normally, this scaling factor will be based on a weighted average of your whole team.  
-But on hard mode, the scaling will be based on the absolute highest level member of your team.  
+But on hard mode, or against Gym Leaders, the scaling will be based on the absolute highest level member of your team.  
 Enemy pokemon will evolve by level if applicable (biased to higher levels).  
 Gym leaders and the Elite-4 scale slightly higher than normal trainers.  
 Warning - The difficulty will be compounded if both trainer scaling and hard mode are active.  
