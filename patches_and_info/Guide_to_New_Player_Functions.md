@@ -273,7 +273,7 @@ The clauses apply to the player and AI equally, and they only apply during non-l
   - The counter increments only if a trapping effect move is selected to be used and it does not miss.
   - After the counter has incremented to 2, 
     - selecting a trapping effect move additional times will make the move to go 2nd in the round. 
-	- this is the same priority as the move Counter.
+    - this is the same priority as the move Counter.
   - The counter only gets reset by switching or using a move that does not have the trapping effect. 
   - Resetting the counter will restore normal priority to trapping effect moves.
 
@@ -433,7 +433,7 @@ If Giovanni has disappeared from his gym, exit and re-enter the gym to bring him
 - Lines will point in the direction of the item and flash with the chimes.
 - If the player is right on top of the item, no lines will show and the chime will play four times.
 - If the SELECT button is held while selecting to USE the itemfinder, then the original itemfinder function is used.
-	
+  
 #### Reworked Daycare  
 The daycare lets you select moves to forget (if any) upon retreiving your pokemon.  
 After trying to learn all the moves it can up to its new level, it will try to evolve if applicable.  
@@ -460,7 +460,7 @@ The daycare now has a PC for the player's convenience.
   - When the shimmer manifests as a 'mon gets sent out, that 'mon gets a large boost to some stats that are low-to-poor.
   - The boost when the shimmer activates is as follows:
     - Affects the pokemon's unmodified Attack, Defense, Speed, and Special when it gets sent into battle.  
-	- If a stat is less than 8/3rds its level, then add its level to that stat.  
+    - If a stat is less than 8/3rds its level, then add its level to that stat.  
   - There is a slight chance that the shimmer will manifest on applicable enemy trainer pokemon.
   - Certain boss-like enemy trainers will always manifest the shimmer on their applicable pokemon.
 
@@ -915,8 +915,8 @@ Note: These are not applicable to the Lite patches.
   - L9 pidgey - gust, sand attack
   - pick one
     - L8 charmander - scratch, growl
-	- L8 squirtle - tackle, tail whip, bubble
-	- L8 bulbasaur - tackle, growl, leech seed
+    - L8 squirtle - tackle, tail whip, bubble
+    - L8 bulbasaur - tackle, growl, leech seed
 - Brock
   - L12 geodude - tackle, defense curl
   - L15 onix - tackle, screech, bind, bide
@@ -926,8 +926,8 @@ Note: These are not applicable to the Lite patches.
   - L15 rattata - tackle, tail whip, quick attack, hyper fang
   - pick one
     - L17 charmander - scratch, growl, ember, leer
-	- L17 squirtle - tackle, tail whip, bubble, water gun
-	- L17 bulbasaur - tackle, growl, leech seed, vine whip
+    - L17 squirtle - tackle, tail whip, bubble, water gun
+    - L17 bulbasaur - tackle, growl, leech seed, vine whip
 - Misty
   - L18 staryu - tackle, water gun
   - L22 starmie - tackle, water gun, harden, bubblebeam
@@ -937,8 +937,8 @@ Note: These are not applicable to the Lite patches.
   - L18 kadabra - teleport, confusion, disable
   - pick one
     - L20 charmeleon - scratch, growl, ember, leer
-	- L20 wartortle - tackle, tail whip, bubble, water gun
-	- L20 ivysaur - tackle, growl, leech seed, vine whip
+    - L20 wartortle - tackle, tail whip, bubble, water gun
+    - L20 ivysaur - tackle, growl, leech seed, vine whip
 - Surge
   - L18 pikachu - thunder wave, quick attack, thundershock, double team
   - L21 voltorb - tackle, screech, sonic boom
@@ -952,12 +952,12 @@ Note: These are not applicable to the Lite patches.
     - L25 charmeleon - growl, ember, leer, rage
   - variant 2
     - L23 growlithe bite, roar, ember, leer
-	- L22 exeggcute - barrage, hypnosis
-	- L25 wartortle - tail whip, bubble, water gun, bite
+    - L22 exeggcute - barrage, hypnosis
+    - L25 wartortle - tail whip, bubble, water gun, bite
   - variant 1
     - L23 gyarados - bite, dragon rage, leer, hydro pump
     - L22 growlithe bite, roar, ember
-	- L25 ivysaur - growl, leech seed, vine whip, poison powder
+    - L25 ivysaur - growl, leech seed, vine whip, poison powder
 - Erika
   - L29 tangela - constrict, bind, absorb, vine whip
   - L33 victreebel - growth, sleep powder, wrap, razor leaf
@@ -977,11 +977,11 @@ Note: These are not applicable to the Lite patches.
   - variant 2
     - L38 growlithe - roar, ember, leer, takedown
     - L35 exeggcute - hypnosis, reflect, leech seed, stun spore
-	- L40 blastoise - bubble, water gun, bite, withdraw
+    - L40 blastoise - bubble, water gun, bite, withdraw
   - variant 3
     - L38 gyarados - bite, dragon rage, leer, hydro pump
     - L35 growlithe - roar, ember, leer, takedown
-	- L40 venusaur - leech seed, vine whip, poison powder, razor leaf
+    - L40 venusaur - leech seed, vine whip, poison powder, razor leaf
 - Sabrina
   - L37 kadabra - reflect, disable, psybeam, recover
   - L37 mr.mime - confusion, barrier, light screen, seismic toss
@@ -997,7 +997,7 @@ Note: These are not applicable to the Lite patches.
   - L45 dugtrio - fissure, dig, sand attack, slash
   - L46 nidoqueen - earthquake, double kick, thunder, body slam
   - L47 nidoking - earthquake, double kick, ice beam, thrash
-  - L52 rhydon - rock slide, body slam, double team, earthquake	
+  - L52 rhydon - rock slide, body slam, double team, earthquake
 - Route 22 Rival Rematch
   - L47 pidgeot - wing attack, agility, quick attack, whirlwind
   - L45 rhyhorn - fury attack, stomp, horn drill, tail whip
@@ -1009,11 +1009,11 @@ Note: These are not applicable to the Lite patches.
   - variant 2
     - L45 growlithe - agility, ember, leer, takedown
     - L47 exeggcute - solar beam, leech seed, poison powder, stun spore
-	- 53 blastoise - hydro pump, skull bash, bite, withdraw
+    - 53 blastoise - hydro pump, skull bash, bite, withdraw
   - variant 3
     - L45 gyarados - bite, dragon rage, leer, hydro pump
     - L47 growlithe - agility, ember, leer, takedown
-	- L53 venusaur - growth, vine whip, poison powder, razor leaf
+    - L53 venusaur - growth, vine whip, poison powder, razor leaf
 - Lorelei
   - L54 dewgong - bubblebeam, aurora beam, rest, takedown
   - L54 cloyster - clamp, supersonic, aurora beam, spike cannon
@@ -1049,11 +1049,11 @@ Note: These are not applicable to the Lite patches.
   - variant 2
     - L61 arcanine - reflect, rest, double edge, flamethrower
     - L63 exeggutor - leech seed, stomp, solar beam, hypnosis
-	- L65 blastoise - blizzard, reflect, skull bash, hydro pump
+    - L65 blastoise - blizzard, reflect, skull bash, hydro pump
   - variant 3
     - L61 gyarados - ice beam, body slam, hydro pump, hyperbeam
     - L63 arcanine - reflect, rest, double edge, flamethrower
-	- L65 venusaur - razor leaf, toxic, sleep powder, solar beam
+    - L65 venusaur - razor leaf, toxic, sleep powder, solar beam
 
 
 #Cheats and Secrets (SPOILERS)

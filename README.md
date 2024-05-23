@@ -1,6 +1,6 @@
 # Shin Pokémon Red, Blue, Green, Red-JP, & Blue-JP
 
-Version 1.24.5
+Version 1.24.6
 
 *Shin (真) - The kanji for "true".  
 Used in Japanese media to denote a remastering, updated retelling , or a "true form" of something.*  
@@ -335,41 +335,46 @@ Cheats and Secrets!
 **Note: Changelogs may contain spoilers**  
 [View the Consolidated Changelog Document from 1.23 to 1.24.0](/patches_and_info/changelog_from_v1.23.md)  
 
-v1.24.5-X (experimental)
-- * Fixed missing punctuation in Oak's pokedex evaluation
-- * Corrected the text in green & red-jp pokedex entries
-- * Fixed a bug in the AI that caused trainers to use poison-effect moves inaccurately
+v1.24.6
+- Bugfixes:
+- Fixed missing punctuation in Oak's pokedex evaluation
+- Corrected the text in green & red-jp pokedex entries
+- Fixed a bug in the AI that caused trainers to use poison-effect moves inaccurately
 - Fixed full randomization option not activating
+- Fixed debug damage display not updating properly for some static damage moves
+- Fixed a minor bug when blacking out of the SS Anne post-game tournament
+- Fixed some oversights with the joke dittos that can be fished in unknown dungeon 3
+  - Cannot toss balls if the wild pokemon is above the level cap
+  - Made ReadSuperRodData a predef and made it so the Unknown Dungeon 3 fishing data reverts if the randomizer is on
+- Fixed a problem with undergoing multiple evolutions when taking a pokemon out of the daycare
+
+- Features:
 - Psywave has been enhanced with a hidden mechanic
   - Psywave will now roll for damage multiple times and use the best roll
   - The number of times that damage is rolled is based on the target's current HP with more HP causing more re-rolls
-- Fixed debug damage display not updating properly for some static damage moves
-- Tweaked NPC text for extra options
-- Rebalanced a few TMs across pokemart inventories
 - Certain moves now affect catching mechanics if known by your active pokemon in battle
   - Razor Wind & Skull Bash - additive +10 to catch rate per toss of a non-safari ball
   - Roar & Whirlwind - additive +20 to catch rate per toss of a non-safari ball
   - Take Down - improves the ball factor of non-safari balls by 2
   - Egg Bomb - improves the ball factor of non-safari balls by 2 and additive +10 to catch rate per toss of a non-safari ball
-- Made the karate dojo master act like a special trainer
-- Starting a new game will keep the hard mode off, but now default to fast text speed
-- Turning the nuzlocke mode on will not reset your difficulty options
-- Fixed a minor bug when blacking out of the SS Anne post-game tournament
-- Water Gun TM has been replaced by a super repel in Mt. Moon, and it is now found in the Pewter Museum
 - Shiny pokemon gain a 4x multiplier for the coin guy in celadon hotel and selling to the game corner chief
-- Fixed some oversights with the joke dittos that can be fished in unknown dungeon 3
-  - Cannot toss balls if the wild pokemon is above the level cap
-  - Made ReadSuperRodData a predef and made it so the Unknown Dungeon 3 fishing data reverts if the randomizer is on
-- Boosted Eevee encounter rate to 5.5%
-- The shimmer transformation's text box no longer requires a button prompt to scroll through
 - The battle clauses between link players now sync and are applied during battles
 - The stat displays of the active pokemon in battle will display its current-time stats instead of its unmodified stats
-- Giovanni gym battle exchanges rhyhorn for kangaskhan
-- Champion Rival's charizard swaps out swords dance for fly
-- Fixed a problem with undergoing multiple evolutions when taking a pokemon out of the daycare
+
+- Adjustments:
 - Trainer level scaling has been dampened outside of hard mode
   - It is now based on a weighted average for regular trainers in normal difficulty
   - Gym leaders always use the absolute level scaling regardless of difficulty
+- Rebalanced a few TMs across pokemart inventories
+- Water Gun TM has been replaced by a super repel in Mt. Moon, and it is now found in the Pewter Museum
+- Starting a new game will keep the hard mode off, but now default to fast text speed
+- Turning the nuzlocke mode on will not reset your difficulty options
+- Boosted Eevee encounter rate to 5.5%
+- Giovanni gym battle exchanges rhyhorn for kangaskhan
+- Champion Rival's charizard swaps out swords dance for fly
+- The shimmer transformation's text box no longer requires a button prompt to scroll through
+- Tweaked NPC text for extra options
+- Made the karate dojo master act like a special trainer
  
 v1.24.5
 - Minor text edit for SS Anne npc in post-game.
@@ -1481,6 +1486,8 @@ v1.24.1
 - Activation/Deactivation
   - Go to the OPTIONS screen and press SELECT to get to the extra menu.
   - Toggle this mode under "NUZLOCKE".
+  
+- This mode **DOES NOT** check if you have obtained pokeballs yet. It is in full effect when toggled to ON.  
   
 - Rule 1: A pokemon that faints is considered dead and can no longer be used.
   - Revival items cannot be used in battle.
