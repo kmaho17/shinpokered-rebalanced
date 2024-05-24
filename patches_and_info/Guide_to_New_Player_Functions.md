@@ -428,6 +428,14 @@ If Giovanni has disappeared from his gym, exit and re-enter the gym to bring him
   - Goldeen, Psyduck, Shellder
   - Goldeen, Shellder, Horsea, Tentacool
   
+#### PokeDex AREA Enhancements  
+- The AREA function of the PokeDex now takes the Super Rod into account
+- It will also notify you if the Pokemon you are referencing is available on the currently loaded map
+- If available on the current map, it will notify you if it can be found by walking, surfing, or by super rod
+- The Cerulean Cave is an "unknown dungeon" so...
+  - Nest icons will not display for this location
+  - But the notification for the current map will still function
+
 #### Improved Itemfinder Function  
 - If an item is detected, it will play 1 to 3 chimes depending on how close it is (more chimes means closer to the item).
 - Lines will point in the direction of the item and flash with the chimes.

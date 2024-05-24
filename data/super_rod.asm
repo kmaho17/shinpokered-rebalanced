@@ -1,13 +1,19 @@
 ReadSuperRodData:
 	call GetPredefRegisters
+
+;joenote - takes the value in D as an argument
+;D = 0 as argument --> super rod functionality
+;D = 'mon hex ID as argument --> If the 'mon in D is fishable with the super rod on this map, return D = 0
 	
 ; return e = 2 if no fish on this map
 ; return e = 1 if a bite, bc = level,species
 ; return e = 0 if no bite
 	ld a, [wCurMap]
+	push de
 	ld de, 3 ; each fishing group is three bytes wide
 	ld hl, SuperRodData
 	call IsInArray
+	pop de
 	jr c, .ReadFishingGroup
 	ld e, $2 ; $2 if no fishing groups found
 	ret
@@ -15,7 +21,7 @@ ReadSuperRodData:
 .ReadFishingGroup
 ; hl points to the fishing group entry in the index
 
-	;joenote - if wild pokemon are randomized, then don't go the joke dittos
+	;joenote - if wild pokemon are randomized, then don't do the joke dittos
 	ld a, [hl]
 	cp UNKNOWN_DUNGEON_3
 	jr nz, .skipmapID
@@ -37,6 +43,11 @@ ReadSuperRodData:
 	inc hl ; point to data
 	ld e, $0 ; no bite yet
 
+;joenote - added functionality where we can now check of a 'mon in D is in the fishing group.
+	ld a, d
+	and a
+	jr nz, .CheckIfInGroup
+	
 .RandomLoop
 	call Random
 	srl a
@@ -57,7 +68,17 @@ ReadSuperRodData:
 	ld e, $1 ; $1 if there's a bite
 	ret
 
-
+.CheckIfInGroup
+	inc hl
+	ld a, [hli]
+	sub d
+	jr z, .found
+	dec b
+	jr nz, .CheckIfInGroup
+	ret
+.found
+	ld d, a
+	ret
 
 ; super rod data
 ; format: map, pointer to fishing group

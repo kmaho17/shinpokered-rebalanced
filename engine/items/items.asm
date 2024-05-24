@@ -2189,6 +2189,7 @@ INCLUDE "data/good_rod.asm"
 ItemUseSuperRod:
 	call FishingInit
 	jp c, ItemUseNotTime
+	ld d, 0	;joenote - specify super rod function since ReadSuperRodData has been enhanced a bit
 	predef ReadSuperRodData
 	ld a, e
 RodResponse:
@@ -3270,6 +3271,9 @@ ItemUseReloadOverworldData:
 ; creates a list at wBuffer of maps where the mon in [wd11e] can be found.
 ; this is used by the pokedex to display locations the mon can be found on the map.
 FindWildLocationsOfMon:
+	ld a, 0
+	ld [wActionResultOrTookBattleTurn], a	;joenote - used to differentiate between land, water, and super rod finding
+
 	ld a, [wd11e]
 	push af
 	predef LookupWildRandomMon	;joenote - adjusted to show locations of randomized wild mons
@@ -3287,13 +3291,62 @@ FindWildLocationsOfMon:
 	ld l, a
 	ld a, [hli]
 	and a
+
+	ld a, [wActionResultOrTookBattleTurn]
+	set 0, a
+	ld [wActionResultOrTookBattleTurn], a
+
 	call nz, CheckMapForMon ; land
 	ld a, [hli]
 	and a
+
+	ld a, [wActionResultOrTookBattleTurn]
+	res 0, a
+	set 2, a
+	ld [wActionResultOrTookBattleTurn], a
+
 	call nz, CheckMapForMon ; water
+	
+	ld a, [wActionResultOrTookBattleTurn]
+	res 2, a
+	ld [wActionResultOrTookBattleTurn], a
+
 	pop hl
 	inc hl
 	inc hl
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;	
+	;joenote - check the map for this loop to see if the 'mon is fishable with the super rod
+	ld a, [wCurMap]
+	push af
+	ld a, c
+	ld [wCurMap], a
+
+	push de
+	ld a, [wd11e]
+	ld d, a
+	push bc
+	push hl
+	predef ReadSuperRodData
+	pop hl
+	pop bc
+	ld a, d
+	and a
+	pop de
+	jr nz, .doneSuperRod
+	ld a, c
+	ld [de], a
+	inc de
+	pop af
+	cp c
+	push af
+	jr nz, .doneSuperRod
+	ld a, [wActionResultOrTookBattleTurn]
+	set 4, a
+	ld [wActionResultOrTookBattleTurn], a
+.doneSuperRod		
+	pop af
+	ld [wCurMap], a
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;		
 	inc c
 	jr .loop
 .done
@@ -3310,9 +3363,28 @@ CheckMapForMon:
 	ld a, [wd11e]
 	cp [hl]
 	jr nz, .nextEntry
+	cp MEW
+	jr z, .nextEntry	;joenote - don't reveal MEW on accident
 	ld a, c
 	ld [de], a
 	inc de
+
+	ld a, [wCurMap]
+	cp c
+	jr nz, .nextEntry
+	ld a, [wActionResultOrTookBattleTurn]
+	bit 0, a
+	jr nz, .handleLand
+	bit 2, a
+	jr z, .nextEntry
+.handleSurf
+	set 3, a	
+	ld [wActionResultOrTookBattleTurn], a
+	jr .nextEntry
+.handleLand
+	set 1, a
+	ld [wActionResultOrTookBattleTurn], a
+	
 .nextEntry
 	inc hl
 	inc hl

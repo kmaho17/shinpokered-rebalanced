@@ -212,6 +212,10 @@ There is a built-in nuzlocke mode that can be toggled from the extra options men
 The girl in Oak's lab toggles wild pokemon randomization.
 If activated early enough in the game, your starter pokemon choices are randomized as well.
 
+The AREA function of the PokeDex now takes the Super Rod into account.
+It will also notify you if the Pokemon you are referencing is available in the immediate vicinity.
+It even works with the randomizer active.
+
 One of the aides in Oak's lab toggles scaling of trainer rosters to your level (evolving them if applicable).
 
 As an alternative to trainer scaling, there is now an obedience level-cap that can be toggled in the extra options menu.
@@ -349,6 +353,13 @@ v1.24.6
 - Fixed a problem with undergoing multiple evolutions when taking a pokemon out of the daycare
 
 - Features:
+- PokeDex Area enhancements
+  - The AREA function of the PokeDex now takes the Super Rod into account
+  - It will also notify you if the Pokemon you are referencing is available on the currently loaded map
+  - If available on the current map, it will notify you if it can be found by walking, surfing, or by super rod
+  - The Cerulean Cave is an "unknown dungeon" so...
+    - Nest icons will not display for this location
+    - But the notification for the current map will still function
 - Psywave has been enhanced with a hidden mechanic
   - Psywave will now roll for damage multiple times and use the best roll
   - The number of times that damage is rolled is based on the target's current HP with more HP causing more re-rolls
@@ -991,6 +1002,14 @@ v1.24.1
   - Withdrawing or depositing a key item from/to the player's PC will default its quantity to 1
   - Item evolutions having a level requirement is now supported
   - DelayFrame now manualy calls VBlank if it runs while the LCD is disabled
+
+- PokeDex Area enhancements
+  - The AREA function of the PokeDex now takes the Super Rod into account
+  - It will also notify you if the Pokemon you are referencing is available on the currently loaded map
+  - If available on the current map, it will notify you if it can be found by walking, surfing, or by super rod
+  - The Cerulean Cave is an "unknown dungeon" so...
+    - Nest icons will not display for this location
+	- But the notification for the current map will still function
 
 - Improved itemfinder function
   - If an item is detected, it will play 1 to 3 chimes depending on how close it is (more chimes means closer to the item).
