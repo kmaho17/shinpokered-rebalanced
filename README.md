@@ -1009,7 +1009,7 @@ v1.24.1
   - If available on the current map, it will notify you if it can be found by walking, surfing, or by super rod
   - The Cerulean Cave is an "unknown dungeon" so...
     - Nest icons will not display for this location
-	- But the notification for the current map will still function
+    - But the notification for the current map will still function
 
 - Improved itemfinder function
   - If an item is detected, it will play 1 to 3 chimes depending on how close it is (more chimes means closer to the item).
