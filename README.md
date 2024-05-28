@@ -116,6 +116,12 @@ Gamma Shader for LCD Screens (Left image is Off / Right image is On)
 ![Shader Off](/screenshots/bgb00035.bmp?raw=true)
 ![Shader On](/screenshots/bgb00036.bmp?raw=true)
 
+Enhanced Area Function  
+![Area Function](/screenshots/z_areadisplay.gif?raw=true)
+
+Status Screen updates with the Active Pokemon in battle  
+![Status Screen](/screenshots/z_statdisplay.gif?raw=true)
+
 **Stats for Nerds**  
 <details>
   <summary>Click to Show/Hide DV Stats</summary>
