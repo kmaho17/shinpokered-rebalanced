@@ -734,6 +734,7 @@ ENDC
 	ld hl, GrewLevelText
 	call PrintText
 	xor a ; PLAYER_PARTY_DATA
+	set 7, a	;indicate that stat display is for level-up in case we're in the middle of battle
 	ld [wMonDataLocation], a
 
 IF DEF(_EXPBAR)
