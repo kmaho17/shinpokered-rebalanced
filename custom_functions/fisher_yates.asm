@@ -190,14 +190,14 @@ _ReplaceMon:
 ;If A < C, then there is no problem because there is no risk of blowing past the end of the mon list.
 ;But it is a problem if A >= C.
 ;So to adjust for this, subtract C from A until A underflows, then add C once to it.
+;This should make the value of A from 0 to C-1
 .loop_remainder
 	sub c
 	jr nc, .loop_remainder
 	add c
-;Now increment A if it is zero. This should make the value of A between 1 and C-1
-	call .incZeroValue
 ;This essentially treats the mon list as a "wheel of fortune" wheel with C number of equal-sized wedges.
 ;And A is how much the wheel has been spun from its starting position.
+;Note that if A is zero, it means that the wheel spun right back around to the position it started at.
 
 ;DE will point to the "origin position" of the list (not necessarily the begining depending on where we are in the loop)	
 	ld d, h
@@ -247,12 +247,6 @@ _ReplaceMon:
 
 	xor a
 	ld [MBC1SRamEnable], a	;disable the sram
-	ret
-.incZeroValue
-;increment A if its value is zero
-	and a
-	ret nz
-	inc a
 	ret
 
 MonListC:
