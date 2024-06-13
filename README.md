@@ -358,6 +358,7 @@ v1.24.6
   - Made ReadSuperRodData a predef and made it so the Unknown Dungeon 3 fishing data reverts if the randomizer is on
 - Fixed a problem with undergoing multiple evolutions when taking a pokemon out of the daycare
 - Fixed a problem where the Trapping Move Clause reads the move effect from the previous round instead of the current round
+- Prevent the wild randomizer from swapping a pokemon species with itself
 
 - Features:
 - PokeDex Area enhancements
