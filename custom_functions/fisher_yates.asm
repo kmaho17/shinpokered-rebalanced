@@ -172,10 +172,10 @@ _ReplaceMon:
 	;the mon list is now loaded into sSpriteBuffer0 ($A000)
 	
 ;We have a mon value in wcf91.
-;We wand to swap this out with a randomized mon using a random seed. 
-;But we also want this to be deterministically replicable to that the playthrough stays consistant.
+;We want to swap this out with a randomized mon using a random seed. 
+;But we also want this to be deterministically replicable so that the playthrough stays consistent.
 ;Here's how this is going to work. 
-;The list of all mons to be randomized with each other are copied into sram at address A000.
+;The list of all mons to be randomized with each other is copied into sram at address A000.
 ;HL and DE will be used as pointers to this list.
 ;C holds the size of this list.
 ;[wUnusedD722 + 1] holds the offset within that list at which our mon in question is located.
