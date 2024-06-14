@@ -79,14 +79,6 @@ _ReplaceMon:
 .no_update
 	ld [wUnusedD722], a
 	
-;	;stack pointer needs to be greater than or equal to $DF40
-;	ld hl, $0000
-;	add hl, sp
-;	ld a, l
-;	cp $40
-;	ret c
-;Not using stack anymore
-
 	CheckEvent EVENT_8D7
 	jr z, .tieredRandom
 	ld hl, MonListTrueRandom
@@ -157,8 +149,7 @@ _ReplaceMon:
 	xor a
 	ld [MBC1SRamBank], a
 	
-;instead of the stack, use sprite buffer 0 in the sram	
-;	ld hl, $DF00
+;use sprite buffer 0 in the sram	
 	ld hl, sSpriteBuffer0
 .loop2
 	ld a, [de]
@@ -171,6 +162,7 @@ _ReplaceMon:
 	
 	;the mon list is now loaded into sSpriteBuffer0 ($A000)
 	
+;Here we are going to do a twist on Durstenfeld's in-place version of the Fisher–Yates shuffle
 ;We have a mon value in wcf91.
 ;We want to swap this out with a randomized mon using a random seed. 
 ;But we also want this to be deterministically replicable so that the playthrough stays consistent.
@@ -181,9 +173,17 @@ _ReplaceMon:
 ;[wUnusedD722 + 1] holds the offset within that list at which our mon in question is located.
 ;wUnusedD722 is the working address for a random number between 0 and 255.
 	
-;	ld hl, $DF00
 	ld hl, sSpriteBuffer0
 .loop3
+;DE will point to the "origin position" of the list (not necessarily the begining depending on where we are in the loop)	
+	ld d, h
+	ld e, l
+
+;If C=1, then there is nothing left to randomize. No need to loop.
+	dec c
+	jr z, .next3
+	inc c
+
 	ld a, [wUnusedD722]
 ;A is a random number from 0 to 255.
 ;The plan is to use the value of A as an offset for pointing to a later section of the mon list.
@@ -199,9 +199,9 @@ _ReplaceMon:
 ;And A is how much the wheel has been spun from its starting position.
 ;Note that if A is zero, it means that the wheel spun right back around to the position it started at.
 
-;DE will point to the "origin position" of the list (not necessarily the begining depending on where we are in the loop)	
-	ld d, h
-	ld e, l
+;If A=0, increment it. This makes it so that mons are not swapped with themselves and every mon should be different.
+	call .incAifZero
+;This should make the value of A from 1 to C-1
 
 ;HL is going to point 'A' positions further in the list to the "destination position"
 	add l
@@ -247,6 +247,12 @@ _ReplaceMon:
 
 	xor a
 	ld [MBC1SRamEnable], a	;disable the sram
+	ret
+	
+.incAifZero
+	and a
+	ret nz
+	inc a
 	ret
 
 MonListC:

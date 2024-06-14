@@ -137,7 +137,7 @@ Instructions to perform:
 2 - Press and hold UP on the d-pad. The cursor will now be on EXIT.  
 3 - While continuing to hold UP, press and hold SELECT.  
 4 - While still continuing to hold the two aforementioned buttons, press B.  
-5 - The start menu should close and you will will hear a jingle.  
+5 - The start menu should close and you will hear a jingle.  
 
 #### Debug Damage Display  
 As a debugging cheat, damage values will be displayed in battle as the UI updates.  
