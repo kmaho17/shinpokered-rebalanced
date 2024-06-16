@@ -70,11 +70,10 @@ _ReplaceMon:
 	ld a, [wRandomizerSeed]
 	and a 
 	jr nz, .no_update
-	ld a, [wPlayerID]
-	ld [wRandomizerSeed], a
-	and a 
-	jr nz, .no_update 
+.callRand	;do not allow a seed value of zero
 	call Random	
+	and a
+	jr z, .callRand
 	ld [wRandomizerSeed], a
 .no_update
 	ld [wUnusedD722], a
@@ -171,7 +170,7 @@ _ReplaceMon:
 ;HL and DE will be used as pointers to this list.
 ;C holds the size of this list.
 ;[wUnusedD722 + 1] holds the offset within that list at which our mon in question is located.
-;wUnusedD722 is the working address for a random number between 0 and 255.
+;wUnusedD722 is the working address for a random number between 1 and 255.
 	
 	ld hl, sSpriteBuffer0
 .loop3
@@ -179,29 +178,48 @@ _ReplaceMon:
 	ld d, h
 	ld e, l
 
-;If C=1, then there is nothing left to randomize. No need to loop.
+;If C=1, then there is nothing left to randomize.
 	dec c
 	jr z, .next3
 	inc c
 
+;Now to update the random number with some deterministic variation. There's multiple ways to do this.
+;One way is to do a basic [1,1,3] Marsaglia XOR Shift.
+;Note that this never produces a zero.
 	ld a, [wUnusedD722]
-;A is a random number from 0 to 255.
+	ld b, a
+	sla a
+	xor b
+	ld b, a
+	srl a
+	xor b
+	ld b, a
+	sla a
+	sla a
+	sla a
+	xor b
+	ld [wUnusedD722], a
+;A is now a random number from 1 to 255.
+
 ;The plan is to use the value of A as an offset for pointing to a later section of the mon list.
 ;If A < C, then there is no problem because there is no risk of blowing past the end of the mon list.
 ;But it is a problem if A >= C.
-;So to adjust for this, subtract C from A until A underflows, then add C once to it.
-;This should make the value of A from 0 to C-1
+;So to adjust for this, subtract C-1 from A until A underflows, then add C-1 back to it one time.
+;This should make the value of A from 0 to C-2
+	dec c
 .loop_remainder
 	sub c
 	jr nc, .loop_remainder
 	add c
-;This essentially treats the mon list as a "wheel of fortune" wheel with C number of equal-sized wedges.
+	inc c
+;This essentially treats the mon list as a "wheel of fortune" wheel with C-1 number of equal-sized wedges.
 ;And A is how much the wheel has been spun from its starting position.
 ;Note that if A is zero, it means that the wheel spun right back around to the position it started at.
 
-;If A=0, increment it. This makes it so that mons are not swapped with themselves and every mon should be different.
-	call .incAifZero
-;This should make the value of A from 1 to C-1
+;Now increment A.
+;This will make the value of A from 1 to C-1
+;This makes it so that mons are not swapped with themselves and every mon should be different.
+	inc a
 
 ;HL is going to point 'A' positions further in the list to the "destination position"
 	add l
@@ -225,12 +243,6 @@ _ReplaceMon:
 	ld h, d
 	ld l, e
 	
-;Now to give some deterministic variation in the random number. There's multiple ways to do this.
-;What's done here is to take the mon's value at the origin position and add it to the random number.
-	ld a, [wUnusedD722]
-	add b
-	ld [wUnusedD722], a
-	
 ;Now increment the origin position and decrement the size of the mon list. 
 ;This is effectively the same as removing a "wedge" from the mon list "wheel"
 	inc hl
@@ -249,12 +261,6 @@ _ReplaceMon:
 	ld [MBC1SRamEnable], a	;disable the sram
 	ret
 	
-.incAifZero
-	and a
-	ret nz
-	inc a
-	ret
-
 MonListC:
 	db METAPOD      ; $7C
 	db KAKUNA       ; $71
