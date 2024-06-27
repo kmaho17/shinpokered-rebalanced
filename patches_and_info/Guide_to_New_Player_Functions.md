@@ -169,12 +169,12 @@ Also, it's DVs will be set to match the quantities of the first four items in yo
 #### Extra Options Menu  
 Press SELECT on the main options menu to go to the extra menu where several new features can be toggled.  
 
-#### Activate Color Correction  
+#### Color Correction (Y Shader)  
 This applies when playing or emulating as a Gameboy Color game.  
 It's assumed you are using a modern backlit screen with no other color correction.  
 Under these stated conditions, the colors will be highly saturated.  
 Press SELECT at the copyright screen when the game first boots (before the Gamefreak logo). 
-- A sfx will play and a symbol with appear at the bottom right to let you know that it worked.  
+- A sfx will play and a symbol will appear at the bottom right to let you know that it worked.  
 - This will fix the saturated colors.  
 
 Note: Can also be toggled in the extra options menu.  
@@ -182,7 +182,7 @@ Note: Can also be toggled in the extra options menu.
 Changing the destination code of the rom header to 00 (JP) defaults this to ON and pressing SELECT turns it OFF.  
 Use the BGB emulator to easily change the destination code and fix the header checksum (https://youtu.be/2AaCkM597iU).  
 
-#### Change the Audio Type  
+#### Audio Type  
 Updated Audio mixing has been ported over from Pokemon Yellow.  
 Cycle through audio types on the extra options menu.  
 You can cycle through mono sound and three types of stereo mixing.  
@@ -192,7 +192,7 @@ This feature is more of a proof-of-concept and is still kinda rusty.
 Toggle this on the extra options menu.  
 Playing as a GBC game will take advantage of the GBC's double-speed processor mode.  
 
-#### Zero-Delay Text  
+#### Zero-Delay Text (Instant Text)  
 This feature reinstitutes a speed-running trick that makes text print with zero frame delay.  
 Toggle this on the extra options menu.  
 Please note that other text speed selections do nothing while this feature is active.  
@@ -212,8 +212,8 @@ Playing in hard mode imposes several changes to the game's systems that increase
 7 - Non-link battles in hard mode use the Stadium 1 formulas for critical hit probability.  
 8 - Wild pokemon DVs get 1 re-roll each if less than 4, biasing them upwards a little bit.
 
-#### AI Trainer Switching  
-- Toggle this on the extra options menu.  
+#### AI Trainer Switching (AI Swaps)  
+- Toggle this on the extra options menu. Activate by setting it to SMART. 
 - This feature allows enemy trainers to switch somewhat intelligently.
 - Note: If disabled, Jugglers are unaffected because their official gimmick is that they switch randomly.
 
@@ -225,7 +225,7 @@ All pokemon, not just trades, will start to disobey if over the displayed level 
 The cap will change based on which badge you have.  
 This is intended as an alternative to, and not to be used with, the Scale Enemy Trainer Levels feature.  
 It provides a different challenge where one is forced to keep a team within the game's level curve.  
-Players should deactivate this feature for post-game adventuring past the level-cap.  
+Players should deactivate this feature for post-game adventuring past the level cap.  
 
 #### Scale Enemy Trainer Levels  
 Not available in the Lite patches.  
@@ -244,7 +244,7 @@ Note: These are not available in the Lite patches.
 
 #### Wild & Starter Pokemon Randomization  
 The girl in Oak's lab toggles on/off a built-in randomizer for wild pokemon.  
-It shuffles all pokemon that can be gained through walking, surfing, fishing, or from the game corner.  
+It shuffles all pokemon that can be gained through walking, surfing, fishing, or from the Celadon Prize Corner.  
 If activated early enough in the game, your starter pokemon choices are randomized as well.  
 Scripted events are unaffected (gifts, in-game trades, static encounters, etc).  
 The game's five legendary pokemon are also excluded from randomization.  
@@ -259,13 +259,13 @@ The girl will also ask if full randomization is preferred, which will combine th
 #### Regular Trainer Randomization  
 One of Oak's Aides has been added to the Viridian Pokemon Center. Talk to him to toggle this feature.  
 This randomizes the teams of regular no-name trainers that do not have roster customization.  
-The randomization method is the same as for the previously mentioned wild pokemon.  
+This randomization method uses different curated lists based on level in order to maintain some balance.  
 
 #### Sleep, Freeze, and Item Clauses  
 The house to the lower-left of Viridian Gym is home to three new NPCs named the Clause Brothers.  
 Each one toggles enforcement of either the item, sleep, or freeze clause from Pokemon Stadium.  
 The sleep clause in particular works like it does in Stadium with respect to using the Rest move.  
-The clauses apply to the player and AI equally, and they only apply during non-link trainer battles.  
+The clauses apply to the player and AI equally, and they only apply during trainer battles.  
 
 #### Trapping Move Clause  
 - A fourth brother has been added for this new clause.
@@ -331,17 +331,17 @@ For example, you can enter the Cinnabar Gym even if the Secret Key is in the non
 For certain unique systems, like Pokemon Stadium compatibility, only the active bag list is detected.  
 
 #### Bag Auto-Sort  
-You can now automatically sort all the items in the active bag space or the PC item box.  
-Hold SELECT and press START while on the bag or box menu to auto-sort your items.  
+You can now automatically sort all the items in the bag menu or the PC item menu.  
+Hold SELECT and press START while on the bag or PC item menu to auto-sort your items.  
 
 #### Display Pokemon DVs  
 Determinant Values (DVs) are the predecessors to the Individual Values (IVs) used in Gen 3 and onwards.  
-Unlike IVs, DV are on a scale from 0 to 15.  
+Unlike IVs, DVs are on a scale from 0 to 15.  
 On the pokemon menu, select a pokemon and place the cursor over STATS.  
 While holding the START button, press the A button to enter the pokemon's status screen.  
 In place of the pokemon's HP and stat values, it's corresponding DVs will be displayed instead.  
 
-#### Display Pokemon StatEXP  
+#### Display Pokemon Stat EXP  
 Stat Experience (StatEXP) is the predecessor to the Effort Values (EVs) used in Gen 3 and onwards.  
 Unlike EVs, StatEXP values are on a scale from 0 to 65535 and there is no sum total limit between stats.  
 At level 100, a pokemon gains extra points in a stat equal to 0.25 x SQRT(StatEXP) rounded down.  
@@ -356,11 +356,15 @@ On the main battle menu, place the cursor over RUN.
 While holding the SELECT button, press the A button.  
 You will be asked to confirm your decision. Choose YES to forfeit or NO to cancel.  
 
-#### View a Shiny Palette  
-This applies when playing or emulating as a Gameboy Color or Super Gameboy game.  
-Choose a pokemon in the pokedex and place the cursor over DATA.  
-While holding the SELECT button, press the A button to view it's pokedex entry.  
-The pokedex entry will display the pokemon with its shiny palette swap.  
+#### Shiny Pokemon and Viewing a Shiny Palette
+Pokemon can be shiny based on the same DV criteria used for Gen-2 Pokemon games where the shiny feature debuted.  
+This means caught shiny pokemon can be transferred between Gen-1 and Gen-2 games and still remain shiny.  
+An indicator of three sparkles will appear by a pokemon's name in battle and the status menu if it is shiny.  
+The shiny pokemon will also have a palette swap color if playing as a Game Boy Color or Super Game Boy game.  
+You can view a pokemon's shiny palette easily in the pokedex.  
+- Choose a pokemon in the pokedex and place the cursor over DATA.  
+- While holding the SELECT button, press the A button to view it's pokedex entry.  
+- The pokedex entry will display the pokemon with its shiny palette swap.  
 
 #### Audio Cue for Owned Pokemon  
 On the main battle menu, place the cursor over an option in the left column (FIGHT or ITEM).  
@@ -368,7 +372,6 @@ Press the SELECT button.
 The active enemy pokemon will play its cry if that species is registered as Owned in your pokedex.  
 
 #### New Game Plus  
-Still somewhat experimental.  
 Activated under these conditions:  
 1 - Must have an existing non-corrupt game save on-file.  
 2 - Must have beaten the Elite-4 in the on-file save.  
@@ -384,14 +387,14 @@ Preserves ONLY the following information (your current party will be lost):
 - Trainer ID (boxed pokemon won't count as traded)  
 - Wild pokemon randomizer seed
 
-The player can now choose whether or not to generate a new Trainer ID when selecting New Game Plus.  
+The player can choose whether or not to generate a new Trainer ID when selecting New Game Plus.  
 
 
 #Gameplay-Related Features
 -----------------------------------------------
 Note: These are not available in the Lite patches.    
 
-#### Play as a Female Trainer  
+#### Female Trainer Option  
 When choosing NEW GAME, you will be asked if you are a boy or a girl.  
 Choose GIRL to play as the female trainer.  
 Choose BOY to play as the usual male trainer.  
@@ -409,7 +412,7 @@ If all four of a pokemon's regular moves are field moves, its temporary field mo
 But if a fifth field move in the temporary slot is a HM, it can still be activated via One-Button HM Usage.  
 Teaching a TM as a field move will not consume the TM.  
 
-#### Rematch Enemy Trainers  
+#### Rematch Trainers  
 The gym leaders and most trainers can be rematched.  
 Simply talk to them once or twice. Select YES when prompted.  
 If Giovanni has disappeared from his gym, exit and re-enter the gym to bring him back.  
@@ -429,12 +432,12 @@ If Giovanni has disappeared from his gym, exit and re-enter the gym to bring him
   - Goldeen, Shellder, Horsea, Tentacool
   
 #### PokeDex AREA Enhancements  
-- The AREA function of the PokeDex now takes the Super Rod into account
-- It will also notify you if the Pokemon you are referencing is available on the currently loaded map
-- If available on the current map, it will notify you if it can be found by walking, surfing, or by super rod
+- The AREA function of the PokeDex now takes the Super Rod into account.
+- It will also notify you if the Pokemon you are referencing is available on the currently loaded map.
+- If available on the current map, it will notify you if it can be found by walking, surfing, or by super rod.
 - The Cerulean Cave is an "unknown dungeon" so...
-  - Nest icons will not display for this location
-  - But the notification for the current map will still function
+  - Nest icons will not display for this location.
+  - But the notification for the current map will still function.
 
 #### Improved Itemfinder Function  
 - If an item is detected, it will play 1 to 3 chimes depending on how close it is (more chimes means closer to the item).
@@ -901,7 +904,7 @@ Note: These are not applicable to the Lite patches.
 
 #### Regular Trainer Changes
 - Certain Trainers have undergone slight roster changes so that all pokemon can be seen under normal game settings.
-  - Lvl 24 lass on route 8 gains exchanges two meowths for jigglypuff and eevee
+  - Lvl 24 lass on route 8 exchanges two meowths for jigglypuff and eevee
   - Lvl 22 lass on route 8 exchanges one clefairy for clefable
   - Lvl 24 jr.trainer-f on route 13 exchages one meowth for dratini
   - Lvl 36 super nerd in cinnabar gym exchanges one vulpix for a flareon
@@ -910,8 +913,8 @@ Note: These are not applicable to the Lite patches.
   - Lvl 24 fisher on route 12 gains omanyte and kabuto
   - Lvl 35 beauty on route 20 swaps her seaking with a vaporeon
   - Lvl 20 rocker in vermilion gym replaces one voltorb with pikachu
-  - Lvl 29 rocker on route 12 replaces its voltorb and electrode with electabuzz and jolteon
-  - Lvl 48 juggler in victory road 2F replaces its mr. mime with tangela an golem
+  - Lvl 29 rocker on route 12 replaces his voltorb and electrode with electabuzz and jolteon
+  - Lvl 48 juggler in victory road 2F replaces his mr. mime with tangela an golem
   - Lvl 34 juggler in fuschia gym with drowzee and kadabra replaced by cooltrainer-f with golbat and venomoth (easter egg)
   - Lvl 31 juggler in fuschia gym with drowzees and kadabras becomes lvl 33 with oddish, gastly, venonat, and koffing
   - Lvl 38 juggler in fuschia gym exchanges his hypno for two exeggute
@@ -942,7 +945,7 @@ Note: These are not applicable to the Lite patches.
 - SS Anne Rival
   - L19 pidgeotto - gust, sand attack, quick attack
   - L16 raticate - tackle, tail whip, quick attack, hyper fang
-  - L18 kadabra - teleport, confusion, disable
+  - L18 kadabra - teleport, kinesis, confusion, disable
   - pick one
     - L20 charmeleon - scratch, growl, ember, leer
     - L20 wartortle - tackle, tail whip, bubble, water gun
@@ -953,7 +956,7 @@ Note: These are not applicable to the Lite patches.
   - L25 raichu - thunderbolt, tail whip, thunder wave, slam
 - Pokemon Tower Rival
   - L25 pidgeotto - gust, sand attack, quick attack
-  - L20 kadabra - teleport, confusion, disable
+  - L20 kadabra - teleport, kinesis, confusion, disable
   - variant 1
     - L23 exeggcute - barrage, hypnosis
     - L22 gyarados - bite, dragon rage, leer, hydro pump
@@ -1017,7 +1020,7 @@ Note: These are not applicable to the Lite patches.
   - variant 2
     - L45 growlithe - agility, ember, leer, takedown
     - L47 exeggcute - solar beam, leech seed, poison powder, stun spore
-    - 53 blastoise - hydro pump, skull bash, bite, withdraw
+    - L53 blastoise - hydro pump, skull bash, bite, withdraw
   - variant 3
     - L45 gyarados - bite, dragon rage, leer, hydro pump
     - L47 growlithe - agility, ember, leer, takedown
