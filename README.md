@@ -656,7 +656,7 @@ v1.24.1
     - Fixes some channel conflicts between cries and the low-health alarm
     - Fixes some audio hiccups with Yellow's color palettes on the GBC
     - Press SELECT on the option menu to go to the extra menu and change the audio mixing option under "AUDIO"
-  - Fuschia gym plays the correct sfx when getting the TM from Koga
+  - Fuchsia gym plays the correct sfx when getting the TM from Koga
   - Vermilion gym plays the correct sfx when getting the TM from Surge
   - Restored sfx for getting a badge
     - A sfx is supposed to play when getting a badge, but not for all gym leaders and the sfx used is inconsistent
@@ -1489,7 +1489,7 @@ v1.24.1
 - Saffron city has elixers
 - Cinnabar island has max elixers
 - Cerulean mart sells escape rope per Yellow version
-- Fuschia mart sells hyper potions per Yellow version
+- Fuchsia mart sells hyper potions per Yellow version
 
 
 #Changes to item locations:

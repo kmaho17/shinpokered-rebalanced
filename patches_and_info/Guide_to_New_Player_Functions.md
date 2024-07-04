@@ -112,9 +112,7 @@ Learnable moves via level and TM/HM have been adapted from Yellow version.
 It is not an exact copy. Particularly so with Eevee and its evolutions since Yellow had it serve as a boss-only Pokemon.  
 Stone-based evolutions also get to learn a few more moves by level-up.  
 Certain pokemon gain an extra TM move or two in their level-up list to play nicer with the AI.  
-For full details, see the...
-- [evos_moves source file](https://github.com/jojobear13/shinpokered/blob/master/data/evos_moves.asm)
-- [base stats file repository](https://github.com/jojobear13/shinpokered/tree/master/data/baseStats)
+For full details, see the "Changes to Pokemon" section.  
 
 
 #Debug Functions
@@ -420,7 +418,7 @@ If Giovanni has disappeared from his gym, exit and re-enter the gym to bring him
 #### Reworked Fishing  
 - The locations of the Good Rod and the Super Rod have been swapped.  
 - Route 12 has been altered to give access to its Fishing Guru without needing the Pokeflute.  
-- All rods now randomly add 0 to 7 levels to anything it hooks.  
+- All rods now randomly add 0 to 7 levels to anything hooked.  
 - The Old Rod can fish up two kinds of pokemon (depending on the current map).  
   - Magikarp or Goldeen
   - Magikarp or Poliwag 
@@ -446,15 +444,15 @@ If Giovanni has disappeared from his gym, exit and re-enter the gym to bring him
 - If the SELECT button is held while selecting to USE the itemfinder, then the original itemfinder function is used.
   
 #### Reworked Daycare  
-The daycare lets you select moves to forget (if any) upon retreiving your pokemon.  
+The daycare lets you select moves to forget (if any) upon retrieving your pokemon.  
 After trying to learn all the moves it can up to its new level, it will try to evolve if applicable.  
 After evolving, it tries to learn any other moves between its evolution threshold level and its new level.  
-If it can evolve again by level, it wil try to do so and once more try to learn any moves it may have missed.  
+If it can evolve again by level, it will try to do so and once more try to learn any moves it may have missed.  
 The daycare experience gain has been recalibrated. It no longer gives 1 exp per step.  
 Instead, it falsifies the act of farming wild encounters against a pokemon with a base exp value of 56.  
 The falsified encounter starts at level 5, and it increases 5 more levels per badge obtained.  
 With 8 badges, using the daycare is essentially a faster way of farming level 45 basic pokemon.  
-The downside of not gaining statexp in the daycare still remains as a tradeoff.  
+The downside of not gaining StatEXP in the daycare still remains as a tradeoff.  
 Consider using the daycare as a way to outsource some grinding while you go focus on other things.  
 And yes, pokemon with HM moves are now allowed in the daycare.  
 The daycare now has a PC for the player's convenience.  
@@ -513,78 +511,8 @@ The Aide NPC inside the house will now gift you a Paras.
 You can use this Paras if you ever find yourself without a pokemon that can learn Cut.  
 
 #### Joe's Drink Stand  
-A new drink stand has been set up on the Route 19 beach below Fuschia City.  
+A new drink stand has been set up on the Route 19 beach below Fuchsia City.  
 It sells vending machine drinks in multiples like a pokemart.  
-
-#### Cloning Genetically Modified Pokemon  
-This process clones your 1st spot pokemon and modifies it with DNA from your 2nd spot pokemon.  
-It does this by treating a pokemon's two bytes of DV values as if they were two genes with two alleles each.  
-Gene-A has the Attack DV as its hi-side (dominant) allele and the Defense DV as its lo-side (recessive) allele.  
-Gene-B has the Speed DV as its hi-side (dominant) allele and the Special DV as its lo-side (recessive) allele.  
-The A-genes from the two donor pokemon will be mixed to make the clone's A-gene.  
-The B-genes from the two donor pokemon will be mixed to make the clone's B-gene.  
-Mixing two genes is done via Punnett Squares, and a random result is chosen based on its ratios.  
-A DV byte is assembled for each Punnett quadrant:  
-- Dominant alleles make up the upper four bits.  
-- Recessive alleles make up the lower four bits.  
-- When there are two dominant or two recessive alleles...  
-  - Randomly choose one of the alleles to make up the upper four bits, changing to or staying dominant.  
-  - The other allele will make up the lower four bits, changing to or staying recessive.  
-
-Allele - Stat    
-A - Attack  
-a - Defense  
-B - Speed  
-b - Special  
-
-| Parent 1 | Parent 2 A  | Parent 2 a  |  
-|:--------:|:-----------:|:-----------:|  
-|    A     |A1A2 or A2A1 |    A1a2     |  
-|    a     |    A2a1     |a1a2 or a2a1 |  
-
-| Parent 1 | Parent 2 B  | Parent 2 b  |  
-|:--------:|:-----------:|:-----------:|  
-|    B     |B1B2 or B2B1 |    B1b2     |  
-|    b     |    B2b1     |b1b2 or b2b1 |  
-
-Talk to the new scientist in the fossil room of the Cinnabar Lab to get started.  
-For a small fee, a gene sequence listing the clone's new DV values in order is randomly determined.  
-If the clone's DVs are acceptable, you may pay a larger fee to gestate the clone.  
-Pro-Tip: This makes it possible to selectively breed for shiny pokemon in a more realistic way.  
-
-Example of selecting for a shiny pokemon:  
-- A shiny pokemon in gen 2 has the 2-byte hex value of $XAAA for its DVs.
-  - Wherein 'X' is the Attack DV composed of the 4 bits %yy1y.
-  - And 'y' bits are "don't care" values that can be either 0 or 1.
-- The first goal is to get $AA as the value for the B-gene.
-  - The minium requirement is to cross two pokemon that both have at least one $A in their B-genes.
-  - This minimum requirement results in a 25% chance of getting a value of $AA. 
-- The second goal is to get $A as the lo-side allele value for the A-gene.
-  - The minium requirement is that one of the donor pokemon have at least one $A in its A-gene.
-  - This minimum requirement has a 12.5% chance of fulfilling the goal if the donor $A is a hi-side allele.
-  - Note: Said chance increases to 37.5% if the donor $A is a lo-side allele.
-- The third goal is to get a 'X' value (previously described) as the hi-side allele value for the A-gene.
-  - The minium requirement is that one of the donor pokemon have at least one 'X' in its A-gene.
-  - This minimum requirement has a 12.5% chance of fulfilling the goal if the donor 'X' is a lo-side allele.
-  - Note: Said chance increases to 37.5% if the donor 'X' is a hi-side allele.
-- Assuming only the most minimal requirements are met, the chance of a shiny is [12.5% * 12.5% * 25%] = 1/256.
-  - Keep in mind that the default chance of a shiny pokemon is 1/8192.
-  - You can boost the chances higher by increasing the number of donor $A alleles and optimizing allele placement.
-  - The chances of getting a shiny by crossing two shiny donors is 50%.
-
-Example:  
-
-| Parent 1 | Parent 2 $4 | Parent 2 $A |  
-|:--------:|:-----------:|:-----------:|  
-|    $F    | $4F or $F4  |    $FA      |  
-|    $5    |    $45      | $5A or $A5  |  
-
-| Parent 1 | Parent 2 $A | Parent 2 $7 |  
-|:--------:|:------------|:-----------:|  
-|    $9    | $9A or $A9  |    $97      |  
-|    $A    |    $AA      | $7A or $A7  |  
-
-Top-right quadrant for the A-gene and bottom-left quadrant for the B-gene gives shiny DVs of FAAA.  
 
 
 #Additions to the Post-Game
@@ -749,7 +677,7 @@ So don't be shy about using TMs acquired from NPCs and exploration.
   - Thunderbolt
   - Hyper Beam
   - Blizzard
-- Fuschia Mart
+- Fuchsia Mart
   - Teleport
   - Mimic
   - Swift
@@ -794,11 +722,12 @@ So don't be shy about using TMs acquired from NPCs and exploration.
 - Pewter city has ethers
 - Cerulean mart sells escape rope per Yellow version
 - Lavender town has max ethers
-- Fuschia mart sells hyper potions per Yellow version
+- Fuchsia mart sells hyper potions per Yellow version
 - Saffron city has elixers
 - Cinnabar island has max elixers
 
-#### Full 151 Pokemon Availability  
+#### Full Pokemon Availability  
+All Pokemon can be caught within a single game pak, but rarity and location sometimes differs with game pak version.  
 - route 22 super rod data has changed to give psyduck & poliwag
 - sandshrew (5.1%) and ekans (5.1%) on route 3
 - bulbasaur on route 4 (4.3%)
@@ -898,6 +827,80 @@ Note: Not available in the Lite patches.
 - This is usually done via the Gen-2 time capsule and trading it back without a hold item or a different hold item.
 
 
+#Cloning Genetically Modified Pokemon  
+-----------------------------------------------
+Note: This is not available in the Lite patches.    
+
+This process clones your 1st spot pokemon and modifies it with DNA from your 2nd spot pokemon.  
+It does this by treating a pokemon's two bytes of DV values as if they were two genes with two alleles each.  
+Gene-A has the Attack DV as its hi-side (dominant) allele and the Defense DV as its lo-side (recessive) allele.  
+Gene-B has the Speed DV as its hi-side (dominant) allele and the Special DV as its lo-side (recessive) allele.  
+The A-genes from the two donor pokemon will be mixed to make the clone's A-gene.  
+The B-genes from the two donor pokemon will be mixed to make the clone's B-gene.  
+Mixing two genes is done via Punnett Squares, and a random result is chosen based on its ratios.  
+A DV byte is assembled for each Punnett quadrant:  
+- Dominant alleles make up the upper four bits.  
+- Recessive alleles make up the lower four bits.  
+- When there are two dominant or two recessive alleles...  
+  - Randomly choose one of the alleles to make up the upper four bits, changing to or staying dominant.  
+  - The other allele will make up the lower four bits, changing to or staying recessive.  
+
+Allele - Stat    
+A - Attack  
+a - Defense  
+B - Speed  
+b - Special  
+
+| Parent 1 | Parent 2 A  | Parent 2 a  |  
+|:--------:|:-----------:|:-----------:|  
+|    A     |A1A2 or A2A1 |    A1a2     |  
+|    a     |    A2a1     |a1a2 or a2a1 |  
+
+| Parent 1 | Parent 2 B  | Parent 2 b  |  
+|:--------:|:-----------:|:-----------:|  
+|    B     |B1B2 or B2B1 |    B1b2     |  
+|    b     |    B2b1     |b1b2 or b2b1 |  
+
+Talk to the new scientist in the fossil room of the Cinnabar Lab to get started.  
+For a small fee, a gene sequence listing the clone's new DV values in order is randomly determined.  
+If the clone's DVs are acceptable, you may pay a larger fee to gestate the clone.  
+Pro-Tip: This makes it possible to selectively breed for shiny pokemon in a more realistic way.  
+
+Example of selecting for a shiny pokemon:  
+- A shiny pokemon in gen 2 has the 2-byte hex value of $XAAA for its DVs.
+  - Wherein 'X' is the Attack DV composed of the 4 bits %yy1y.
+  - And 'y' bits are "don't care" values that can be either 0 or 1.
+- The first goal is to get $AA as the value for the B-gene.
+  - The minium requirement is to cross two pokemon that both have at least one $A in their B-genes.
+  - This minimum requirement results in a 25% chance of getting a value of $AA. 
+- The second goal is to get $A as the lo-side allele value for the A-gene.
+  - The minium requirement is that one of the donor pokemon have at least one $A in its A-gene.
+  - This minimum requirement has a 12.5% chance of fulfilling the goal if the donor $A is a hi-side allele.
+  - Note: Said chance increases to 37.5% if the donor $A is a lo-side allele.
+- The third goal is to get a 'X' value (previously described) as the hi-side allele value for the A-gene.
+  - The minium requirement is that one of the donor pokemon have at least one 'X' in its A-gene.
+  - This minimum requirement has a 12.5% chance of fulfilling the goal if the donor 'X' is a lo-side allele.
+  - Note: Said chance increases to 37.5% if the donor 'X' is a hi-side allele.
+- Assuming only the most minimal requirements are met, the chance of a shiny is [12.5% * 12.5% * 25%] = 1/256.
+  - Keep in mind that the default chance of a shiny pokemon is 1/8192.
+  - You can boost the chances higher by increasing the number of donor $A alleles and optimizing allele placement.
+  - The chances of getting a shiny by crossing two shiny donors is 50%.
+
+Example:  
+
+| Parent 1 | Parent 2 $4 | Parent 2 $A |  
+|:--------:|:-----------:|:-----------:|  
+|    $F    | $4F or $F4  |    $FA      |  
+|    $5    |    $45      | $5A or $A5  |  
+
+| Parent 1 | Parent 2 $A | Parent 2 $7 |  
+|:--------:|:------------|:-----------:|  
+|    $9    | $9A or $A9  |    $97      |  
+|    $A    |    $AA      | $7A or $A7  |  
+
+Top-right quadrant for the A-gene and bottom-left quadrant for the B-gene gives shiny DVs of FAAA.  
+
+
 #Changes to Trainers (SPOILERS)  
 -----------------------------------------------
 Note: These are not applicable to the Lite patches.  
@@ -915,9 +918,9 @@ Note: These are not applicable to the Lite patches.
   - Lvl 20 rocker in vermilion gym replaces one voltorb with pikachu
   - Lvl 29 rocker on route 12 replaces his voltorb and electrode with electabuzz and jolteon
   - Lvl 48 juggler in victory road 2F replaces his mr. mime with tangela an golem
-  - Lvl 34 juggler in fuschia gym with drowzee and kadabra replaced by cooltrainer-f with golbat and venomoth (easter egg)
-  - Lvl 31 juggler in fuschia gym with drowzees and kadabras becomes lvl 33 with oddish, gastly, venonat, and koffing
-  - Lvl 38 juggler in fuschia gym exchanges his hypno for two exeggute
+  - Lvl 34 juggler in Fuchsia gym with drowzee and kadabra replaced by cooltrainer-f with golbat and venomoth (easter egg)
+  - Lvl 31 juggler in Fuchsia gym with drowzees and kadabras becomes lvl 33 with oddish, gastly, venonat, and koffing
+  - Lvl 38 juggler in Fuchsia gym exchanges his hypno for two exeggute
   - Lvl 36 blackbelt in the dojo exchanges his primape for poliwrath
   - Dojo master increased to level 38
   
@@ -1065,6 +1068,214 @@ Note: These are not applicable to the Lite patches.
     - L61 gyarados - ice beam, body slam, hydro pump, hyperbeam
     - L63 arcanine - reflect, rest, double edge, flamethrower
     - L65 venusaur - razor leaf, toxic, sleep powder, solar beam
+
+
+#Changes to Pokemon (SPOILERS)  
+-----------------------------------------------
+Note: These are not applicable to the Lite patches.  
+
+#### TM/HM Learnset Changes  
+- Charizard can learn FLY.
+- Butterfree, Venonat, and Venomoth can learn FLASH.
+- Diglett, Dugtrio, and Kabutops can learn CUT.
+
+#### Altered Level-Up Movelists  
+Pokemon that have had moves added to their learn-lists or changed levels at which moves are learned:  
+- Arcanine
+  - L20, EMBER and BITE added
+  - L30, LEER added
+  - L40, TAKE DOWN added
+  - L50, FLAMETHROWER added
+- Butterfree
+  - L10, CONFUSION
+  - L13, POISONPOWDER
+  - L14, STUN SPORE
+  - L15, SLEEP POWDER
+  - L18, SUPERSONIC
+  - L23, WHIRLWIND
+  - L28, GUST added
+- Chansey
+  - L12, TAIL WHIP added
+- Clefable
+  - L13, SING added
+  - L18, DOUBLESLAP added
+  - L24, MINIMIZE added
+  - L31, METRONOME added
+- Cloyster
+  - L18, SUPERSONIC added
+  - L23, CLAMP added
+  - L30, WATER GUN added
+  - L39, AURORA BEAM added
+- Cubone
+  - L13, TAIL WHIP added
+  - L16, HEADBUTT added
+- Eevee
+  - L8, SAND ATTACK added
+  - L16, GROWL added
+  - L23, QUICK ATTACK
+  - L30, BITE
+  - L36, FOCUS ENERGY added
+  - L42, TAKE DOWN
+- Electrode
+  - L29, LIGHT SCREEN and REFLECT
+- Exeggutor
+  - L19, EGG BOMB added
+  - L25, REFLECT added
+  - L42, SOLARBEAM added
+  - L48, HYPNOSIS added
+- Flareon
+  - L8, SAND ATTACK added
+  - L16, GROWL added
+  - L23, QUICK ATTACK
+  - L30, BITE added as extra instance
+  - L36, FIRE SPIN added as extra instance
+  - L47, SMOG added
+  - L52, FLAMETHROWER
+- Geodude
+  - L29, BODY SLAM added
+- Golem
+  - L29, BODY SLAM added
+- Graveler
+  - L29, BODY SLAM added
+- Jolteon
+  - L8, SAND ATTACK added
+  - L16, GROWL added
+  - L23, QUICK ATTACK
+  - L30, DOUBLE KICK added as extra instance
+  - L36, PIN MISSILE added as extra instance
+  - L40, DOUBLE KICK
+  - L42, THUNDER WAVE
+  - L52, THUNDER
+- Kadabra
+  - L16, KINESIS and CONFUSION
+- Kakuna
+  - L7, HARDEN added
+- Koffing
+  - L42, MIMIC added
+  - L42, SLUDGE added as extra instance
+- Mankey
+  - L9, LOW KICK added
+  - L45, SCREECH added
+- Marowak
+  - L13, TAIL WHIP added
+  - L16, HEADBUTT added
+- Metapod
+  - L7, HARDEN added
+- Nidoking
+  - L12, DOUBLE KICK added
+  - L19, POISON STING
+- Nidoqueen
+  - L12, DOUBLE KICK added
+  - L19, POISON STING
+- Nidoran (female)
+  - L12, DOUBLE KICK
+  - L17, POISON STING
+  - L23, TAIL WHIP
+  - L30, BITE
+  - L38, FURY SWIPES
+- Nidoran (male)
+  - L12, DOUBLE KICK
+  - L17, POISON STING
+  - L23, FOCUS ENERGY
+  - L30, FURY ATTACK
+  - L38, HORN DRILL
+- Nidorina
+  - L12, DOUBLE KICK
+  - L19, POISON STING
+  - L27, TAIL WHIP
+  - L36, BITE
+  - L46, FURY SWIPES
+- Nidorino
+  - L12, DOUBLE KICK
+  - L19, POISON STING
+  - L27, FOCUS ENERGY
+  - L36, FURY ATTACK
+  - L46, HORN DRILL
+- Ninetales
+  - L20, QUICK ATTACK added
+  - L28, CONFUSE RAY added
+  - L36, FLAMETHROWER added
+  - L44, FIRE SPIN added
+- Pikachu
+  - L6, TAIL WHIP added
+  - L8, THUNDER WAVE
+  - L11, QUICK ATTACK
+  - L11, THUNDERSHOCK added as an extra instance
+  - L15, DOUBLE TEAM added
+  - L20, SLAM added
+  - L26, THUNDERBOLT added
+  - L29, SWIFT
+  - L41, THUNDER
+  - L50, LIGHT SCREEN added
+- Pinsir
+  - L21, BIND added
+- Poliwrath
+  - L16, WATER GUN
+  - L19, HYPNOSIS
+  - L27, DOUBLESLAP added
+  - L35, SUBMISSION added
+  - L44, BUBBLEBEAM added
+- Primeape
+  - L9, LOW KICK added
+  - L28, RAGE added
+  - L45, SCREECH added
+- Raichu
+  - L11, TAIL WHIP added
+  - L13, THUNDER WAVE added
+  - L25, SLAM added
+  - L31, THUNDERBOLT added
+  - L46, THUNDER added
+  - L55, LIGHT SCREEN added
+- Tangela
+  - L27, ABSORB
+  - L29, VINE WHIP added
+- Scyther
+  - L50, WING ATTACK added
+- Starmie
+  - L21, WATER GUN added
+  - L26, HARDEN added
+  - L31, RECOVER added
+  - L36, SWIFT added
+  - L46, BUBBLEBEAM added
+  - L51, REFLECT added
+- Vaporeon
+  - L8, SAND ATTACK added
+  - L16, GROWL added
+  - L23, QUICK ATTACK
+  - L30, BITE added as extra instance
+  - L36, AURORA BEAM added
+  - L47, AURORA BEAM added as extra instance
+  - L52, HYDRO PUMP
+- Venomoth
+  - L11, SUPERSONIC added
+  - L19, CONFUSION added
+  - L22, POISONPOWDER
+- Venonat
+  - L11, SUPERSONIC added
+  - L19, CONFUSION added
+  - L22, POISONPOWDER
+- Victreebel
+  - L18, POISONPOWDER
+  - L23, SLEEP POWDER
+  - L30, STUN SPORE added
+  - L37, ACID added
+  - L44, RAZOR LEAF added
+- Vileplume
+  - L30, ACID added
+  - L40, PETAL DANCE added
+- Voltorb
+  - L29, LIGHT SCREEN and REFLECT
+- Weezing
+  - L45, MIMIC added
+  - L47, SLUDGE added as extra instance
+- Wigglytuff
+  - L9, POUND added
+  - L14, DISABLE added
+  - L19, DEFENSE CURL added
+  - L24, SING added
+  - L29, DOUBLESLAP added
+  - L34, DISABLE added
+  - L39, BODY SLAM added
 
 
 #Cheats and Secrets (SPOILERS)
