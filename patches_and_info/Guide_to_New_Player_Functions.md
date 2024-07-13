@@ -515,7 +515,7 @@ A new drink stand has been set up on the Route 19 beach below Fuchsia City.
 It sells vending machine drinks in multiples like a pokemart.  
 
 
-#Additions to the Post-Game
+#Post-Game Additions
 -----------------------------------------------
 Note: These are not available in the Lite patches.    
 
@@ -543,6 +543,7 @@ After beating the Elite-4, vitamins have no limit placed upon them when used on 
 Find the house with the game corner CHIEF in Celadon City.  
 Talk to him after beating the Elite-4 to find he's in some dire straights.  
 He will offer to buy the pokemon in your team's first slot from you.  
+The value is based on the pokemon's DVs, level, catch rate, and whether it is shiny or not.  
 
 #### Bulk Coin Seller  
 One of the Rocket grunts walking around the top left corner of Celadon City will now sell you 1000 coins at a time.  
