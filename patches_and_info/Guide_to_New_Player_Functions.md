@@ -1300,6 +1300,13 @@ Beat Lance with a Dragonite in your 1st party slot.
 The Dragonite's cry will play and its catch rate byte will be modified.  
 It will now be allowed to learn the Fly HM.  
 
+#### Tutor for Event Moves  
+The man in the Mt. Moon pokemon center will serve as a move tutor after buying the Magikarp in from him.  
+This is a throwback feature for certain Japan-only event pokemon giveaways.  
+- Talk to him with Magikarp at the top of your party, and he will offer to teach it Dragon Rage.
+- Talk to him with Fearow or Rapidash at the top of your party, and he will offer to teach it Pay Day.
+- Talk to him with Pikachu at the top of your party that has an empty move slot, and he can teach it Fly.
+
 #### The Surfboard  
 The truck at the Vermilion Dock holds the Surfboard as a hidden item.  
 The surfboard substitutes for a pokemon that knows how to Surf.  
