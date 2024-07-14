@@ -1300,12 +1300,17 @@ Beat Lance with a Dragonite in your 1st party slot.
 The Dragonite's cry will play and its catch rate byte will be modified.  
 It will now be allowed to learn the Fly HM.  
 
+#### Psyduck Learning Amnesia  
+You must first have 151 pokemon registered as owned in your pokedex.  
+Place a Psyduck in your 1st party slot then go talk to the Psyduck in Mr. Fuji's house.  
+It will now try to learn the Amnesia move.  
+
 #### Tutor for Event Moves  
-The man in the Mt. Moon pokemon center will serve as a move tutor after buying the Magikarp in from him.  
+The man in the Mt. Moon pokemon center will serve as a move tutor after buying the Magikarp from him.  
 This is a throwback feature for certain Japan-only event pokemon giveaways.  
-- Talk to him with Magikarp at the top of your party, and he will offer to teach it Dragon Rage.
-- Talk to him with Fearow or Rapidash at the top of your party, and he will offer to teach it Pay Day.
-- Talk to him with Pikachu at the top of your party that has an empty move slot, and he can teach it Fly.
+- Talk to him with Magikarp at the top of your party, and he will offer to teach it Dragon Rage for 5000 yen.
+- Talk to him with Fearow or Rapidash at the top of your party, and he will offer to teach it Pay Day for 1000 yen.
+- Talk to him with Pikachu at the top of your party that has an empty move slot, and he can teach it Fly for 2000 yen.
 
 #### The Surfboard  
 The truck at the Vermilion Dock holds the Surfboard as a hidden item.  

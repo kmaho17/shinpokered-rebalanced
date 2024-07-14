@@ -97,7 +97,7 @@ MtMoonTradeNurseText:
 
 	
 	
-	
+;joenote - turn this shady guy into a move tutor for japan-only event pokemon moves	
 
 MagikarpSalesmanText_CheckEventMons:
 	ld hl, wPartyMon1Species

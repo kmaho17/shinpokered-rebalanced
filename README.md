@@ -380,6 +380,15 @@ v1.24.6
 - Shiny pokemon gain a 4x multiplier for the coin guy in celadon hotel and selling to the game corner chief
 - The battle clauses between link players now sync and are applied during battles
 - The stat displays of the active pokemon in battle will display its current-time stats instead of its unmodified stats
+- After buying the Magikarp from the man in the Mt. Moon pokemon center, he will serve as a move tutor
+  - This is a throwback to certain Japan-only event pokemon giveaways
+  - Talk to him with Magikarp at the top of your party, and he will offer to teach it Dragon Rage for 5000 yen.
+  - Talk to him with Fearow or Rapidash at the top of your party, and he will offer to teach it Pay Day for 1000 yen.
+  - Talk to him with Pikachu at the top of your party that has an empty move slot, and he can teach it Fly for 2000 yen.
+- Psyduck Learning Amnesia  
+  - You must first have 151 pokemon registered as owned in your pokedex.  
+  - Place a Psyduck in your 1st party slot then go talk to the Psyduck in Mr. Fuji's house.  
+  - It will now try to learn the Amnesia move.  
 
 - Adjustments:
 - Trainer level scaling has been dampened outside of hard mode
@@ -1352,6 +1361,15 @@ v1.24.1
 <details>
   <summary>Click to Reveal Spoilers!</summary>
 
+- After buying the Magikarp from the man in the Mt. Moon pokemon center, he will serve as a move tutor
+  - This is a throwback to certain Japan-only event pokemon giveaways
+  - Talk to him with Magikarp at the top of your party, and he will offer to teach it Dragon Rage for 5000 yen.
+  - Talk to him with Fearow or Rapidash at the top of your party, and he will offer to teach it Pay Day for 1000 yen.
+  - Talk to him with Pikachu at the top of your party that has an empty move slot, and he can teach it Fly for 2000 yen.
+- Psyduck Learning Amnesia  
+  - You must first have 151 pokemon registered as owned in your pokedex.  
+  - Place a Psyduck in your 1st party slot then go talk to the Psyduck in Mr. Fuji's house.  
+  - It will now try to learn the Amnesia move.  
 - The surfboard, a nugget, and TM 15 are hidden items added to the vermilion dock
 - Mew is on the basement level of the unknown dungeon
   - it is the rarest encounter in the game
