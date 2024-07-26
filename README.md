@@ -1358,6 +1358,7 @@ v1.24.1
 
 
 #Cheats and Secrets
+---------------------
 <details>
   <summary>Click to Reveal Spoilers!</summary>
 
@@ -1695,7 +1696,7 @@ The following folks for their great tutorials, glitch videos, and explanations a
 - ChickasaurusGL
 - v0id19
 
-The following folks for bugfix collaberation
+The following folks for bugfix collaboration
 - kadetPirx
 - JOBOalthor1992
 - krazsen

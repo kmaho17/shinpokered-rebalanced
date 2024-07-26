@@ -569,26 +569,26 @@ After the Elite-4 are beaten, he will offer to engage you in randomized battles.
 Win 5 matches in a row against him without leaving the area to get more M.GENE items.  
 
 #### Finding Mew  
-Mew is available to catch after viewing your completed 'Dex diploma in the Celadon Gamfreak building.  
+Mew is available to catch after viewing your completed 'Dex diploma in the Celadon Gamefreak building.  
 Mew shows up on only one map, it is level 70, and it is a random encounter.  
 A message will hint that you are on the right map.  
 The random encounter for Mew only happens a single time. You have only one opportunity to catch it.  
 
 #### The Secret of the MIST STONE  
-The MIST STONE will max-out all the stat exp of the lvl > 30 pokemon on which it is used.  
-If all the stat exp is already at max, then it will set all the DVs to maximum instead.  
+The MIST STONE will max-out all the StatEXP of the lvl > 30 pokemon on which it is used.  
+If all the StatEXP is already at max, then it will set all the DVs to maximum instead.  
 But this assumes you are able to find the secret room for obtaining it.  
 Here's a hint. There is a cave entrance hidden on the overworld just out of sight off the beaten path.  
 
 #### Special Trainer Battles  
 There are four special trainers to find and defeat after beating the Elite-4.  
-The first is Oak. Talk him at his lab, and select NO when he asks to rate your 'Dex.  
+The first is Oak. Talk to him at his lab, and select NO when he asks to rate your 'Dex.  
 Each victory will hint towards the next special trainer's location.  
-Beating the fourth special trainer at the Vermilion dock will hint to where Mew is located.  
+Beating the fourth special trainer at the Vermilion Dock will hint to where Mew is located.  
 Beating all four special trainers will enable a final fifth battle outside Bill's Villa.  
 Beating the fifth special trainer will:
 - Respawn all the legendaries
-- Reset the Mew event so it can be re-encounterd
+- Reset the Mew event so it can be re-encountered
 - Reset the Mist Stone event to make it re-obtainable
 - Reset the fifth trainer itself, so you must defeat the other four again (any order) to re-challenge
 
