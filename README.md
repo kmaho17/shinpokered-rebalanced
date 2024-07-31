@@ -640,7 +640,7 @@ v1.24.1
 - Item Fixes  
   - Great ball has a ball factor of 12 now
   - Stone evolutions cannot be triggered via level-up anymore
-  - Ether and elixer now account for PP-ups used when determining if move is at full PP
+  - Ether and elixir now account for PP-ups used when determining if move is at full PP
   - PP-restoring items no longer affect transformed moves and only restore the original moves
   - EXP ALL fixes
     - should now dispense the correct exp if multiple pokemon take place in a battle
@@ -1506,8 +1506,8 @@ v1.24.1
 - TMs of all kinds at all stores (Prize Corner included). All TMs are now re-purchaseable at various stages of the game.
 - Pewter city has ethers
 - Lavender town has max ethers
-- Saffron city has elixers
-- Cinnabar island has max elixers
+- Saffron city has elixirs
+- Cinnabar island has max elixirs
 - Cerulean mart sells escape rope per Yellow version
 - Fuchsia mart sells hyper potions per Yellow version
 
