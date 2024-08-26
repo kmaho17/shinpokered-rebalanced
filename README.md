@@ -360,6 +360,7 @@ v1.24.6
 - Fixed a problem where the Trapping Move Clause reads the move effect from the previous round instead of the current round
 - Wild pokemon randomizer will no longer swap a species with itself
 - Sprites will not cover the move list when forgetting moves at the daycare
+- Fixed Full Restores undoing burn/paralysis stat changes when healing a non-active pokemon
 
 - Features:
 - PokeDex Area enhancements
