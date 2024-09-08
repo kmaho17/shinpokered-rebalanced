@@ -347,6 +347,7 @@ Cheats and Secrets!
 
 v1.24.6
 - Bugfixes:
+- Fixed an oversight where the player does not face the Viridian Gym door during the message saying it's locked
 - Fixed missing punctuation in Oak's pokedex evaluation
 - Corrected the text in green & red-jp pokedex entries
 - Fixed a bug in the AI that caused trainers to use poison-effect moves inaccurately
@@ -752,6 +753,7 @@ v1.24.1
   - Fixed picking a fossil causing all trainers on Mt. Moon floor 3 to lose line of sight
   - Fixed an underflow issue which caused trainers above the player to not see beyond 3 spaces downward
   - Lance and the player will face each other when speaking.
+  - Fixed an oversight where the player does not face the Viridian Gym door during the message saying it's locked
  
  
 #Tweaks
