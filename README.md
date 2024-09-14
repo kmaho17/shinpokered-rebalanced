@@ -638,6 +638,7 @@ v1.24.1
   - Fixed junk tiles displaying for 1 frame when the game resets after displaying THE END
   - Fixed transitions when entering and exiting Rock Tunnel
   - Fixed a bug catcher on route 9 being able to walk onto a ledge
+  - The rocket grunt in Cerulean city has a minor fix to the timing of when its sprite disappears
 
 
 - Item Fixes  
@@ -1256,7 +1257,6 @@ v1.24.1
 - Added spaceworld-style trainer back sprites for consistency with the spaceworld 'mon back sprites 
 - The silhouette effect at the start of battle now displays when playing on a DMG gameboy
 - Improved fade-in and fade-out to black/white transitions when playing on GBC in 60FPS mode
-- The rocket grunt in Cerulean city has a minor fix to the timing of when its sprite disappears
 
 
 #Pre-E4 NPCs
