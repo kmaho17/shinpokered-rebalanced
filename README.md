@@ -362,6 +362,7 @@ v1.24.6
 - Wild pokemon randomizer will no longer swap a species with itself
 - Sprites will not cover the move list when forgetting moves at the daycare
 - Fixed Full Restores undoing burn/paralysis stat changes when healing a non-active pokemon
+- The rocket grunt in Cerulean city has a minor fix to the timing of when its sprite disappears
 
 - Features:
 - PokeDex Area enhancements
@@ -1255,6 +1256,7 @@ v1.24.1
 - Added spaceworld-style trainer back sprites for consistency with the spaceworld 'mon back sprites 
 - The silhouette effect at the start of battle now displays when playing on a DMG gameboy
 - Improved fade-in and fade-out to black/white transitions when playing on GBC in 60FPS mode
+- The rocket grunt in Cerulean city has a minor fix to the timing of when its sprite disappears
 
 
 #Pre-E4 NPCs
