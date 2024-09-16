@@ -347,6 +347,7 @@ Cheats and Secrets!
 
 v1.24.6
 - Bugfixes:
+- Fixed wrong color palette being loaded for player back sprite tiles during screen shake animation
 - Fixed an oversight where the player does not face the Viridian Gym door during the message saying it's locked
 - Fixed missing punctuation in Oak's pokedex evaluation
 - Corrected the text in green & red-jp pokedex entries
@@ -639,6 +640,7 @@ v1.24.1
   - Fixed transitions when entering and exiting Rock Tunnel
   - Fixed a bug catcher on route 9 being able to walk onto a ledge
   - The rocket grunt in Cerulean city has a minor fix to the timing of when its sprite disappears
+  - Fixed wrong color palette being loaded for player back sprite tiles during screen shake animation
 
 
 - Item Fixes  
