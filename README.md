@@ -364,6 +364,7 @@ v1.24.6
 - Sprites will not cover the move list when forgetting moves at the daycare
 - Fixed Full Restores undoing burn/paralysis stat changes when healing a non-active pokemon
 - The rocket grunt in Cerulean city has a minor fix to the timing of when its sprite disappears
+- Fixed the cloning feature in Cinnabar Lab handling the charging of money incorrectly
 
 - Features:
 - PokeDex Area enhancements
