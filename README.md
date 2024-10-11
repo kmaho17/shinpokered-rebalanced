@@ -408,6 +408,7 @@ v1.24.6
 - Giovanni gym battle exchanges rhyhorn for kangaskhan
 - Champion Rival's charizard swaps out swords dance for fly
 - The shimmer transformation's text box no longer requires a button prompt to scroll through
+- The shimmer adds double level to the special stat exclusively for Hitmonchan
 - Tweaked NPC text for extra options
 - Made the karate dojo master act like a special trainer
  
@@ -1458,9 +1459,10 @@ v1.24.1
   - The manifestation of the shimmer boosts one-to-four of a 'mons unmodified stats.
 	- If 3/8ths of an unmodified stat is less than the mon's level, then the level value is added to that stat.
     - Stats that can be boosted are: attack, defense, speed, or special.
+	- Exclusively for Hitmonchan, the shimmer adds the level twice to its special stat so it can use its elemental punches.
   - There is the same chance of shimmer manifesting on applicable enemy trainer pokemon.
   - Given their rosters, the shimmer will always manifest on the applicable pokemon of Bruno, Agatha, and the Karate Master.
-  
+    
 </details>
 
 
