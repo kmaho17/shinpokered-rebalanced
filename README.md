@@ -357,6 +357,7 @@ Cheats and Secrets!
 
 v1.24.6
 - Bugfixes:
+- Fixed an issue with the title menu becoming dark when saving in rock tunnel
 - Fixed desync problem during link battles with Rage, Thrash, and trapping moves
 - The 'bwoop' sfx now plays when registering pokemon with short names like "Onix"
 - Fixed wrong color palette being loaded for player back sprite tiles during screen shake animation
@@ -655,6 +656,7 @@ v1.24.1
   - Fixed a bug catcher on route 9 being able to walk onto a ledge
   - The rocket grunt in Cerulean city has a minor fix to the timing of when its sprite disappears
   - Fixed wrong color palette being loaded for player back sprite tiles during screen shake animation
+  - Fixed an issue with the title menu becoming dark when saving in rock tunnel
 
 
 - Item Fixes  
