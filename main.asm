@@ -1932,6 +1932,8 @@ INCLUDE "engine/overworld/elevator.asm"	;joenote - moving this to make space
 
 INCLUDE "custom_functions/func_gamma.asm"
 INCLUDE "custom_functions/func_extra_menu.asm"
+INCLUDE "custom_functions/func_move_secrets.asm"
+INCLUDE "custom_functions/func_linkbattlecomms.asm"
 
 SECTION "Pics 1", ROMX, BANK[PICS_1]
 INCLUDE "constants/pic_banks/pic1.asm"
@@ -1964,3 +1966,5 @@ ENDC
 
 INCLUDE "text/tmhm_names.asm"	;joenote - adding name list for tm and hm items
 tmhmNamesEnd:
+
+INCLUDE "data/super_rod.asm"	;joenote - moving all the super rod data here
