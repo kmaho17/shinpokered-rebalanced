@@ -355,6 +355,9 @@ Cheats and Secrets!
 **Note: Changelogs may contain spoilers**  
 [View the Consolidated Changelog Document from 1.23 to 1.24.0](/patches_and_info/changelog_from_v1.23.md)  
 
+v1.24.6_dev
+- Status Screen now prints types from party struct data instead of species header
+
 v1.24.6
 - Bugfixes:
 - Fixed an issue with the title menu becoming dark when saving in rock tunnel
@@ -1046,6 +1049,7 @@ v1.24.1
   - Withdrawing or depositing a key item from/to the player's PC will default its quantity to 1
   - Item evolutions having a level requirement is now supported
   - DelayFrame now manualy calls VBlank if it runs while the LCD is disabled
+  - Status Screen now prints types from party struct data instead of species header
 
 - PokeDex Area enhancements
   - The AREA function of the PokeDex now takes the Super Rod into account
