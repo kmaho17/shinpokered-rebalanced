@@ -357,6 +357,7 @@ Cheats and Secrets!
 
 v1.24.6_dev
 - Status Screen now prints types from party struct data instead of species header
+- Lickitung can learn Lick via the move-relearner in Saffron City
 
 v1.24.6
 - Bugfixes:
@@ -1018,6 +1019,9 @@ v1.24.1
   - Butterfree and Beedrill have their prior evolutions' moves added to their level-0 move list
   - Clefable and Wigglytuff get some moves back via level-up
   - Diglett & Dugtrio can learn cut like in yellow version
+
+- Undocumented super secret pokemon changes
+  - Lickitung can learn Lick via the move-relearner in Saffron City
   
 - Engine changes just for developers
   - The trainer move engine has been backported from Yellow version; trainer movesets can now be fully customized
