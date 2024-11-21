@@ -357,7 +357,19 @@ Cheats and Secrets!
 
 v1.24.6_dev
 - Status Screen now prints types from party struct data instead of species header
-- Lickitung can learn Lick via the move-relearner in Saffron City
+- Undocumented secret pokemon changes
+  - Lickitung can learn Lick via the move-relearner in Saffron City
+  - Flareon can learn Agility and Low Kick from the Karate Master
+  - Hitmonlee can learn Agility and Quick Attack from the Pikachu in the Vermilion Fan Club
+  - Moltres can learn Flamethrower from Blaine
+  - Ninja Scyther: Scyther can get a "ninja form" by defeating Koga as your sole party member
+    - Will exchange its Flying type for Ghost type
+	- Koga becomes a move tutor and can teach it a selection of new moves:
+	  - Confuse Ray
+	  - Hypnosis
+	  - Light Screen
+	  - Pin Missile
+	  - Rolling Kick
 
 v1.24.6
 - Bugfixes:
@@ -1020,8 +1032,19 @@ v1.24.1
   - Clefable and Wigglytuff get some moves back via level-up
   - Diglett & Dugtrio can learn cut like in yellow version
 
-- Undocumented super secret pokemon changes
+- Undocumented secret pokemon changes
   - Lickitung can learn Lick via the move-relearner in Saffron City
+  - Flareon can learn Agility and Low Kick from the Karate Master
+  - Hitmonlee can learn Agility and Quick Attack from the Pikachu in the Vermilion Fan Club
+  - Moltres can learn Flamethrower from Blaine
+  - Ninja Scyther: Scyther can get a "ninja form" by defeating Koga as your sole party member
+    - Will exchange its Flying type for Ghost type
+	- Koga becomes a move tutor and can teach it a selection of new moves:
+	  - Confuse Ray
+	  - Hypnosis
+	  - Light Screen
+	  - Pin Missile
+	  - Rolling Kick
   
 - Engine changes just for developers
   - The trainer move engine has been backported from Yellow version; trainer movesets can now be fully customized
