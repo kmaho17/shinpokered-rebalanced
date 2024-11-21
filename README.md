@@ -41,7 +41,7 @@ Other Social Links:
 
 #Patch Info  
 -----------
-BPS patches are provided for entry into your preferred emulator, patching tool, or other accessory that supports the BPS format.  
+BPS patches are provided for entry into your preferred emulator, patching tool, or other accessory that supports the BPS format. 
 Download and enter a patch which corresponds to the ROM of which you own a lawful copy.  
 - **Red patches (Shin Pokemon Red, Red_origback, and Red-JP) are intended for USA Red.**
   - File/ROM SHA-1: EA9BCAE617FDF159B045185467AE58B2E4A48B9A
@@ -50,6 +50,8 @@ Download and enter a patch which corresponds to the ROM of which you own a lawfu
   - File/ROM SHA-1: D7037C83E1AE5B39BDE3C30787637BA1D4C48CE2
   - File/ROM CRC32: D6DA8A1A
 - The "_origback" patches are alternatives that keep the original back sprites. 
+
+Note: The BPS format looks for a matching SHA-1 or CRC32 ROM checksum such that it will not allow you to patch over an incorrect or corrupted ROM file. If you are having patching problems, verify your ROM file has the correct checksum using an online tool such as the one found at https://www.toolsley.com/crcmulti.html
 
 ***Includes Pokemon Green and Japanese Red!***
 - The compiler primarily builds the graphics and cerulean cave layout back to the original japanese release.
