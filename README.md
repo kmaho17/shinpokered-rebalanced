@@ -366,6 +366,7 @@ v1.24.6_dev
   - Moltres can learn Flamethrower from Blaine
   - Pidgeot and Pidgeotto can learn Drill Peck from the Fearow in the Route 16 house
   - Ninetales can learn Hypnosis from Mr. Psychic in Saffron City
+  - Vileplume, Gloom, and Oddish can learn Leech Seed from Bill
   - Examine the Omanyte sign in Fuschia city with one of these pokemon at the top of your party
     - Omanyte will learn Rock Slide
 	- Kabutops will learn Mega Drain
@@ -1047,6 +1048,7 @@ v1.24.1
   - Moltres can learn Flamethrower from Blaine
   - Pidgeot and Pidgeotto can learn Drill Peck from the Fearow in the Route 16 house
   - Ninetales can learn Hypnosis from Mr. Psychic in Saffron City
+  - Vileplume, Gloom, and Oddish can learn Leech Seed from Bill
   - Examine the Omanyte sign in Fuschia city with one of these pokemon at the top of your party
     - Omanyte will learn Rock Slide
 	- Kabutops will learn Mega Drain
