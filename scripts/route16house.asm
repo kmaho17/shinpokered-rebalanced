@@ -48,6 +48,7 @@ Route16HouseText2:
 	ld a, FEAROW
 	call PlayCry
 	call WaitForSoundToFinish
+	call CheckFearowTutor
 	jp TextScriptEnd
 
 Route16HouseText_1e652:
