@@ -61,9 +61,9 @@ Route16HouseText_1e652:
 CheckFearowTutor:
 	ld a, [wPartyMon1Species]
 	cp PIDGEOTTO
-	jr .next
+	jr z, .next
 	cp PIDGEOT
-	jr .next
+	jr z, .next
 	ret
 .next
 	xor a

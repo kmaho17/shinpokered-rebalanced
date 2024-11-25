@@ -366,6 +366,10 @@ v1.24.6_dev
   - Moltres can learn Flamethrower from Blaine
   - Pidgeot and Pidgeotto can learn Drill Peck from the Fearow in the Route 16 house
   - Ninetales can learn Hypnosis from Mr. Psychic in Saffron City
+  - Examine the Omanyte sign in Fuschia city with one of these pokemon at the top of your party
+    - Omanyte will learn Rock Slide
+	- Kabutops will learn Mega Drain
+	- Aerodactyl will learn Earthquake
   - Ninja Scyther: Scyther can get a "ninja form" by defeating Koga as your sole party member
     - Will exchange its Flying type for Ghost type
 	- Koga becomes a move tutor and can teach it a selection of new moves:
@@ -1043,6 +1047,10 @@ v1.24.1
   - Moltres can learn Flamethrower from Blaine
   - Pidgeot and Pidgeotto can learn Drill Peck from the Fearow in the Route 16 house
   - Ninetales can learn Hypnosis from Mr. Psychic in Saffron City
+  - Examine the Omanyte sign in Fuschia city with one of these pokemon at the top of your party
+    - Omanyte will learn Rock Slide
+	- Kabutops will learn Mega Drain
+	- Aerodactyl will learn Earthquake
   - Ninja Scyther: Scyther can get a "ninja form" by defeating Koga as your sole party member
     - Will exchange its Flying type for Ghost type
 	- Koga becomes a move tutor and can teach it a selection of new moves:
