@@ -271,7 +271,7 @@ BillTutor:
 	ret
 .Text1
 	text "Oh! What a leafy"
-	line "POKEMON! Might it"
+	line "#MON! Might it"
 	cont "enjoy some plant"
 	cont "fertilizer from"
 	cont "CELADON CITY?"
