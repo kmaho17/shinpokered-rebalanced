@@ -358,6 +358,7 @@ Cheats and Secrets!
 [View the Consolidated Changelog Document from 1.23 to 1.24.0](/patches_and_info/changelog_from_v1.23.md)  
 
 v1.24.6_dev
+- Moved CalcStat function out of home bank to free up space
 - Status Screen now prints types from party struct data instead of species header
 - Undocumented secret pokemon changes
   - Lickitung can learn Lick via the move-relearner in Saffron City
