@@ -332,6 +332,7 @@ Cheats and Secrets!
   - An accurate emulator, preferably a GBC-dedicated emulator, is required in order to avoid unexpected bugs
   - Goomba and Visual Boy Advance in particular are known to be problematic
   - BGB is the supported standard due to its accuracy and debugging tools
+  - There are error messages that may display on the initial menu if there is an emulator error detected
 - Compatible with original Gameboy hardware (DMG, Super, Pocket, Color, Advance, SP)
 - Potentially compatible with Pokemon Stadium 1 & 2 (using original Nintendo hardware)
   - Simpler flash carts (like cheap bootlegs) are recognized, but products with firmware like the EZ Flash JR. will not work.
@@ -357,11 +358,11 @@ Cheats and Secrets!
 **Note: Changelogs may contain spoilers**  
 [View the Consolidated Changelog Document from 1.23 to 1.24.0](/patches_and_info/changelog_from_v1.23.md)  
 
-v1.24.6_dev
+v1.24.6(hotfix)
 - Worked on emulator tests a bit more
 - Moved CalcStat function out of home bank to free up space
 - Status Screen now prints types from party struct data instead of species header
-- Undocumented secret pokemon changes
+- Undocumented secret move tutors; these are considered cheats and are just for fun
   - Lickitung can learn Lick via the move-relearner in Saffron City
   - Flareon can learn Agility and Low Kick from the Karate Master
   - Hitmonlee can learn Agility and Quick Attack from the Pikachu in the Vermilion Fan Club
@@ -370,7 +371,7 @@ v1.24.6_dev
   - Ninetales can learn Hypnosis from Mr. Psychic in Saffron City
   - Vileplume, Gloom, and Oddish can learn Leech Seed from Bill
   - Examine the Omanyte sign in Fuschia city with one of these pokemon at the top of your party
-    - Omanyte will learn Rock Slide
+    - Omastar will learn Rock Slide
 	- Kabutops will learn Mega Drain
 	- Aerodactyl will learn Earthquake
   - Ninja Scyther: Scyther can get a "ninja form" by defeating Koga as your sole party member
@@ -1043,27 +1044,6 @@ v1.24.1
   - Clefable and Wigglytuff get some moves back via level-up
   - Diglett & Dugtrio can learn cut like in yellow version
 
-- Undocumented secret pokemon changes
-  - Lickitung can learn Lick via the move-relearner in Saffron City
-  - Flareon can learn Agility and Low Kick from the Karate Master
-  - Hitmonlee can learn Agility and Quick Attack from the Pikachu in the Vermilion Fan Club
-  - Moltres can learn Flamethrower from Blaine
-  - Pidgeot and Pidgeotto can learn Drill Peck from the Fearow in the Route 16 house
-  - Ninetales can learn Hypnosis from Mr. Psychic in Saffron City
-  - Vileplume, Gloom, and Oddish can learn Leech Seed from Bill
-  - Examine the Omanyte sign in Fuschia city with one of these pokemon at the top of your party
-    - Omanyte will learn Rock Slide
-	- Kabutops will learn Mega Drain
-	- Aerodactyl will learn Earthquake
-  - Ninja Scyther: Scyther can get a "ninja form" by defeating Koga as your sole party member
-    - Will exchange its Flying type for Ghost type
-	- Koga becomes a move tutor and can teach it a selection of new moves:
-	  - Confuse Ray
-	  - Hypnosis
-	  - Light Screen
-	  - Pin Missile
-	  - Rolling Kick
-  
 - Engine changes just for developers
   - The trainer move engine has been backported from Yellow version; trainer movesets can now be fully customized
   - Improved exp calculation for developers who want a level cap between 101 and 255
@@ -1526,7 +1506,28 @@ v1.24.1
 	- Exclusively for Hitmonchan, the shimmer adds the level twice to its special stat so it can use its elemental punches.
   - There is the same chance of shimmer manifesting on applicable enemy trainer pokemon.
   - Given their rosters, the shimmer will always manifest on the applicable pokemon of Bruno, Agatha, and the Karate Master.
-    
+
+- Undocumented secret move tutors; these are considered cheats and are just for fun
+  - Lickitung can learn Lick via the move-relearner in Saffron City
+  - Flareon can learn Agility and Low Kick from the Karate Master
+  - Hitmonlee can learn Agility and Quick Attack from the Pikachu in the Vermilion Fan Club
+  - Moltres can learn Flamethrower from Blaine
+  - Pidgeot and Pidgeotto can learn Drill Peck from the Fearow in the Route 16 house
+  - Ninetales can learn Hypnosis from Mr. Psychic in Saffron City
+  - Vileplume, Gloom, and Oddish can learn Leech Seed from Bill
+  - Examine the Omanyte sign in Fuschia city with one of these pokemon at the top of your party
+    - Omastar will learn Rock Slide
+	- Kabutops will learn Mega Drain
+	- Aerodactyl will learn Earthquake
+  - Ninja Scyther: Scyther can get a "ninja form" by defeating Koga as your sole party member
+    - Will exchange its Flying type for Ghost type
+	- Koga becomes a move tutor and can teach it a selection of new moves:
+	  - Confuse Ray
+	  - Hypnosis
+	  - Light Screen
+	  - Pin Missile
+	  - Rolling Kick
+  
 </details>
 
 
@@ -1698,6 +1699,12 @@ These are things that are commonly requested but fall outside the scope of the p
 
 #Frequently Asked Questions
 ---------------------------
+> **I'm getting an Emulator Error message at the main title menu. What does this mean?**
+
+There are a couple checks performed in the background under the assumption that some form of emulation is being used. One or more messages may be displayed to indicate failures of these checks. For example, emulators like Visual Boy Advance and Goomba allow data read/writes to VRAM during mode 3 wherein the LCD controller is utilizing it; this is not possible on a real Game Boy and may cause issues with Shin Pokemon. Another example, one where Visual Boy Advance-M fails, is in the cpu cycles required to initiate an OAM Interrupt after the LCD goes from being disabled to enabled.
+
+These messages are informative in nature and do not impede play. That said, it is encouraged to switch to a more accurate emulator to avoid things like graphical glitches and other weirdness. See "Compatibility Notes" for more info.
+
 > **Will you do a special request just for me or make some specific patches or a ROM file for me?**
 
 No. Such requests will be politely declined. If you think you have a good recommendation, please fill out a suggestion ticket in the Issues tab of this project's github repository.
