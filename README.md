@@ -491,24 +491,24 @@ v1.24.2
 v1.24.1  
 - Optimized smooth fades to eliminate graphical jank during battle black-outs
 - Trainers will not use non-healing items if they or the player are at low HP, making them more aggressive
-- AI will not switch if its HP is below 25% as it's ususally not worth it
+- AI will not switch if its HP is below 25% as it's usually not worth it
 - Fades in or out to white in GBC mode with gamma shader enabled will no longer have a frame of incorrect color
 - The move Transform now decrements PP properly when used by the AI recursively
 - Spinner tiles animate properly without resorting to vblank-induced slowdown
 - Fixed wrong color for move animation when it comes after self-inflicted confusion damage
-- Reworked the prize mon level function and synchronized DVs for gift pokemon added to party or box
+- Reworked the prize mon level function and also synchronized the DVs for gift pokemon that are added to party or box
 - Fixed typed effectiveness being applied the wrong way to static damage moves
 - All the extra options on the option menu have been moved to their own separate menu
 - Add Debug Stat Reset feature
-- Fixed shiny clause now working in nuzlocke mode
+- Fixed shiny clause so that it is now working in nuzlocke mode
 - Fixed a bug catcher on route 9 being able to walk onto a ledge
 - The message for substitute taking damage now only displays after the first attack of a multi-attack move
-- Multi-attack moves display effectivenes only on first attack instead of the last attack
+- Multi-attack moves display effectiveness only on first attack instead of the last attack
 - Twineedle does not print redundant messages like other multi-hit moves
 - If active, the shimmer will always manifest on the applicable pokemon of Bruno, Agatha, and the Karate Master
 - Karate Master's pokemon increased from level 37 to 38
 - Extended shiny mercy to tower ghosts, ghost marowak, and old man battle
-- Fixed daycare somtimes prompting to learn the same move twice
+- Fixed daycare sometimes prompting to learn the same move twice
 - Fixed special HUD symbols displaying during the ghost marowak encounter
 
 
