@@ -12,7 +12,7 @@ INCBIN ARTICUNO_FR,0,1 ; 77, sprite dimensions
 dw ArticunoPicFront
 dw ArticunoPicBack
 ; attacks known at lvl 0
-db PECK
+db DRILL_PECK
 db ICE_BEAM
 db 0
 db 0
