@@ -242,10 +242,11 @@ ClefairyEvosMoves:
 	db EV_ITEM, MOON_STONE, 1, CLEFABLE
 	db 0
 ; Learnset
-	db 13, SING
 	db 18, DOUBLESLAP
-	db 24, MINIMIZE
+	db 24, SING
+	db 26, MINIMIZE
 	db 31, METRONOME
+	db 34, BODY_SLAM
 	db 39, DEFENSE_CURL
 	db 48, LIGHT_SCREEN
 	db 0
@@ -1875,10 +1876,13 @@ ClefableEvosMoves:	;joenote - modified to gain level up moves
 ; Evolutions
 	db 0
 ; Learnset
-	db 13, SING
-	db 18, DOUBLESLAP
-	db 24, MINIMIZE
-	db 31, METRONOME
+	db 21, DOUBLESLAP
+	db 28, SING
+	db 30, MINIMIZE
+	db 35, METRONOME
+	db 40, BODY_SLAM
+	db 45, DEFENSE_CURL
+	db 55, LIGHT_SCREEN
 	db 0
 
 WeezingEvosMoves:
