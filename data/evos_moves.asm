@@ -219,6 +219,8 @@ KangaskhanEvosMoves:
 	db 36, MEGA_PUNCH
 	db 41, LEER
 	db 46, DIZZY_PUNCH
+	db 50, BODY_SLAM
+	db 55, DOUBLE_EDGE
 	db 0
 
 NidoranMEvosMoves:
@@ -343,9 +345,11 @@ LickitungEvosMoves:
 ; Learnset
 	db 7, STOMP
 	db 15, DISABLE
+	db 20, HEADBUTT
 	db 23, DEFENSE_CURL
-	db 31, SLAM
+	db 31, BODY_SLAM
 	db 39, SCREECH
+	db 45, WRAP
 	db 0
 
 ExeggcuteEvosMoves:
@@ -604,8 +608,10 @@ TangelaEvosMoves:
 	db 32, POISONPOWDER
 	db 36, STUN_SPORE
 	db 39, SLEEP_POWDER
-	db 45, SLAM
+	db 42, MEGA_DRAIN
+	db 45, BODY_SLAM
 	db 49, GROWTH
+	db 55, BIND
 	db 0
 
 MissingNo1FEvosMoves:
@@ -753,8 +759,11 @@ MrMimeEvosMoves:
 	db 15, CONFUSION
 	db 23, LIGHT_SCREEN
 	db 31, DOUBLESLAP
+	db 35, PSYBEAM
 	db 39, MEDITATE
-	db 47, SUBSTITUTE
+	db 45, PSYCHIC_M
+	db 50, SUBSTITUTE
+	db 55, BARRIER
 	db 0
 
 HitmonleeEvosMoves:
@@ -1086,9 +1095,11 @@ JynxEvosMoves:
 ; Learnset
 	db 18, LICK
 	db 23, DOUBLESLAP
+	db 28, CONFUSION
 	db 31, ICE_PUNCH
 	db 39, BODY_SLAM
 	db 47, THRASH
+	db 50, PSYCHIC_M
 	db 58, BLIZZARD
 	db 0
 
@@ -2084,9 +2095,11 @@ GoldeenEvosMoves:
 	db 0
 ; Learnset
 	db 19, SUPERSONIC
+	db 22, WATER_GUN
 	db 24, HORN_ATTACK
 	db 30, FURY_ATTACK
 	db 37, WATERFALL
+	db 40, DRILL_PECK
 	db 45, HORN_DRILL
 	db 54, AGILITY
 	db 0
@@ -2096,9 +2109,11 @@ SeakingEvosMoves:
 	db 0
 ; Learnset
 	db 19, SUPERSONIC
+	db 22, WATER_GUN
 	db 24, HORN_ATTACK
 	db 30, FURY_ATTACK
 	db 39, WATERFALL
+	db 43, DRILL_PECK
 	db 48, HORN_DRILL
 	db 54, AGILITY
 	db 0
@@ -2230,8 +2245,11 @@ PorygonEvosMoves:
 ; Learnset
 	db 23, PSYBEAM
 	db 28, RECOVER
-	db 35, AGILITY
+	db 32, SHARPEN
 	db 42, TRI_ATTACK
+	db 45, AGILITY
+	db 50, BARRIER
+	db 55, HYPER_BEAM
 	db 0
 
 AerodactylEvosMoves:
