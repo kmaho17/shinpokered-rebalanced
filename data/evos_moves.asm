@@ -800,9 +800,12 @@ ParasectEvosMoves:
 	db 0
 ; Learnset
 	db 13, STUN_SPORE
+	db 15, ABSORB
 	db 20, LEECH_LIFE
+	db 22, POISONPOWDER
 	db 30, SPORE
-	db 39, SLASH
+	db 35, MEGA_DRAIN
+	db 40, SLASH
 	db 48, GROWTH
 	db 0
 
@@ -1536,8 +1539,11 @@ ParasEvosMoves:
 	db 0
 ; Learnset
 	db 13, STUN_SPORE
+	db 15, ABSORB
 	db 20, LEECH_LIFE
+	db 22, POISONPOWDER
 	db 27, SPORE
+	db 30, MEGA_DRAIN
 	db 34, SLASH
 	db 41, GROWTH
 	db 0
