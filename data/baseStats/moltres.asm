@@ -12,7 +12,7 @@ INCBIN MOLTRES_FR,0,1 ; 77, sprite dimensions
 dw MoltresPicFront
 dw MoltresPicBack
 ; attacks known at lvl 0
-db PECK
+db DRILL_PECK
 db FIRE_SPIN
 db 0
 db 0
