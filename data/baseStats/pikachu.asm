@@ -1,9 +1,9 @@
 db DEX_PIKACHU ; pokedex id
-db 35 ; base hp
+db 60 ; base hp
 db 55 ; base attack
-db 30 ; base defense
+db 50 ; base defense
 db 90 ; base speed
-db 50 ; base special
+db 70 ; base special
 db ELECTRIC ; species type 1
 db ELECTRIC ; species type 2
 db 163 ; catch rate ;joenote - adjusted from 190 to match yellow's starter pikachu
