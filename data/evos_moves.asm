@@ -258,9 +258,12 @@ SpearowEvosMoves:
 ; Learnset
 	db 9, LEER
 	db 15, FURY_ATTACK
+	db 18, FOCUS_ENERGY
+	db 18, SWIFT
 	db 22, MIRROR_MOVE
 	db 29, DRILL_PECK
 	db 36, AGILITY
+	db 44, SHARPEN
 	db 0
 
 VoltorbEvosMoves:
@@ -648,9 +651,12 @@ FearowEvosMoves:
 ; Learnset
 	db 9, LEER
 	db 15, FURY_ATTACK
+	db 18, FOCUS_ENERGY
+	db 18, SWIFT
 	db 25, MIRROR_MOVE
-	db 34, DRILL_PECK
-	db 43, AGILITY
+	db 32, DRILL_PECK
+	db 40, AGILITY
+	db 48, SHARPEN
 	db 0
 
 PidgeyEvosMoves:
@@ -1382,11 +1388,13 @@ JigglypuffEvosMoves:
 	db 0
 ; Learnset
 	db 9, POUND
+	db 11, DOUBLESLAP
 	db 14, DISABLE
 	db 19, DEFENSE_CURL
 	db 24, DOUBLESLAP
 	db 29, REST
 	db 34, BODY_SLAM
+	db 36, LOVELY_KISS
 	db 39, DOUBLE_EDGE
 	db 0
 
@@ -1394,13 +1402,15 @@ WigglytuffEvosMoves:	;joenote - modified for level-up moves
 ; Evolutions
 	db 0
 ; Learnset
-	db 9, POUND
-	db 14, DISABLE
-	db 19, DEFENSE_CURL
-	db 24, SING
-	db 29, DOUBLESLAP
-	db 34, DISABLE
-	db 39, BODY_SLAM
+	db 12, POUND
+	db 15, DOUBLESLAP
+	db 20, DISABLE
+	db 25, DEFENSE_CURL
+	db 30, DOUBLESLAP
+	db 35, REST
+	db 42, BODY_SLAM
+	db 44, LOVELY_KISS
+	db 48, DOUBLE_EDGE
 	db 0
 
 EeveeEvosMoves:
@@ -2143,6 +2153,7 @@ RattataEvosMoves:
 	db 7, QUICK_ATTACK
 	db 14, HYPER_FANG
 	db 23, FOCUS_ENERGY
+	db 28, DIG
 	db 34, SUPER_FANG
 	db 0
 
@@ -2153,6 +2164,7 @@ RaticateEvosMoves:
 	db 7, QUICK_ATTACK
 	db 14, HYPER_FANG
 	db 27, FOCUS_ENERGY
+	db 32, DIG
 	db 41, SUPER_FANG
 	db 0
 
