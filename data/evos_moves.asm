@@ -633,7 +633,6 @@ OnixEvosMoves:
 	db 0
 ; Learnset
 	db 15, RAGE
-	db 19, ROCK_THROW
 	db 25, BIND
 	db 30, DIG
 	db 33, SLAM
