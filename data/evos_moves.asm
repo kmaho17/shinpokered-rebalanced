@@ -998,10 +998,13 @@ FarfetchdEvosMoves:
 	db 0
 ; Learnset
 	db 7, LEER
+	db 10, SHARPEN
 	db 15, FURY_ATTACK
-	db 23, SWORDS_DANCE
+	db 20, WING_ATTACK
+	db 25, SWORDS_DANCE
 	db 31, AGILITY
-	db 39, SLASH
+	db 35, SLASH
+	db 40, DRILL_PECK
 	db 0
 
 VenonatEvosMoves:
@@ -1059,7 +1062,8 @@ DoduoEvosMoves:
 	db 30, DRILL_PECK
 	db 36, RAGE
 	db 40, TRI_ATTACK
-	db 44, AGILITY
+	db 43, LOW_KICK
+	db 46, AGILITY
 	db 0
 
 PoliwagEvosMoves:
@@ -1623,7 +1627,8 @@ DodrioEvosMoves:
 	db 30, DRILL_PECK
 	db 39, RAGE
 	db 45, TRI_ATTACK
-	db 51, AGILITY
+	db 50, LOW_KICK
+	db 55, AGILITY
 	db 0
 
 PrimeapeEvosMoves:
