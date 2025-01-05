@@ -1218,7 +1218,7 @@ PikachuEvosMoves:
 	db 11, QUICK_ATTACK
 	db 11, THUNDERSHOCK
 	db 15, DOUBLE_TEAM
-	db 20, SLAM
+	db 20, HEADBUTT
 	db 26, THUNDERBOLT
 	db 29, SWIFT
 	db 33, AGILITY
@@ -1230,11 +1230,16 @@ RaichuEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset;joenote-modified just for fun
-	db 11, TAIL_WHIP
-	db 13, THUNDER_WAVE
-	db 25, SLAM
+	db 10, TAIL_WHIP
+	db 11, THUNDER_WAVE
+	db 14, QUICK_ATTACK
+	db 14, THUNDERSHOCK
+	db 20, DOUBLE_TEAM
+	db 25, HEADBUTT
 	db 31, THUNDERBOLT
-	db 46, THUNDER
+	db 34, SWIFT
+	db 38, AGILITY
+	db 45, THUNDER
 	db 55, LIGHT_SCREEN
 	db 0
 
